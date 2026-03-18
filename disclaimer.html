@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Service, Privacy Policy and Legal Information for Samuel Berlad's website.">
+    <meta name="author" content="Samuel Berlad">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samuelberlad.com/disclaimer.html">
+    <meta property="og:title" content="Legal & Privacy Policy | Samuel Berlad">
+    <meta property="og:description" content="Terms of Service, Privacy Policy, and GDPR compliance information for Samuel Berlad's professional website.">
+    <meta property="og:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Samuel Berlad">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://samuelberlad.com/disclaimer.html">
+    <meta property="twitter:title" content="Legal & Privacy Policy | Samuel Berlad">
+    <meta property="twitter:description" content="Terms of Service, Privacy Policy, and GDPR compliance information for Samuel Berlad's professional website.">
+    <meta property="twitter:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Samuel Berlad | Legal & Privacy</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1KBWVNTC4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K1KBWVNTC4');
+    </script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/glacial-indifference-2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-red: #a42020;
+            --deep-black: #000;
+            --off-white: #fafafa;
+            --warm-gray: #333;
+            --light-gray: #888;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Glacial Indifference', sans-serif;
+            background: var(--deep-black);
+            color: var(--off-white);
+            line-height: 1.6;
+            font-weight: 300;
+            padding-top: 75px;
+        }
+
+        /* Header - Same as other pages */
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(12px);
+            transition: all 0.4s ease;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background: var(--primary-red);
+            transition: width 0.6s ease;
+        }
+
+        .header.scrolled::before {
+            width: 200px;
+        }
+
+        .header_content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            height: 75px;
+        }
+
+        .logo img {
+            height: 45px;
+            width: auto;
+        }
+
+        .nav {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav_list {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav_item a {
+            color: var(--off-white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: lowercase;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav_item a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background: var(--primary-red);
+            transition: width 0.3s ease;
+        }
+
+        .nav_item a:hover::after {
+            width: 80%;
+        }
+
+        .nav_item a:hover {
+            color: var(--primary-red);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .bar {
+            width: 22px;
+            height: 2px;
+            background: var(--off-white);
+            margin: 2px 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav-open {
+            transform: translateX(0) !important;
+        }
+
+        .hamburger-open .bar:nth-child(1) {
+            transform: translateY(6px) rotate(45deg);
+        }
+
+        .hamburger-open .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-open .bar:nth-child(3) {
+            transform: translateY(-6px) rotate(-45deg);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .page-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--primary-red);
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .page-subtitle {
+            font-size: 1.1rem;
+            color: var(--light-gray);
+            letter-spacing: 1px;
+        }
+
+        /* Legal Content */
+        .legal-content {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(164, 32, 32, 0.2);
+            padding: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .credits {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(164, 32, 32, 0.05);
+            border: 1px solid rgba(164, 32, 32, 0.2);
+        }
+
+        .credits p {
+            color: var(--light-gray);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--primary-red);
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(164, 32, 32, 0.3);
+            padding-bottom: 0.5rem;
+        }
+
+        .subsection-title {
+            font-size: 1.2rem;
+            color: var(--off-white);
+            margin: 2rem 0 1rem;
+            font-weight: 500;
+        }
+
+        .legal-content p {
+            margin-bottom: 1rem;
+            color: var(--light-gray);
+            font-size: 0.95rem;
+        }
+
+        .legal-content ul {
+            margin: 1rem 0 1rem 2rem;
+            color: var(--light-gray);
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .privacy-section {
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(164, 32, 32, 0.3);
+        }
+
+        /* Legal Content Link Styling */
+        .legal-content a {
+            color: var(--primary-red);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        .legal-content a:hover {
+            color: var(--off-white);
+            border-bottom: 1px solid var(--primary-red);
+            text-decoration: none;
+        }
+
+        .legal-content a:focus {
+            outline: 1px solid var(--primary-red);
+            outline-offset: 2px;
+        }
+
+        /* Email links styling */
+        .legal-content a[href^="mailto:"] {
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .legal-content a[href^="mailto:"]:hover {
+            background: rgba(164, 32, 32, 0.1);
+            padding: 2px 4px;
+            border-radius: 2px;
+            border-bottom: none;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--deep-black);
+            padding: 2rem;
+            border-top: 1px solid rgba(164, 32, 32, 0.2);
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .copyright {
+            color: var(--light-gray);
+            font-size: 0.85rem;
+        }
+
+        .footer-social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-social-links a {
+            color: var(--light-gray);
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .footer-social-links a:hover {
+            color: var(--primary-red);
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav {
+                position: fixed;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                height: calc(100vh - 75px);
+                background: rgba(0, 0, 0, 0.95);
+                backdrop-filter: blur(15px);
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                padding: 3rem 2rem;
+            }
+
+            .nav-open {
+                transform: translateX(0);
+            }
+
+            .nav_list {
+                flex-direction: column;
+                gap: 2rem;
+                height: 100%;
+                justify-content: flex-start;
+            }
+
+            .nav_item a {
+                font-size: 1.2rem;
+            }
+
+            .hamburger-open .bar:nth-child(1) {
+                transform: translateY(6px) rotate(45deg);
+            }
+
+            .hamburger-open .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger-open .bar:nth-child(3) {
+                transform: translateY(-6px) rotate(-45deg);
+            }
+        }
+        @media (max-width: 768px) {
+            .nav {
+                position: fixed;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                height: calc(100vh - 75px);
+                background: rgba(0, 0, 0, 0.98);
+                backdrop-filter: blur(15px);
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                padding: 3rem 2rem;
+            }
+
+            .nav_list {
+                flex-direction: column;
+                gap: 2rem;
+                height: 100%;
+                justify-content: flex-start;
+            }
+
+            .nav_item a {
+                font-size: 1.2rem;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .legal-content {
+                padding: 2rem;
+            }
+
+            .credits {
+                padding: 1.5rem;
+            }
+
+            .footer-content {
+                text-align: center;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .legal-content {
+                padding: 1.5rem;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header_content">
+            <a class="logo" href="index.html">
+                <img src="images/Samuel_Berlad_bass-baritone__1_-removebg-crop-300x160.png" alt="Samuel Berlad">
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html">home</a></li>
+                    <li class="nav_item"><a href="about.html">biography</a></li>
+                    <li class="nav_item"><a href="repertoire.html">repertoire</a></li>
+                    <li class="nav_item"><a href="gallery.html">gallery</a></li>
+                    <li class="nav_item"><a href="videos.html">hear me sing</a></li>
+                    <li class="nav_item"><a href="blog.html">blog</a></li>
+                    <li class="nav_item"><a href="reach-me.html">contact</a></li>
+                    <li class="nav_item"><a href="disclaimer.html">legal</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="page-header">
+            <h1 class="page-title">Legal & Privacy</h1>
+            <p class="page-subtitle">Terms of Service and Privacy Policy</p>
+        </div>
+
+        <!-- Credits -->
+        <div class="credits">
+            <p><strong>Webdesign by <a href="https://samuelberlad.com" style="color: var(--primary-red); text-decoration: none;">Samuel Berlad</a></strong></p>
+            <p>Photography by <a href="https://www.michaelpavia.com/" target="_blank" style="color: var(--primary-red); text-decoration: none;">Michael Pavia</a>, <a href="https://www.larryphotography.com/" target="_blank" style="color: var(--primary-red); text-decoration: none;">Larry Brandt</a>, and <a href="https://www.behringer-medien.de/" target="_blank" style="color: var(--primary-red); text-decoration: none;">Ray Behringer</a> unless otherwise credited.</p>
+        </div>
+
+        <!-- Legal Content -->
+        <div class="legal-content">
+            <h2 class="section-title">Terms of Service and Privacy Policy</h2>
+            <p><em>Last updated: 08 June 2025</em></p>
+            
+            <h3 class="subsection-title">1. Terms</h3>
+            <p>By accessing the website at http://www.samuelberlad.com, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>
+
+            <h3 class="subsection-title">2. Use License</h3>
+            <p>Permission is granted to temporarily download one copy of the materials (information or software) on Samuel Berlad's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+            <ul>
+                <li>modify or copy the materials;</li>
+                <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
+                <li>attempt to decompile or reverse engineer any software contained on Samuel Berlad's website;</li>
+                <li>remove any copyright or other proprietary notations from the materials; or</li>
+                <li>transfer the materials to another person or "mirror" the materials on any other server.</li>
+            </ul>
+            <p>This license shall automatically terminate if you violate any of these restrictions and may be terminated by Samuel Berlad at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</p>
+
+            <h3 class="subsection-title">3. Disclaimer</h3>
+            <p>The materials on Samuel Berlad's website are provided on an 'as is' basis. Samuel Berlad makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+            <p>Further, Samuel Berlad does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.</p>
+
+            <h3 class="subsection-title">4. Limitations</h3>
+            <p>In no event shall Samuel Berlad or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Samuel Berlad's website, even if Samuel Berlad or a Samuel Berlad authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>
+
+            <h3 class="subsection-title">5. Accuracy of Materials</h3>
+            <p>The materials appearing on Samuel Berlad's website could include technical, typographical, or photographic errors. Samuel Berlad does not warrant that any of the materials on its website are accurate, complete or current. Samuel Berlad may make changes to the materials contained on its website at any time without notice. However Samuel Berlad does not make any commitment to update the materials.</p>
+
+            <h3 class="subsection-title">6. Links</h3>
+            <p>Samuel Berlad has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Samuel Berlad of the site. Use of any such linked website is at the user's own risk.</p>
+
+            <h3 class="subsection-title">7. Modifications</h3>
+            <p>Samuel Berlad may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>
+
+            <h3 class="subsection-title">8. Governing Law</h3>
+            <p>These terms and conditions are governed by and construed in accordance with the laws of Jerusalem, Israel and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
+
+            <div class="privacy-section">
+                <h2 class="section-title">Privacy Policy</h2>
+                <p>Your privacy is important to us.</p>
+                <p><em>Last updated: January 2025</em></p>
+                <p>It is Samuel Berlad's policy to respect your privacy regarding any information we may collect while operating our website. Accordingly, we have developed this privacy policy in order for you to understand how we collect, use, communicate, disclose and otherwise make use of personal information. We have outlined our privacy policy below.</p>
+                
+                <ul>
+                    <li>We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned.</li>
+                    <li>Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.</li>
+                    <li>We will collect and use personal information solely for fulfilling those purposes specified by us and for other ancillary purposes, unless we obtain the consent of the individual concerned or as required by law.</li>
+                    <li>Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date.</li>
+                    <li>We will protect personal information by using reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.</li>
+                    <li>We will make readily available to customers information about our policies and practices relating to the management of personal information.</li>
+                    <li>We will only retain personal information for as long as necessary for the fulfilment of those purposes.</li>
+                </ul>
+                
+                <p>We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. Samuel Berlad may change this privacy policy from time to time at Samuel Berlad's sole discretion.</p>
+
+                <h3 class="subsection-title">GDPR Compliance</h3>
+                <p>Under the General Data Protection Regulation (GDPR), you have the following rights regarding your personal data:</p>
+                <ul>
+                    <li><strong>Right to Access:</strong> You can request copies of your personal data.</li>
+                    <li><strong>Right to Rectification:</strong> You can request correction of inaccurate or incomplete data.</li>
+                    <li><strong>Right to Erasure:</strong> You can request deletion of your personal data.</li>
+                    <li><strong>Right to Restrict Processing:</strong> You can request limitation of data processing.</li>
+                    <li><strong>Right to Data Portability:</strong> You can request transfer of your data.</li>
+                    <li><strong>Right to Object:</strong> You can object to processing of your personal data.</li>
+                </ul>
+                <p>To exercise any of these rights, please contact us at contact@samuelberlad.com. We will respond within one month.</p>
+
+                <h3 class="subsection-title">Cookies and Tracking</h3>
+                <p>This website uses cookies and tracking technologies to improve user experience and analyze website traffic:</p>
+                <ul>
+                    <li><strong>Essential Cookies:</strong> Required for basic website functionality (none currently used).</li>
+                    <li><strong>Google Analytics:</strong> We use Google Analytics 4 to collect anonymous statistical data about website usage, including pages visited, time spent on site, and general geographic location. This helps us understand how visitors interact with our content and improve the website experience.</li>
+                    <li><strong>Embedded Content:</strong> YouTube and SoundCloud videos may set cookies for functionality and analytics. These are governed by their respective privacy policies.</li>
+                    <li><strong>Google Fonts:</strong> We load fonts from Google, which may collect minimal technical data (IP address, browser information).</li>
+                </ul>
+                <p>By using this website, you consent to the use of cookies as described above. You can disable analytics tracking by:</p>
+                <ul>
+                    <li>Installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a></li>
+                    <li>Enabling "Do Not Track" in your browser settings</li>
+                    <li>Using browser privacy/incognito mode</li>
+                </ul>
+
+                <h3 class="subsection-title">Google Analytics Data Collection</h3>
+                <p>Google Analytics collects the following types of information:</p>
+                <ul>
+                    <li><strong>Technical Data:</strong> Browser type, operating system, screen resolution, IP address (anonymized)</li>
+                    <li><strong>Usage Data:</strong> Pages visited, time spent on pages, click behavior, referral sources</li>
+                    <li><strong>Geographic Data:</strong> General location based on IP address (city/region level, not precise location)</li>
+                </ul>
+                <p><strong>Data Retention:</strong> Google Analytics data is automatically deleted after 14 months. You can request immediate deletion of your data by contacting us at contact@samuelberlad.com.</p>
+                <p><strong>Data Sharing:</strong> Analytics data is shared with Google in accordance with their <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. We do not sell or share personal data with other third parties.</p>
+
+                <h3 class="subsection-title">Data Processing</h3>
+                <p>This website collects minimal personal data:</p>
+                <ul>
+                    <li><strong>Direct Email:</strong> When you email contact@samuelberlad.com, your communication is governed by standard email privacy practices.</li>
+                    <li><strong>Phone/SMS:</strong> Direct contact through provided phone numbers.</li>
+                    <li><strong>Social Media:</strong> Contact through linked social media platforms is governed by their respective privacy policies.</li>
+                    <li><strong>Analytics Data:</strong> Anonymous website usage statistics collected via Google Analytics as described above.</li>
+                </ul>
+                <p>We do not use contact forms or automatically collect personal data through this website beyond analytics.</p>
+                
+                <h3 class="subsection-title">Artificial Intelligence (AI) Generated Content</h3>
+                <p>In the interest of transparency and legal compliance, Samuel Berlad discloses the following regarding AI-generated content on this website:</p>
+                
+                <h4 style="font-size: 1rem; color: var(--off-white); margin: 1.5rem 0 0.8rem; font-weight: 500;">AI-Generated Images</h4>
+                <p>Some images used on this website, particularly blog post illustrations, are created using artificial intelligence image generation tools including but not limited to DALL-E, Midjourney, and Stable Diffusion. These images are clearly artistic interpretations designed to complement written content and are not intended to represent real people, places, or events unless specifically noted.</p>
+                
+                <p><strong>Copyright Status:</strong> Under current U.S. Copyright Office guidance, AI-generated images cannot be protected by copyright as they lack human authorship. These images are considered to be in the public domain for copyright purposes.</p>
+                
+                <h4 style="font-size: 1rem; color: var(--off-white); margin: 1.5rem 0 0.8rem; font-weight: 500;">Human-Created Content</h4>
+                <p>All written content, including blog posts, biographical information, and website copy, is created by Samuel Berlad. Musical performances, recordings, and professional photographs (unless otherwise noted as AI-generated) are human-created works and remain protected by copyright.</p>
+                
+                <h4 style="font-size: 1rem; color: var(--off-white); margin: 1.5rem 0 0.8rem; font-weight: 500;">Attribution and Transparency</h4>
+                <p>We are committed to clearly distinguishing between AI-generated and human-created content. This transparency serves to:</p>
+                <ul>
+                    <li>Maintain professional integrity and honesty with our audience</li>
+                    <li>Comply with evolving legal requirements regarding AI disclosure</li>
+                    <li>Protect copyright claims on human-authored content</li>
+                    <li>Provide clarity for users regarding content ownership and usage rights</li>
+                </ul>
+                
+                <p><strong>Usage Rights:</strong> While AI-generated images on this site are not copyright-protected, we request that users respect the creative intent and context in which they are presented. Human-created content remains fully protected by copyright law.</p>
+                
+                <p><strong>Future Changes:</strong> As AI technology and related legislation continue to evolve, this disclosure policy may be updated to reflect new legal requirements or industry standards. Any significant changes will be noted in the "Last updated" date of this policy.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                <p>© 2025 Samuel Berlad. All rights reserved.</p>
+            </div>
+            <div class="footer-social-links">
+                <a href="https://www.facebook.com/samuel.berlad/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/samuelberlad_bassbaritone/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UC5I1E7F3C1SUcLed-w7Ax9A" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://open.spotify.com/artist/6yueNB4pXtAZmGPh01Q4Eo" target="_blank" aria-label="Spotify">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('.nav');
+            const navLinks = document.querySelectorAll('.nav_item a');
+
+            if (hamburger && nav) {
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('hamburger-open');
+                    nav.classList.toggle('nav-open');
+                });
+            }
+
+            if (navLinks) {
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (hamburger && nav) {
+                            hamburger.classList.remove('hamburger-open');
+                            nav.classList.remove('nav-open');
+                        }
+                    });
+                });
+            }
+
+            // Header scroll effects
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('.header');
+                const scrollTop = window.pageYOffset;
+                
+                if (scrollTop > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

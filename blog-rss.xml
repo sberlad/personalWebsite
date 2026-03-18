@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+    <title>Samuel Berlad Blog</title>
+    <link>https://samuelberlad.com/blog.html</link>
+    <description>Insights on opera, vocal technique, and life as a professional bass-baritone. From Wagner preparation to German pedagogy, performance tips, and the journey of an international opera singer.</description>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 11 Jun 2025 12:00:00 +0000</lastBuildDate>
+    <pubDate>Wed, 11 Jun 2025 12:00:00 +0000</pubDate>
+    <ttl>1440</ttl>
+    <generator>Samuel Berlad Website</generator>
+    <managingEditor>contact@samuelberlad.com (Samuel Berlad)</managingEditor>
+    <webMaster>contact@samuelberlad.com (Samuel Berlad)</webMaster>
+    <copyright>Copyright 2025 Samuel Berlad. All rights reserved.</copyright>
+    <category>Music</category>
+    <category>Opera</category>
+    <category>Classical Music</category>
+    <category>Vocal Technique</category>
+    <category>Chazzanut</category>
+    <category>Career Development</category>
+    
+    <!-- Self-referencing RSS link -->
+    <atom:link href="https://samuelberlad.com/blog-rss.xml" rel="self" type="application/rss+xml"/>
+    
+    <!-- Channel Image -->
+    <image>
+        <url>https://samuelberlad.com/images/samuel-berlad-social.jpg</url>
+        <title>Samuel Berlad Blog</title>
+        <link>https://samuelberlad.com/blog.html</link>
+        <description>Samuel Berlad - Professional Bass-Baritone</description>
+        <width>144</width>
+        <height>144</height>
+    </image>
+
+    <!-- ACTUAL BLOG POSTS -->
+    
+    <item>
+        <title>Letters from the Stage: What Singers Wish Conductors and Theater Managers Knew</title>
+        <link>https://samuelberlad.com/blog.html#post-3</link>
+        <description>An open letter addressing the hidden challenges opera singers face in rehearsal rooms worldwide. Seven practical insights on vocal health, emotional safety, audition feedback, and creating collaborative environments where artists can take risks. Essential reading for conductors, directors, and theater administrators who want to understand what singers truly need to deliver their best performances.</description>
+        <content:encoded><![CDATA[
+        <p><strong>Dear Maestros, Intendants, and Artistic Administrators,</strong></p>
+        
+        <p>We love you. We really do. We know how much you juggle—budgets, schedules, egos, crises. We know you're doing your best under impossible constraints. But from our place under the lights, there are some things we deeply wish you understood. Not to accuse, not to criticize—but to help us all make better art, together.</p>
+
+        <p>Because if you listen carefully, the voice onstage might be telling you more than just the score.</p>
+
+        <h2>1. Our Instrument Is Our Body—And It's Always in Flux</h2>
+        <p>Unlike a violinist or flutist, we can't replace strings or polish valves. Singers carry our instruments in our ribs, throat, lungs, and nervous system. That means we walk into rehearsal with the same body that slept poorly, fought a cold, or held its breath after a tense phone call...</p>
+        
+        <p><a href="https://samuelberlad.com/blog.html#post-3">Read the complete open letter</a></p>
+        ]]></content:encoded>
+        <pubDate>Wed, 11 Jun 2025 09:00:00 +0000</pubDate>
+        <guid isPermaLink="true">https://samuelberlad.com/blog.html#post-3</guid>
+        <category>Career Development</category>
+        <category>Opera</category>
+        <category>Professional Development</category>
+        <category>Vocal Health</category>
+        <category>Industry Insights</category>
+        <dc:creator>Samuel Berlad</dc:creator>
+    </item>
+
+    <item>
+        <title>From Shul to Stage: Breathing Together in Chazzanut and Opera</title>
+        <link>https://samuelberlad.com/blog.html#post-2</link>
+        <description>How cantorial prayer and operatic performance share the same breath, technique, and spiritual foundation. From Thomas Heyer's teachings on voice as 'vessel of the soul' to leading Yom Kippur services and singing Mozart, discover why sacred and secular music traditions strengthen each other rather than compete—and how physiological empathy connects performer and audience through shared breathing.</description>
+        <content:encoded><![CDATA[
+        <p>When people discover that I'm both a chazzan (cantor) and an opera singer, their first question is often, "Do those two worlds ever get mixed up?" The answer is yes—but not in the way they expect. The disciplines of <strong>chazzanut</strong> and <strong>classical singing</strong> don't merely coexist for me. They are in constant, vibrant conversation.</p>
+
+        <h2>The Voice as Vessel of Soul</h2>
+        <p>One of the most formative ideas I encountered as a voice student came from Prof. Thomas Heyer, my second voice teacher during university. He loved to (intentionally) mis-translate the word <em>person</em> from Latin <em>per sonare</em>: "to sound through." While not linguistically accurate, the idea behind it was profound. To him, and eventually to me, the <strong>voice is the vessel of the soul</strong>.</p>
+        
+        <p><a href="https://samuelberlad.com/blog.html#post-2">Continue reading about sacred and secular music traditions</a></p>
+        ]]></content:encoded>
+        <pubDate>Thu, 31 Oct 2024 14:00:00 +0000</pubDate>
+        <guid isPermaLink="true">https://samuelberlad.com/blog.html#post-2</guid>
+        <category>Chazzanut</category>
+        <category>Sacred Music</category>
+        <category>Vocal Technique</category>
+        <category>Spiritual Practice</category>
+        <category>Opera</category>
+        <dc:creator>Samuel Berlad</dc:creator>
+    </item>
+
+    <item>
+        <title>Becoming Wagner's Alberich: The Challenge of Power and Restraint</title>
+        <link>https://samuelberlad.com/blog.html#post-1</link>
+        <description>Preparing Wagner's cunning Nibelung dwarf at Harztheater revealed unexpected vocal and dramatic challenges. From mastering the Coburger Fassung's reduced orchestration to embodying psychological complexity on stage, Alberich demands far more than Wagnerian power—it requires technical precision, emotional vulnerability, and the courage to find humanity in opera's most demanding villain roles.</description>
+        <content:encoded><![CDATA[
+        <p>Preparing for the role of Alberich in Richard Wagner's Das Rheingold has been one of the most demanding and transformative experiences of my operatic career. Alberich is a character steeped in complexity—a villain driven by rage, rejection, and ambition. Portraying this iconic figure requires far more than vocal power; it demands a deep psychological understanding, physical adaptability, and a finely tuned vocal technique capable of both explosive force and subtle restraint.</p>
+
+        <h2>The Vocal Landscape of Alberich</h2>
+        <p>Wagner's writing for Alberich sits in the challenging range of a bass-baritone, calling for immense vocal stamina paired with agility. Unlike some Wagnerian roles that rely on sheer volume, Alberich's character thrives in nuanced expression...</p>
+        
+        <p><a href="https://samuelberlad.com/blog.html#post-1">Read the complete Wagner preparation guide</a></p>
+        ]]></content:encoded>
+        <pubDate>Wed, 15 May 2024 10:00:00 +0000</pubDate>
+        <guid isPermaLink="true">https://samuelberlad.com/blog.html#post-1</guid>
+        <category>Wagner</category>
+        <category>Opera</category>
+        <category>Character Preparation</category>
+        <category>Vocal Technique</category>
+        <category>Harztheater</category>
+        <category>Bass-Baritone</category>
+        <dc:creator>Samuel Berlad</dc:creator>
+    </item>
+
+</channel>
+</rss>

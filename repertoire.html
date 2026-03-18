@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Samuel Berlad - Complete roles and performances database. Bass-Baritone repertoire from 2010-2025.">
+    <meta name="author" content="Samuel Berlad">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samuelberlad.com/repertoire.html">
+    <meta property="og:title" content="Roles & Performances | Samuel Berlad">
+    <meta property="og:description" content="Complete operatic and concert career database. From Wagner's Alberich to Mozart's Papageno - explore Samuel Berlad's diverse repertoire.">
+    <meta property="og:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Samuel Berlad">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://samuelberlad.com/repertoire.html">
+    <meta property="twitter:title" content="Roles & Performances | Samuel Berlad">
+    <meta property="twitter:description" content="Complete operatic and concert career database. From Wagner's Alberich to Mozart's Papageno - explore Samuel Berlad's diverse repertoire.">
+    <meta property="twitter:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Samuel Berlad | Roles & Performances</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1KBWVNTC4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K1KBWVNTC4');
+    </script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/glacial-indifference-2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-red: #a42020;
+            --deep-black: #000;
+            --off-white: #fafafa;
+            --warm-gray: #333;
+            --light-gray: #888;
+        }
+
+        body {
+            font-family: 'Glacial Indifference', sans-serif;
+            background: var(--deep-black);
+            color: var(--off-white);
+            line-height: 1.6;
+            font-weight: 300;
+            padding-top: 75px; /* Account for fixed header */
+        }
+
+        /* Header - Same as main site */
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(12px);
+            transition: all 0.4s ease;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background: var(--primary-red);
+            transition: width 0.6s ease;
+        }
+
+        .header.scrolled::before {
+            width: 200px;
+        }
+
+        .header_content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            height: 75px;
+        }
+
+        .logo img {
+            height: 45px;
+            width: auto;
+        }
+
+        .nav {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav_list {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav_item a {
+            color: var(--off-white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: lowercase;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav_item a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background: var(--primary-red);
+            transition: width 0.3s ease;
+        }
+
+        .nav_item a:hover::after {
+            width: 80%;
+        }
+
+        .nav_item a:hover {
+            color: var(--primary-red);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .bar {
+            width: 22px;
+            height: 2px;
+            background: var(--off-white);
+            margin: 2px 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav-open {
+            transform: translateX(0) !important;
+        }
+
+        .hamburger-open .bar:nth-child(1) {
+            transform: translateY(6px) rotate(45deg);
+        }
+
+        .hamburger-open .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-open .bar:nth-child(3) {
+            transform: translateY(-6px) rotate(-45deg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header-roles {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-top: 1rem;
+        }
+
+        .header-roles h1 {
+            font-size: 2.5rem;
+            color: var(--primary-red);
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        .header-roles p {
+            color: var(--light-gray);
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filter-dropdown {
+            display: none;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto 2rem;
+        }
+
+        .filter-select {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(164, 32, 32, 0.3);
+            color: var(--off-white);
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--primary-red);
+        }
+
+        .filter-select option {
+            background: var(--deep-black);
+            color: var(--off-white);
+        }
+
+        .filter-btn {
+            padding: 0.8rem 1.5rem;
+            background: transparent;
+            border: 1px solid rgba(164, 32, 32, 0.3);
+            color: var(--off-white);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-red);
+            border-color: var(--primary-red);
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto 2rem;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(164, 32, 32, 0.3);
+            color: var(--off-white);
+            font-size: 1rem;
+            border-radius: 4px;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-red);
+        }
+
+        .search-input::placeholder {
+            color: var(--light-gray);
+        }
+
+        .roles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .role-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(164, 32, 32, 0.2);
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .role-card:hover {
+            border-color: rgba(164, 32, 32, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .role-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .role-name {
+            font-size: 1.3rem;
+            color: var(--primary-red);
+            font-weight: 500;
+        }
+
+        .role-year {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .opera-title {
+            font-size: 1.1rem;
+            color: var(--off-white);
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .composer {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .venue-info {
+            border-top: 1px solid rgba(164, 32, 32, 0.2);
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+
+        .venue-name {
+            color: var(--off-white);
+            font-size: 0.95rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .venue-location {
+            color: var(--light-gray);
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .production-team {
+            color: var(--light-gray);
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .stats.two-columns {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .stats.one-column {
+            grid-template-columns: 1fr;
+            max-width: 300px;
+            margin: 0 auto 3rem;
+        }
+
+        .stat-item {
+            background: rgba(164, 32, 32, 0.1);
+            padding: 1.5rem;
+            border: 1px solid rgba(164, 32, 32, 0.2);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            color: var(--primary-red);
+            font-weight: 600;
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0.5rem;
+        }
+
+        /* Footer - Same as main site */
+        footer {
+            background: var(--deep-black);
+            padding: 2rem;
+            border-top: 1px solid rgba(164, 32, 32, 0.2);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .copyright {
+            color: var(--light-gray);
+            font-size: 0.85rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--light-gray);
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-red);
+            transform: translateY(-2px);
+        }
+
+        /* Scroll to top */
+        #scrolltotop_parent {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 45px;
+            height: 45px;
+            background: var(--primary-red);
+            border-radius: 2px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        #scrolltotop_parent:hover {
+            background: #b52525;
+            transform: translateY(-2px);
+        }
+
+        #scrolltotop_arrow {
+            color: white;
+            font-size: 1rem;
+        }
+
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.7rem;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.75rem;
+        }
+        .status-badge.current  { background: var(--primary-red); color: #fff; }
+        .status-badge.upcoming { background: #28a745; color: #fff; }
+
+        .featured-card {
+            border-color: rgba(164, 32, 32, 0.45);
+            background: rgba(164, 32, 32, 0.07);
+        }
+
+        .role-description {
+            color: var(--light-gray);
+            font-size: 0.82rem;
+            font-style: italic;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        .no-results {
+            text-align: center;
+            color: var(--light-gray);
+            font-style: italic;
+            margin-top: 3rem;
+            display: none;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav {
+                position: fixed;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                height: calc(100vh - 75px);
+                background: rgba(0, 0, 0, 0.95);
+                backdrop-filter: blur(15px);
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                padding: 3rem 2rem;
+            }
+
+            .nav-open {
+                transform: translateX(0);
+            }
+
+            .nav_list {
+                flex-direction: column;
+                gap: 2rem;
+                height: 100%;
+                justify-content: flex-start;
+            }
+
+            .nav_item a {
+                font-size: 1.2rem;
+            }
+
+            .hamburger-open .bar:nth-child(1) {
+                transform: translateY(6px) rotate(45deg);
+            }
+
+            .hamburger-open .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger-open .bar:nth-child(3) {
+                transform: translateY(-6px) rotate(-45deg);
+            }
+        }
+        @media (max-width: 768px) {
+            .nav {
+                position: fixed;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                height: calc(100vh - 75px);
+                background: rgba(0, 0, 0, 0.98);
+                backdrop-filter: blur(15px);
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                padding: 3rem 2rem;
+            }
+
+            .nav_list {
+                flex-direction: column;
+                gap: 2rem;
+                height: 100%;
+                justify-content: flex-start;
+            }
+
+            .nav_item a {
+                font-size: 1.2rem;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .roles-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .role-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .footer-content {
+                text-align: center;
+                flex-direction: column;
+            }
+
+            #scrolltotop_parent {
+                bottom: 1rem;
+                right: 1rem;
+            }
+        }
+    </style>
+
+    <!-- REPERTOIRE PAGE SCHEMA (repertoire.html) -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Repertoire & Performances - Samuel Berlad",
+    "description": "Complete database of operatic roles and concert performances by bass-baritone Samuel Berlad",
+    "mainEntity": {
+        "@type": "ItemList",
+        "name": "Samuel Berlad Performance Repertoire",
+        "description": "Comprehensive list of operatic roles performed by Samuel Berlad",
+        "itemListElement": [
+        {
+            "@type": "MusicComposition",
+            "name": "Das Rheingold - Alberich", 
+            "composer": {
+            "@type": "Person",
+            "name": "Richard Wagner"
+            },
+            "genre": "Opera"
+        },
+        {
+            "@type": "MusicComposition",
+            "name": "Die Zauberflöte - Papageno",
+            "composer": {
+            "@type": "Person", 
+            "name": "Wolfgang Amadeus Mozart"
+            },
+            "genre": "Opera"
+        }
+        ]
+    }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header_content">
+            <a href="index.html" class="logo">
+                <img src="images/Samuel_Berlad_bass-baritone__1_-removebg-crop-300x160.png" alt="Samuel Berlad">
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html">home</a></li>
+                    <li class="nav_item"><a href="about.html">biography</a></li>
+                    <li class="nav_item"><a href="repertoire.html">repertoire</a></li>
+                    <li class="nav_item"><a href="gallery.html">gallery</a></li>
+                    <li class="nav_item"><a href="videos.html">hear me sing</a></li>
+                    <li class="nav_item"><a href="blog.html">blog</a></li>
+                    <li class="nav_item"><a href="reach-me.html">contact</a></li>
+                    <li class="nav_item"><a href="disclaimer.html">legal</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="header-roles">
+            <h1>Roles & Performances</h1>
+            <p>A comprehensive overview of Samuel Berlad's operatic and concert career</p>
+        </div>
+
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search roles, operas, venues..." id="searchInput">
+        </div>
+
+        <div class="filter-dropdown">
+            <select class="filter-select" id="filterSelect">
+                <option value="all">All Categories</option>
+                <option value="opera">Opera</option>
+                <option value="operetta">Operetta</option>
+                <option value="musical">Musical Theater</option>
+                <option value="concert">Concert</option>
+                <option value="oratorio">Oratorio</option>
+                <option value="recital">Recital</option>
+            </select>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="opera">Opera</button>
+            <button class="filter-btn" data-filter="operetta">Operetta</button>
+            <button class="filter-btn" data-filter="musical">Musical Theater</button>
+            <button class="filter-btn" data-filter="concert">Concert</button>
+            <button class="filter-btn" data-filter="oratorio">Oratorio</button>
+            <button class="filter-btn" data-filter="recital">Recital</button>
+        </div>
+
+        <div class="roles-grid" id="rolesGrid">
+            <!-- Roles will be populated by JavaScript -->
+        </div>
+
+        <div class="no-results" id="noResults">
+            No roles found matching your search criteria.
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                <p>© 2025 Samuel Berlad. All rights reserved.</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/samuel.berlad/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/samuelberlad_bassbaritone/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UC5I1E7F3C1SUcLed-w7Ax9A" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://open.spotify.com/artist/6yueNB4pXtAZmGPh01Q4Eo" target="_blank" aria-label="Spotify">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <div id="scrolltotop_parent">
+        <i class="fas fa-chevron-up" id="scrolltotop_arrow"></i>
+    </div>
+
+    <script>
+        let allRoles = [];
+        let filteredRoles = [];
+
+        // ── Fetch from roles-database.json ──────────────────────────────────
+        async function loadRoles() {
+            try {
+                const response = await fetch('./roles-database.json');
+                if (!response.ok) throw new Error('HTTP ' + response.status);
+                const data = await response.json();
+                allRoles = data.roles || [];
+                filteredRoles = [...allRoles];
+                renderRoles(filteredRoles);
+            } catch (err) {
+                console.error('Could not load roles-database.json:', err);
+                renderError();
+            }
+        }
+
+        function renderError() {
+            const grid = document.getElementById('rolesGrid');
+            if (grid) grid.innerHTML = `
+                <div style="grid-column:1/-1; text-align:center; padding:4rem 1rem; color:var(--light-gray);">
+                    <p style="font-family:'Playfair Display',serif; font-size:1.2rem; color:var(--off-white); margin-bottom:1rem;">
+                        The repertoire list is temporarily unavailable.
+                    </p>
+                    <p>Please <a href="reach-me.html" style="color:var(--primary-red); text-decoration:none;">contact me directly</a> for details — I apologise for the inconvenience.</p>
+                </div>`;
+        }
+
+        // ── Render ───────────────────────────────────────────────────────────
+        function renderRoles(data) {
+            const grid = document.getElementById('rolesGrid');
+            const noResults = document.getElementById('noResults');
+
+            if (data.length === 0) {
+                grid.innerHTML = '';
+                noResults.style.display = 'block';
+                return;
+            }
+            noResults.style.display = 'none';
+
+            grid.innerHTML = data.map(function(role) {
+                const showBadge  = role.status === 'current' || role.status === 'upcoming';
+                const showTeam   = role.director &&
+                                   role.director !== 'Concert Performance' &&
+                                   role.director !== 'Recital' &&
+                                   role.director !== 'Broadcast';
+                const teamString = showTeam
+                    ? (role.director && role.conductor ? role.director + ' | ' + role.conductor
+                       : role.director || role.conductor)
+                    : (role.conductor && role.conductor !== role.director ? role.conductor : '');
+
+                return `
+                <div class="role-card${role.featured ? ' featured-card' : ''}" data-type="${role.type}">
+                    ${showBadge ? `<div class="status-badge ${role.status}">${role.status}</div>` : ''}
+                    <div class="role-header">
+                        <div class="role-name">${role.role}</div>
+                        <div class="role-year">${role.year}</div>
+                    </div>
+                    <div class="opera-title">${role.opera}</div>
+                    <div class="composer">${role.composer}</div>
+                    ${role.description ? `<div class="role-description">${role.description}</div>` : ''}
+                    <div class="venue-info">
+                        <div class="venue-name">${role.venue}</div>
+                        <div class="venue-location">${role.location}</div>
+                        ${teamString ? `<div class="production-team">${teamString}</div>` : ''}
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        // ── Filter & Search ──────────────────────────────────────────────────
+        function applyFilters() {
+            const activeFilter = (document.querySelector('.filter-btn.active') || {}).dataset.filter || 'all';
+            const searchTerm   = document.getElementById('searchInput').value.toLowerCase().trim();
+
+            filteredRoles = allRoles.filter(function(role) {
+                const matchType   = activeFilter === 'all' || role.type === activeFilter;
+                const matchSearch = !searchTerm ||
+                    role.role.toLowerCase().includes(searchTerm) ||
+                    role.opera.toLowerCase().includes(searchTerm) ||
+                    role.composer.toLowerCase().includes(searchTerm) ||
+                    role.venue.toLowerCase().includes(searchTerm) ||
+                    role.location.toLowerCase().includes(searchTerm);
+                return matchType && matchSearch;
+            });
+
+            renderRoles(filteredRoles);
+        }
+
+        // ── Responsive filter buttons vs dropdown ────────────────────────────
+        function checkFilterLayout() {
+            const filtersContainer = document.querySelector('.filters');
+            const dropdown         = document.querySelector('.filter-dropdown');
+            filtersContainer.style.display = 'flex';
+            dropdown.style.display = 'none';
+            const buttons = filtersContainer.querySelectorAll('.filter-btn');
+            if (buttons.length > 1) {
+                const firstTop = buttons[0].offsetTop;
+                const lastTop  = buttons[buttons.length - 1].offsetTop;
+                if (firstTop !== lastTop) {
+                    filtersContainer.style.display = 'none';
+                    dropdown.style.display = 'block';
+                }
+            }
+        }
+
+        // ── Event listeners ──────────────────────────────────────────────────
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu
+            const hamburger = document.querySelector('.hamburger');
+            const nav       = document.querySelector('.nav');
+            const navLinks  = document.querySelectorAll('.nav_item a');
+
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('hamburger-open');
+                nav.classList.toggle('nav-open');
+            });
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('hamburger-open');
+                    nav.classList.remove('nav-open');
+                });
+            });
+
+            // Header scroll
+            window.addEventListener('scroll', function() {
+                document.querySelector('.header').classList.toggle('scrolled', window.pageYOffset > 100);
+            });
+
+            // Scroll-to-top
+            const scrollBtn = document.getElementById('scrolltotop_parent');
+            window.addEventListener('scroll', function() {
+                scrollBtn.style.display = window.pageYOffset > 500 ? 'flex' : 'none';
+            });
+            scrollBtn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Filter buttons
+            document.querySelectorAll('.filter-btn').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    document.querySelector('.filter-btn.active').classList.remove('active');
+                    this.classList.add('active');
+                    applyFilters();
+                });
+            });
+
+            // Dropdown fallback
+            document.getElementById('filterSelect').addEventListener('change', function() {
+                document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+                const matching = document.querySelector(`.filter-btn[data-filter="${this.value}"]`);
+                if (matching) matching.classList.add('active');
+                applyFilters();
+            });
+
+            // Search
+            document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+            // Load data
+            loadRoles();
+            checkFilterLayout();
+            window.addEventListener('resize', checkFilterLayout);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# robots.txt for samuelberlad.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://samuelberlad.com/sitemap.xml

@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Samuel Berlad - Distinguished German bass-baritone. From Frankfurt conservatories to Jerusalem's stages, now performing across European opera houses.">
+    <meta name="author" content="Samuel Berlad">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://samuelberlad.com/about.html">
+    <meta property="og:title" content="Biography | Samuel Berlad Bass-Baritone">
+    <meta property="og:description" content="From Frankfurt conservatories to Jerusalem's stages, now performing across European opera houses. Available in multiple languages.">
+    <meta property="og:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Samuel Berlad">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://samuelberlad.com/about.html">
+    <meta property="twitter:title" content="Biography | Samuel Berlad Bass-Baritone">
+    <meta property="twitter:description" content="From Frankfurt conservatories to Jerusalem's stages, now performing across European opera houses. Available in multiple languages.">
+    <meta property="twitter:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Samuel Berlad | Biography</title>
+
+    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1KBWVNTC4"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K1KBWVNTC4');
+    </script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/glacial-indifference-2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Hebrew Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruehl+Libre:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-red: #a42020;
+            --deep-black: #000;
+            --off-white: #fafafa;
+            --warm-gray: #333;
+            --light-gray: #888;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Glacial Indifference', sans-serif;
+            background: var(--deep-black);
+            color: var(--off-white);
+            line-height: 1.6;
+            font-weight: 300;
+            padding-top: 75px;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(12px);
+            transition: all 0.4s ease;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background: var(--primary-red);
+            transition: width 0.6s ease;
+        }
+
+        .header.scrolled::before {
+            width: 200px;
+        }
+
+        .header_content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            height: 75px;
+        }
+
+        .logo img {
+            height: 45px;
+            width: auto;
+        }
+
+        .nav {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav_list {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav_item a {
+            color: var(--off-white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: lowercase;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav_item a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background: var(--primary-red);
+            transition: width 0.3s ease;
+        }
+
+        .nav_item a:hover::after {
+            width: 80%;
+        }
+
+        .nav_item a:hover {
+            color: var(--primary-red);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .bar {
+            width: 22px;
+            height: 2px;
+            background: var(--off-white);
+            margin: 2px 0;
+            transition: all 0.3s ease;
+        }
+
+        /* Main Content */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .bio-header {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .bio-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--primary-red);
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .bio-subtitle {
+            font-size: 1.2rem;
+            color: var(--light-gray);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .language-switcher p {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .language-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .language-links a {
+            color: var(--off-white);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(164, 32, 32, 0.3);
+            transition: all 0.3s ease;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .language-links a:hover,
+        .language-links a.active {
+            background: var(--primary-red);
+            border-color: var(--primary-red);
+            color: white;
+        }
+
+        .language-links a[id="hebrew"] {
+            font-family: 'Alef', 'Arial Hebrew', Arial, sans-serif;
+        }
+
+        .bio-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+            margin-bottom: 4rem;
+        }
+
+            .bio-sidebar {
+                position: sticky;
+                top: 120px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+        .bio-image {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            border: 2px solid rgba(164, 32, 32, 0.3);
+            margin-bottom: 2rem;
+            display: block;
+            flex-shrink: 0;
+        }
+
+        .quick-facts {
+            background: rgba(164, 32, 32, 0.05);
+            border: 1px solid rgba(164, 32, 32, 0.2);
+            padding: 2rem 1.5rem;
+        }
+
+        .quick-facts h3 {
+            color: var(--primary-red);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .fact-item {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .fact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .fact-label {
+            color: var(--light-gray);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .fact-value {
+            color: var(--off-white);
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        /* Bio text content */
+        .bio-text {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .bio-section {
+            margin-bottom: 2rem;
+        }
+
+        .bio-section h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-red);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .bio-section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .bio-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* RTL Support for Hebrew */
+        .rtl {
+            direction: rtl;
+            text-align: right;
+            font-family: 'Alef', 'Arial Hebrew', Arial, sans-serif;
+        }
+
+        .rtl h2 {
+            font-family: 'Frank Ruehl Libre', 'Times New Roman Hebrew', serif;
+            text-align: right;
+        }
+
+        .rtl p {
+            text-align: justify;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav {
+                position: fixed;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                height: calc(100vh - 75px);
+                background: rgba(0, 0, 0, 0.95);
+                backdrop-filter: blur(15px);
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                padding: 3rem 2rem;
+            }
+
+            .nav-open {
+                transform: translateX(0);
+            }
+
+            .nav_list {
+                flex-direction: column;
+                gap: 2rem;
+                height: 100%;
+                justify-content: flex-start;
+            }
+
+            .nav_item a {
+                font-size: 1.2rem;
+            }
+
+            .hamburger-open .bar:nth-child(1) {
+                transform: translateY(6px) rotate(45deg);
+            }
+
+            .hamburger-open .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger-open .bar:nth-child(3) {
+                transform: translateY(-6px) rotate(-45deg);
+            }
+        }
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 2rem 1rem;
+            }
+
+            .bio-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .bio-sidebar {
+                position: static;
+                order: -1;
+                background: rgba(255, 255, 255, 0.02);
+                padding: 1rem;
+                border-radius: 10px;
+                max-width: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .bio-image {
+                width: 100%;
+                max-width: 320px;
+                height: auto;
+                border: 2px solid rgba(164, 32, 32, 0.3);
+                margin-bottom: 2rem;
+                display: block;
+                flex-shrink: 0;
+            }
+
+            .language-links {
+                gap: 0.5rem;
+            }
+
+            .language-links a {
+                padding: 0.4rem 0.7rem;
+                font-size: 0.75rem;
+                min-width: auto;
+            }
+
+            .quick-facts {
+                background: rgba(164, 32, 32, 0.03);
+                border: 1px solid rgba(164, 32, 32, 0.15);
+                padding: 1rem;
+                font-size: 0.9rem;
+                width: 100%;
+            }
+
+            .quick-facts h3 {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                text-align: center;
+                color: var(--primary-red);
+                font-weight: 500;
+            }
+        }
+    </style>
+    <!-- ABOUT PAGE SCHEMA (about.html) -->
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "Biography - Samuel Berlad",
+        "description": "Professional biography of Samuel Berlad, bass-baritone opera singer, including education, career highlights, and current engagements.",
+        "mainEntity": {
+            "@type": ["Person", "PerformingArtist"],
+            "name": "Samuel Berlad",
+            "jobTitle": "Professional Bass-Baritone Opera Singer",
+            "description": "Distinguished bass-baritone with international training and performance experience",
+            "educationalCredential": [
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Master of Music",
+                "educationalLevel": "Graduate",
+                "recognizedBy": {
+                "@type": "Organization",
+                "name": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main"
+                }
+            },
+            {
+                "@type": "EducationalOccupationalCredential", 
+                "credentialCategory": "Bachelor of Music",
+                "educationalLevel": "Undergraduate",
+                "recognizedBy": {
+                "@type": "Organization",
+                "name": "Jerusalem Academy of Music and Dance"
+                }
+            }
+            ]
+        }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header_content">
+            <a href="index.html" class="logo">
+                <img src="images/Samuel_Berlad_bass-baritone__1_-removebg-crop-300x160.png" alt="Samuel Berlad">
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html">home</a></li>
+                    <li class="nav_item"><a href="about.html">biography</a></li>
+                    <li class="nav_item"><a href="repertoire.html">repertoire</a></li>
+                    <li class="nav_item"><a href="gallery.html">gallery</a></li>
+                    <li class="nav_item"><a href="videos.html">hear me sing</a></li>
+                    <li class="nav_item"><a href="blog.html">blog</a></li>
+                    <li class="nav_item"><a href="reach-me.html">contact</a></li>
+                    <li class="nav_item"><a href="disclaimer.html">legal</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div class="bio-header">
+            <h1 class="bio-title">Biography</h1>
+        </div>
+
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <p>Biography available in multiple languages:</p>
+            <div class="language-links">
+                <a id="english" class="active">English</a>
+                <a id="german">Deutsch</a>
+                <a id="french">Français</a>
+                <a id="italian">Italiano</a>
+                <a id="hebrew">עברית</a>
+            </div>
+        </div>
+
+        <div class="bio-content">
+            <div class="bio-sidebar">
+                    <img src="images/RBZ_5353.jpeg" alt="Samuel Berlad portrait" class="bio-image">
+                
+                <div class="quick-facts">
+                    <h3>Quick Facts</h3>
+                    <div class="fact-item">
+                        <span class="fact-label">Voice Type</span>
+                        <span class="fact-value">Bass-Baritone</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-label">Current Position</span>
+                        <span class="fact-value">Harztheater Ensemble</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-label">Languages</span>
+                        <span class="fact-value">German, English, Hebrew, French, Italian</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-label">Current Base</span>
+                        <span class="fact-value">Halberstadt, Germany</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-label">Home</span>
+                        <span class="fact-value">Jerusalem, Israel</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bio-text">
+                <div id="biotext">
+                    <div class="bio-section">
+                        <p>Introducing Samuel Berlad, a distinguished bass-baritone whose musical journey has taken him from Germany through a transformative decade in Israel to his current work in European opera houses.</p>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2>Current Work</h2>
+                        <p>Since September 2022, Samuel has been based at Harztheater in Halberstadt, Germany, where he continues to captivate audiences with his remarkable versatility. His recent performances showcase an impressive range spanning from Wagner's cunning Nibelung dwarf Alberich in "Das Rheingold" to the lyrical water spirit Vodnik in Dvořák's "Rusalka," and the character Curtis in the high-energy musical "Blues Brothers," demonstrating his ability to excel across operatic and musical theater genres.</p>
+                        
+                        <p>Looking ahead, Samuel will take on the menacing Hunding in Wagner's "Die Walküre" in 2025, adding another significant Wagnerian role to his expanding repertoire. His recent seasons have also featured Schaunard in Puccini's "La Bohème" and roles in "Dracula" and "Der Opernball," further establishing his presence on the German operatic stage.</p>
+
+                        <p>Throughout his career, Samuel has excelled in prominent baritone and bass-baritone roles, including cherished portrayals such as Mozart's Figaro, Leporello, and Papageno, along with Donizetti's Belcore. Collaborating with esteemed conductors such as Yishai Steckler, Omer Arieli, Nir Kabaretti, and Zubin Mehta, Samuel has graced venues and opera houses across Israel, Germany, France, Italy, the USA, and the United Kingdom.</p>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2>Concert Work & Art Song</h2>
+                        <p>In the concert hall, Samuel has developed a particularly fruitful collaboration with pianist Dr. Ido Ariel since their work together at the Israel Schubertiade Festival in 2021. This artistic partnership has flourished into regular performances and reached a historic milestone in summer 2024 with the world premiere of Schubert's complete "Die Schöne Müllerin" cycle in Hebrew—the first time this beloved song cycle had ever been performed in Hebrew in any translation.</p>
+                        
+                        <p>Dr. Ariel's specially crafted Hebrew translation preserves both the rhyme scheme and musical rhythm of the original German, allowing the cycle to be sung naturally in Hebrew while maintaining Schubert's musical intentions. Samuel's broader concert repertoire spans from Baroque oratorios to Romantic art song, with notable performances including the baritone solo in Brahms' "German Requiem" and various programs featuring works by Schubert, Schumann, and contemporary composers.</p>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2>Israel - Artistic Home</h2>
+                        <p>Samuel's artistic identity was profoundly shaped during a decade in Israel, where he made aliya in November 2012 and truly found his home. Beyond developing his vocal technique, this period represented a complete artistic and personal awakening, as he immersed himself in Israel's rich musical landscape and diverse cultural traditions.</p>
+                        
+                        <p>It was in Israel that Samuel discovered his authentic artistic voice, performing major roles and building lasting collaborations with distinguished conductors and musicians. The country's unique blend of ancient traditions and contemporary innovation deeply influenced his approach to both sacred and secular music.</p>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2>Musical Heritage</h2>
+                        <p>Rooted in tradition, Samuel's early exposure to synagogue singing, inspired by his grandfather – a revered Jewish cantor in Miami – kindled his passion for music. Continuing this legacy, he remains committed to his role as a cantor, honoring sacred melodies.</p>
+                        
+                        <p>Samuel's musical education began at age 7 with the flute, later extending to the violoncello. In 2002, he embarked on vocal studies, a pivotal moment in shaping his artistic path.</p>
+                    </div>
+
+                    <div class="bio-section">
+                        <h2>Education</h2>
+                        <p>Academically accomplished, Samuel holds a Master's degree in Opera from Frankfurt University for Music and the Performing Arts, accompanied by a Diploma in Vocal Pedagogy from Wiesbaden Music Academy. His exploration of Jewish Cantorial Arts at Tel Aviv Cantorial Institute, guided by distinguished mentors, deepens his cultural connection.</p>
+                        
+                        <p>Beyond his artistic pursuits, Samuel's dedication extends to musicology studies, reflecting his commitment to a well-rounded musical understanding. In Samuel Berlad, tradition and innovation harmoniously converge, forging a legacy that resonates far beyond the footlights.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Language switcher with updated biographies
+        const englishBio = `
+        <div class="bio-section">
+            <p>Introducing Samuel Berlad, a distinguished bass-baritone whose musical journey has taken him from Germany through a transformative decade in Israel to his current work in European opera houses.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Current Work</h2>
+            <p>Since September 2022, Samuel has been based at Harztheater in Halberstadt, Germany, where he continues to captivate audiences with his remarkable versatility. His recent performances showcase an impressive range spanning from Wagner's cunning Nibelung dwarf Alberich in "Das Rheingold" to the lyrical water spirit Vodnik in Dvořák's "Rusalka," and the character Curtis in the high-energy musical "Blues Brothers," demonstrating his ability to excel across operatic and musical theater genres.</p>
+            
+            <p>Looking ahead, Samuel will take on the menacing Hunding in Wagner's "Die Walküre" in 2025, adding another significant Wagnerian role to his expanding repertoire. His recent seasons have also featured Schaunard in Puccini's "La Bohème" and roles in "Dracula" and "Der Opernball," further establishing his presence on the German operatic stage.</p>
+
+            <p>Throughout his career, Samuel has excelled in prominent baritone and bass-baritone roles, including cherished portrayals such as Mozart's Figaro, Leporello, and Papageno, along with Donizetti's Belcore. Collaborating with esteemed conductors such as Yishai Steckler, Omer Arieli, Nir Kabaretti, and Zubin Mehta, Samuel has graced venues and opera houses across Israel, Germany, France, Italy, the USA, and the United Kingdom.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Concert Work & Art Song</h2>
+            <p>In the concert hall, Samuel has developed a particularly fruitful collaboration with pianist Dr. Ido Ariel since their work together at the Israel Schubertiade Festival in 2021. This artistic partnership has flourished into regular performances and reached a historic milestone in summer 2024 with the world premiere of Schubert's complete "Die Schöne Müllerin" cycle in Hebrew—the first time this beloved song cycle had ever been performed in Hebrew in any translation.</p>
+            
+            <p>Dr. Ariel's specially crafted Hebrew translation preserves both the rhyme scheme and musical rhythm of the original German, allowing the cycle to be sung naturally in Hebrew while maintaining Schubert's musical intentions. Samuel's broader concert repertoire spans from Baroque oratorios to Romantic art song, with notable performances including the baritone solo in Brahms' "German Requiem" and various programs featuring works by Schubert, Schumann, and contemporary composers.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Israel - Artistic Home</h2>
+            <p>Samuel's artistic identity was profoundly shaped during a decade in Israel, where he made aliya in November 2012 and truly found his home. Beyond developing his vocal technique, this period represented a complete artistic and personal awakening, as he immersed himself in Israel's rich musical landscape and diverse cultural traditions.</p>
+            
+            <p>It was in Israel that Samuel discovered his authentic artistic voice, performing major roles and building lasting collaborations with distinguished conductors and musicians. The country's unique blend of ancient traditions and contemporary innovation deeply influenced his approach to both sacred and secular music.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Musical Heritage</h2>
+            <p>Rooted in tradition, Samuel's early exposure to synagogue singing, inspired by his grandfather – a revered Jewish cantor in Miami – kindled his passion for music. Continuing this legacy, he remains committed to his role as a cantor, honoring sacred melodies.</p>
+            
+            <p>Samuel's musical education began at age 7 with the flute, later extending to the violoncello. In 2002, he embarked on vocal studies, a pivotal moment in shaping his artistic path.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Education</h2>
+            <p>Academically accomplished, Samuel holds a Master's degree in Opera from Frankfurt University for Music and the Performing Arts, accompanied by a Diploma in Vocal Pedagogy from Wiesbaden Music Academy. His exploration of Jewish Cantorial Arts at Tel Aviv Cantorial Institute, guided by distinguished mentors, deepens his cultural connection.</p>
+            
+            <p>Beyond his artistic pursuits, Samuel's dedication extends to musicology studies, reflecting his commitment to a well-rounded musical understanding. In Samuel Berlad, tradition and innovation harmoniously converge, forging a legacy that resonates far beyond the footlights.</p>
+        </div>
+        `;
+
+        const germanBio = `
+        <div class="bio-section">
+            <p>Samuel Berlad verkörpert den modernen Bassbariton unserer Zeit. Seine außergewöhnliche künstlerische Laufbahn führte ihn von deutschen Konservatorien über ein prägendes Jahrzehnt in Israel zurück auf die Bühnen europäischer Opernhäuser.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Aktuelle Bühnenarbeit</h2>
+            <p>Seit September 2022 bereichert Samuel Berlad als Ensemblemitglied das Harztheater Halberstadt und begeistert dort mit seiner bemerkenswerten Vielseitigkeit. Seine jüngsten Auftritte reichen vom verschlagenen Nibelungen-Zwerg Alberich in Wagners "Rheingold" über den lyrischen Wassermann Vodnik in Dvořáks "Rusalka" bis hin zur Figur Curtis im energiegeladenen Musical "Blues Brothers" – ein eindrucksvoller Beweis seiner Wandlungsfähigkeit zwischen Oper und Musiktheater.</p>
+            
+            <p>Für 2025 steht der bedrohliche Hunding in Wagners "Walküre" auf dem Programm und erweitert damit sein Wagner-Repertoire um eine weitere bedeutende Rolle. Seine zurückliegenden Spielzeiten umfassten auch den Schaunard in Puccinis "Bohème" sowie Partien in "Dracula" und "Der Opernball", womit er seine Präsenz auf der deutschen Opernbühne kontinuierlich ausbaut.</p>
+
+            <p>In seinem facettenreichen Repertoire brilliert er in den großen Bariton- und Bassbaritonpartien der Opernliteratur – von Mozarts zeitlosen Gestalten des Figaro, Leporello und Papageno bis hin zu Donizettis charmantem Belcore. Unter der Stabführung renommierter Dirigenten wie Yishai Steckler, Omer Arieli, Nir Kabaretti und Zubin Mehta gastierte er bereits an bedeutenden Opernhäusern in Israel, Deutschland, Frankreich, Italien, den USA und Großbritannien.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Konzertgesang & Liedkunst</h2>
+            <p>Im Konzertsaal hat Samuel eine besonders fruchtbare Zusammenarbeit mit dem Pianisten Dr. Ido Ariel entwickelt, die seit ihrer gemeinsamen Arbeit beim Israel Schubertiade Festival 2021 besteht. Diese künstlerische Partnerschaft gipfelte im Sommer 2024 in der historischen Weltpremiere von Schuberts vollständigem Zyklus "Die schöne Müllerin" in hebräischer Sprache – das erste Mal überhaupt, dass dieser geliebte Liederzyklus in einer hebräischen Übertragung erklang.</p>
+            
+            <p>Dr. Ariels meisterhafte Übertragung bewahrt sowohl Reimschema als auch musikalischen Rhythmus des deutschen Originals und ermöglicht es, den Zyklus natürlich auf Hebräisch zu singen, ohne Schuberts musikalische Intention zu beeinträchtigen. Samuels breites Konzertrepertoire umspannt Barockoratorien bis zur romantischen Liedkunst, mit bemerkenswerten Aufführungen des Baritonsolos in Brahms' "Deutschem Requiem" und vielfältigen Programmen mit Werken von Schubert, Schumann und zeitgenössischen Komponisten.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Israel – Künstlerische Wahlheimat</h2>
+            <p>Samuels künstlerische Persönlichkeit erfuhr ihre entscheidende Prägung während seines zehnjährigen Aufenthalts in Israel, wohin er im November 2012 seine Alija antrat und seine wahre künstlerische Heimat fand. Weit über die reine Gesangstechnik hinaus erlebte er dort ein umfassendes künstlerisches und persönliches Erwachen inmitten der reichen Musiklandschaft und der vielfältigen kulturellen Traditionen des Landes.</p>
+            
+            <p>Israel wurde zum Ort seiner künstlerischen Selbstfindung – hier gestaltete er bedeutende Rollen und knüpfte nachhaltige Arbeitsbeziehungen zu herausragenden Dirigenten und Musikern. Die einzigartige Verbindung von jahrtausendealten Traditionen mit zeitgenössischer Innovation prägte nachhaltig seinen Zugang sowohl zur geistlichen als auch zur weltlichen Musik.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Musikalische Wurzeln</h2>
+            <p>Samuels musikalische Berufung wurzelt tief in der Tradition: Bereits in frühen Jahren wurde seine Leidenschaft für die Musik durch die Synagogengesänge seines Großvaters geweckt, eines angesehenen jüdischen Kantors in Miami. Diese Tradition setzt er als praktizierender Kantor fort und bewahrt damit das Erbe heiliger Melodien.</p>
+            
+            <p>Seine systematische Musikausbildung begann im Alter von sieben Jahren mit der Querflöte, später erweiterte er sein instrumentales Spektrum um das Violoncello. Der Wendepunkt seiner Laufbahn kam 2002 mit dem Beginn seiner Gesangsstudien – eine Entscheidung, die seinen weiteren künstlerischen Werdegang maßgeblich bestimmen sollte.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Ausbildung</h2>
+            <p>Samuel Berlad verfügt über eine fundierte akademische Ausbildung: Er erwarb seinen Masterabschluss in Oper an der Hochschule für Musik und Darstellende Kunst Frankfurt sowie ein Diplom in Gesangspädagogik an der Wiesbadener Musikakademie. Seine Vertiefung in die jüdische Kantorenkunst am Tel Aviv Cantorial Institute unter Anleitung herausragender Mentoren stärkt zusätzlich seine kulturelle Verwurzelung.</p>
+            
+            <p>Über seine künstlerische Praxis hinaus widmet sich Samuel Berlad musikwissenschaftlichen Studien – ein Ausdruck seines Strebens nach umfassender musikalischer Bildung. In seiner Person vereinen sich Tradition und Innovation zu einer künstlerischen Persönlichkeit, deren Ausstrahlung weit über den Theaterraum hinausreicht.</p>
+        </div>
+        `;
+
+        const frenchBio = `
+        <div class="bio-section">
+            <p>Samuel Berlad incarne l'excellence de l'art lyrique contemporain. Ce baryton-basse d'exception a tracé un parcours artistique singulier, des conservatoires allemands aux scènes israéliennes, pour aujourd'hui rayonner sur les plateaux des opéras européens.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Activité Actuelle</h2>
+            <p>Depuis septembre 2022, Samuel Berlad enrichit la troupe du Harztheater à Halberstadt, en Allemagne, où il éblouit par sa remarquable polyvalence. Ses récentes prestations embrassent un registre impressionnant, du fourbe nain des Nibelungen Alberich dans "L'Or du Rhin" de Wagner à l'esprit des eaux lyrique Vodnik dans "Rusalka" de Dvořák, en passant par le personnage de Curtis dans l'explosif musical "Blues Brothers" – démonstration éclatante de sa maîtrise entre opéra et théâtre musical.</p>
+            
+            <p>L'horizon 2025 verra Samuel endosser le rôle menaçant de Hunding dans "La Walkyrie" de Wagner, ajoutant une nouvelle dimension à son répertoire wagnérien. Ses saisons récentes ont également mis en lumière son Schaunard dans "La Bohème" de Puccini ainsi que ses interprétations dans "Dracula" et "Der Opernball," consolidant sa présence sur les scènes lyriques allemandes.</p>
+
+            <p>Interprète d'une rare versatilité, il s'illustre dans les grands rôles de baryton et baryton-basse du répertoire, notamment dans les créations mozartiennes immortelles de Figaro, Leporello et Papageno, ainsi que dans le séduisant Belcore de Donizetti. Sous la direction de maestros prestigieux tels qu'Yishai Steckler, Omer Arieli, Nir Kabaretti et Zubin Mehta, il s'est produit dans les plus belles institutions d'Israël, d'Allemagne, de France, d'Italie, des États-Unis et du Royaume-Uni.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Art du Concert & Mélodie</h2>
+            <p>Dans l'art du récital, Samuel a développé une collaboration particulièrement fructueuse avec le pianiste Dr. Ido Ariel depuis leurs débuts communs au Festival Schubertiade d'Israël en 2021. Ce partenariat artistique a atteint son apogée à l'été 2024 avec la création mondiale historique du cycle complet "Die schöne Müllerin" de Schubert en hébreu – première interprétation jamais réalisée de ce cycle bien-aimé dans une traduction hébraïque.</p>
+            
+            <p>La traduction magistrale du Dr. Ariel préserve à la fois les rimes et le rythme musical de l'original allemand, permettant de chanter le cycle naturellement en hébreu tout en respectant les intentions musicales de Schubert. Le vaste répertoire concertant de Samuel s'étend des oratorios baroques à la mélodie romantique, avec des prestations remarquables du solo de baryton dans le "Requiem allemand" de Brahms et divers programmes mettant en valeur Schubert, Schumann et des compositeurs contemporains.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Israël – Terre d'Épanouissement Artistique</h2>
+            <p>C'est en Israël que Samuel Berlad a vécu sa métamorphose artistique la plus profonde. Son alya de novembre 2012 a marqué le début d'une décennie transformatrice où, bien au-delà du perfectionnement de sa technique vocale, il a connu un véritable éveil artistique et personnel au cœur du riche paysage musical israélien et de ses traditions culturelles plurielles.</p>
+            
+            <p>Sur cette terre d'exception, l'artiste a trouvé sa voix authentique, assumant des rôles majeurs et tissant des collaborations durables avec des chefs d'orchestre et musiciens de renom. L'alchimie unique entre traditions millénaires et innovation contemporaine qui caractérise ce pays a nourri en profondeur son approche tant de la musique sacrée que profane.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Héritage Musical</h2>
+            <p>L'art de Samuel Berlad puise ses racines dans une tradition familiale séculaire. Dès son plus jeune âge, les chants synagogaux de son grand-père, cantor juif révéré à Miami, ont éveillé en lui une passion musicale indéfectible. Perpétuant cet héritage, il honore aujourd'hui encore son rôle de chantre, gardien des mélodies sacrées.</p>
+            
+            <p>Sa formation musicale débute à sept ans par l'apprentissage de la flûte traversière, avant de s'enrichir de la pratique du violoncelle. L'année 2002 marque un tournant décisif avec le commencement de ses études de chant – moment charnière qui orientera définitivement sa destinée artistique.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Formation</h2>
+            <p>Samuel Berlad s'appuie sur une formation académique exemplaire : titulaire d'un Master d'Opéra de l'Université de Musique et Arts du Spectacle de Francfort, il détient également un Diplôme de Pédagogie Vocale de l'Académie de Musique de Wiesbaden. Son approfondissement de l'art cantorial juif au Tel Aviv Cantorial Institute, sous la tutelle de maîtres émérites, enrichit encore sa connexion culturelle.</p>
+            
+            <p>Par-delà ses activités artistiques, Samuel Berlad nourrit ses réflexions par des études musicologiques, témoignant de son aspiration à une compréhension musicale globale. En sa personne se conjuguent harmonieusement tradition et modernité, forgeant un héritage artistique qui résonne bien au-delà des feux de la rampe.</p>
+        </div>
+        `;
+
+        const italianBio = `
+        <div class="bio-section">
+            <p>Samuel Berlad rappresenta l'eccellenza del canto lirico contemporaneo. Questo straordinario basso-baritono ha intessuto un percorso artistico unico, dai conservatori tedeschi ai palcoscenici israeliani, per approdare oggi ai teatri d'opera europei con una maturità artistica conquistata sul campo.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Attività Attuale</h2>
+            <p>Dal settembre 2022, Samuel Berlad arricchisce il cartellone dell'Harztheater di Halberstadt, in Germania, dove continua a incantare con la sua straordinaria versatilità. Le sue recenti interpretazioni spaziano dall'astuto nano dei Nibelunghi Alberich nell'"Oro del Reno" di Wagner allo spirito delle acque lirico Vodnik nella "Rusalka" di Dvořák, fino al personaggio di Curtis nell'esplosivo musical "Blues Brothers" – dimostrazione lampante della sua padronanza tra opera e teatro musicale.</p>
+            
+            <p>Il 2025 vedrà Samuel nei panni del minaccioso Hunding nella "Valchiria" di Wagner, aggiungendo un'altra dimensione significativa al suo repertorio wagneriano. Le sue stagioni recenti hanno anche messo in luce il suo Schaunard nella "Bohème" di Puccini e le sue interpretazioni in "Dracula" e "Der Opernball," consolidando la sua presenza sui palcoscenici lirici tedeschi.</p>
+
+            <p>Interprete di rara versatilità, eccelle nei grandi ruoli di baritono e basso-baritono del repertorio, dalle immortali creazioni mozartiane di Figaro, Leporello e Papageno al garbato Belcore donizettiano. Ha calcato le scene dei più prestigiosi teatri d'opera di Israele, Germania, Francia, Italia, Stati Uniti e Regno Unito, collaborando con maestri di chiara fama quali Yishai Steckler, Omer Arieli, Nir Kabaretti e Zubin Mehta.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Arte Concertistica & Lied</h2>
+            <p>Nell'arte concertistica, Samuel ha sviluppato una collaborazione particolarmente proficua con il pianista Dr. Ido Ariel dal loro debutto comune al Festival Schubertiade di Israele nel 2021. Questo sodalizio artistico ha raggiunto il culmine nell'estate 2024 con la storica prima mondiale del ciclo completo "Die schöne Müllerin" di Schubert in ebraico – la prima esecuzione mai realizzata di questo amato ciclo liederistico in traduzione ebraica.</p>
+            
+            <p>La magistrale traduzione del Dr. Ariel preserva sia le rime che il ritmo musicale dell'originale tedesco, consentendo di cantare il ciclo naturalmente in ebraico mantenendo le intenzioni musicali schubertiane. Il vasto repertorio concertistico di Samuel spazia dagli oratori barocchi al Lied romantico, con esecuzioni memorabili del solo di baritono nel "Requiem tedesco" di Brahms e diversi programmi che valorizzano Schubert, Schumann e compositori contemporanei.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Israele – Patria Artistica</h2>
+            <p>È stata la Terra Santa a segnare la più profonda metamorfosi artistica di Samuel Berlad. La sua aliya del novembre 2012 ha aperto un decennio trasformativo in cui, ben oltre il perfezionamento della tecnica vocale, ha vissuto un autentico risveglio artistico e umano, immergendosi nella ricchezza del panorama musicale israeliano e delle sue multiformi tradizioni culturali.</p>
+            
+            <p>In questa terra di antica memoria e moderne speranze, l'artista ha scoperto la sua voce più autentica, affrontando ruoli di primo piano e costruendo collaborazioni durature con direttori d'orchestra e musicisti di prestigio. L'unicità di un paese che sa fondere tradizioni millenarie e innovazione contemporanea ha nutrito profondamente il suo approccio tanto alla musica sacra quanto a quella profana.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Eredità Musicale</h2>
+            <p>L'arte di Samuel Berlad affonda le radici in una tradizione familiare che attraversa i secoli. Fin dalla tenera età, i canti sinagogali del nonno, venerato cantore ebraico di Miami, hanno acceso in lui una passione musicale che non si è mai sopita. Proseguendo questa nobile eredità, continua ad onorare il suo ruolo di cantore, custode delle melodie sacre.</p>
+            
+            <p>La sua formazione musicale prende avvio a sette anni con lo studio del flauto, per poi arricchirsi con la pratica del violoncello. Il 2002 segna la svolta decisiva con l'inizio degli studi di canto – momento cruciale che orienterà definitivamente il suo cammino artistico.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Formazione</h2>
+            <p>Samuel Berlad vanta una formazione accademica di altissimo livello: Maestro in Opera presso l'Università di Musica e Arti Performative di Francoforte, ha conseguito anche il Diploma in Pedagogia Vocale presso l'Accademia di Musica di Wiesbaden. Il suo approfondimento dell'arte cantoriale ebraica presso il Tel Aviv Cantorial Institute, sotto la guida di maestri illustri, arricchisce ulteriormente il suo legame culturale.</p>
+            
+            <p>Oltre alle attività artistiche, Samuel Berlad coltiva studi musicologici che testimoniano la sua aspirazione a una comprensione musicale a tutto tondo. Nella sua persona si coniugano armoniosamente tradizione e innovazione, creando un'eredità artistica che risuona ben oltre i riflettori del palcoscenico.</p>
+        </div>
+        `;
+
+        const hebrewBio = `
+        <div class="bio-section rtl">
+            <p>שמואל ברלד הוא בס-בריטון מוערך שמסעו האמנותי עבר מגרמניה דרך עשור מעצב בישראל ועד להופעותיו הנוכחיות בבתי האופרה באירופה.</p>
+        </div>
+
+        <div class="bio-section rtl">
+            <h2>פעילות נוכחית</h2>
+            <p>מאז ספטמבר 2022 שמואל חבר בהרכב Harztheater בהלברשטאדט, גרמניה, שם הוא ממשיך להציג מגוון תפקידים מרשים. הופעותיו האחרונות מציגות טווח נפלא החל מהגמד הערמומי אלבריך מ"זהב הריין" של וגנר, דרך רוח המים הליריים וודניק מ"רוסלקה" של דבוז'אק, ועד לדמות קרטיס במחזמר הדינמי "האחים בלוז" - הוכחה מרשימה ליכולתו להצטיין הן באופרה והן במחזמר.</p>
+            
+            <p>בקרוב, ב-2025, שמואל יגלם את הונדינג המאיים ב"ולקיריה" של וגנר, ויוסיף תפקיד וגנריאני נוסף לרפרטואר המתרחב שלו. העונות האחרונות כללו גם את שאונרד ב"בוהם" של פוצ'יני ותפקידים ב"דרקולה" וב"נשף האופרה", המחזקים את נוכחותו על הבמה הגרמנית.</p>
+
+            <p>לאורך הקריירה שלו הוא התמחה בתפקידי בריטון ובס-בריטון מרכזיים, כולל דמויותיו האהובות של מוצרט - פיגרו, לפורלו ופפאגנו - ובלקורה הקסום של דוניצטי. הוא הופיע תחת שרביטם של מנצחים מובילים כמו ישעיהו שטקלר, עומר אריאלי, ניר קברטי וזובין מהטה, בבתי אופרה ואולמות קונצרטים בישראל, גרמניה, צרפת, איטליה, ארצות הברית ובריטניה.</p>
+        </div>
+
+        <div class="bio-section rtl">
+            <h2>עבודת קונצרטים ושיר אמנותי</h2>
+            <p>בתחום הקונצרטים פיתח שמואל שיתוף פעולה פורה במיוחד עם הפסנתרן ד"ר אידו אריאל מאז עבודתם המשותפת בפסטיבל השובריטיאדה הישראלי ב-2021. השותפות האמנותית הזאת הגיעה לשיאה בקיץ 2024 עם הבכורה ההיסטורית העולמית של מחזור "הטחנת היפה" השלם של שוברט בעברית - הפעם הראשונה בהיסטוריה שהמחזור האהוב הזה בוצע בתרגום עברי.</p>
+            
+            <p>התרגום המומחה של ד"ר אריאל שומר הן על החרוז והן על הקצב המוזיקלי של המקור הגרמני, ומאפשר לשיר את המחזור באופן טבעי בעברית תוך שמירה על הכוונות המוזיקליות של שוברט. הרפרטואר הקונצרטנטי הרחב של שמואל משתרע מאורטוריות בארוקיות ועד לשיר אמנותי רומנטי, עם ביצועים מרגשים של סולו הבריטון ברקוויאם הגרמני של ברהמס ותוכניות מגוונות של שוברט, שומאן ומלחינים עכשוויים.</p>
+        </div>
+
+        <div class="bio-section rtl">
+            <h2>ישראל - בית אמנותי</h2>
+            <p>התקופה המעצבת ביותר בחייו האמנותיים של שמואל הייתה העשור שבילה בישראל לאחר עלייתו בנובמבר 2012. מעבר לפיתוח הטכניקה הקולית, זו הייתה תקופה של התעוררות אמנותית ואישית מלאה תוך כדי השתלבות בנוף המוזיקלי הישראלי העשיר ובמסורותיו התרבותיות הרבות.</p>
+            
+            <p>בישראל מצא שמואל את הקול האמנותי האמיתי שלו, ביצע תפקידים מרכזיים ובנה קשרי עבודה ארוכי טווח עם מנצחים ומוזיקאים מובילים. השילוב הייחודי במדינה בין מסורות עתיקות לחדשנות מודרנית השפיע רבות על גישתו הן למוזיקה קדושה והן לחילונית.</p>
+        </div>
+
+        <div class="bio-section rtl">
+            <h2>מורשת מוזיקלית</h2>
+            <p>השורשים המוזיקליים של שמואל נעוצים במסורת משפחתית. מגיל צעיר הוא נחשף לניגוני בית הכנסת דרך סבו, חזן יהודי מוערך במיאמי, שהצית בו את האהבה למוזיקה. הוא ממשיך מסורת זו ומשמש כחזן, משמר מנגינות קודש.</p>
+            
+            <p>הלימודים המוזיקליים שלו החלו בגיל 7 עם חליל, והמשיכו עם צ'לו. נקודת המפנה הייתה ב-2002 עם תחילת לימודי הזמר - רגע שקבע את כיוון הקריירה האמנותית שלו.</p>
+        </div>
+
+        <div class="bio-section rtl">
+            <h2>השכלה</h2>
+            <p>שמואל בעל השכלה אקדמית רחבה: תואר מוסמך באופרה מאוניברסיטת פרנקפורט למוזיקה ואמנויות הבמה, ודיפלומה בפדגוגיה קולית מאקדמיית המוזיקה בוויסבאדן. לימודיו באמנות החזנות היהודית במכון החזנים בתל אביב עם מורים מובילים העמיקו את הקשר התרבותי שלו.</p>
+            
+            <p>בנוסף לפעילות האמנותית הוא עוסק גם במחקר מוזיקולוגי, מה שמעיד על חתירתו להבנה מוזיקלית רחבה. שמואל משלב בעבודתו מסורת וחדשנות, ויוצר מורשת אמנותית שמשפיעה מעבר לבמה.</p>
+        </div>
+        `;
+
+        const switchLanguage = (bioText, lang) => {
+            document.getElementById("biotext").innerHTML = bioText;
+            
+            // Update active state
+            document.querySelectorAll(".language-links a").forEach(link => {
+                link.classList.remove("active");
+            });
+            document.getElementById(lang).classList.add("active");
+        }
+
+        // Language switcher event handlers
+        document.getElementById("english").addEventListener('click', () => {
+            switchLanguage(englishBio, 'english');
+        });
+
+        document.getElementById("german").addEventListener('click', () => {
+            switchLanguage(germanBio, 'german');
+        });
+
+        document.getElementById("french").addEventListener('click', () => {
+            switchLanguage(frenchBio, 'french');
+        });
+
+        document.getElementById("italian").addEventListener('click', () => {
+            switchLanguage(italianBio, 'italian');
+        });
+
+        document.getElementById("hebrew").addEventListener('click', () => {
+            switchLanguage(hebrewBio, 'hebrew');
+        });
+
+        // Header scroll effects
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            const scrollTop = window.pageYOffset;
+            
+            if (scrollTop > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('.nav');
+            const navLinks = document.querySelectorAll('.nav_item a');
+
+            if (hamburger && nav) {
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('hamburger-open');
+                    nav.classList.toggle('nav-open');
+                });
+            }
+
+            if (navLinks) {
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (hamburger && nav) {
+                            hamburger.classList.remove('hamburger-open');
+                            nav.classList.remove('nav-open');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

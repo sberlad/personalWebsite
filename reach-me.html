@@ -1,0 +1,831 @@
+</div><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Samuel Berlad - Professional Bass-Baritone. Contact information and virtual business card.">
+        <meta name="author" content="Samuel Berlad">
+        <meta property="og:type" content="profile">
+        <meta property="og:url" content="https://samuelberlad.com/reach-me.html">
+        <meta property="og:title" content="Contact | Samuel Berlad Bass-Baritone">
+        <meta property="og:description" content="Get in touch with professional bass-baritone Samuel Berlad. Based in Germany and Israel. Available for opera, concerts, and vocal instruction.">
+        <meta property="og:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:site_name" content="Samuel Berlad">
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://samuelberlad.com/reach-me.html">
+        <meta property="twitter:title" content="Contact | Samuel Berlad Bass-Baritone">
+        <meta property="twitter:description" content="Get in touch with professional bass-baritone Samuel Berlad. Based in Germany and Israel. Available for opera, concerts, and vocal instruction.">
+        <meta property="twitter:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <title>Samuel Berlad | Contact</title>
+
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1KBWVNTC4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-K1KBWVNTC4');
+        </script>
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/glacial-indifference-2">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+            <style>
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+
+                    :root {
+                        --primary-red: #a42020;
+                        --deep-black: #000;
+                        --off-white: #fafafa;
+                        --warm-gray: #333;
+                        --light-gray: #888;
+                    }
+
+                    html {
+                        scroll-behavior: smooth;
+                    }
+
+                    body {
+                        font-family: 'Glacial Indifference', sans-serif;
+                        background: var(--deep-black);
+                        color: var(--off-white);
+                        line-height: 1.6;
+                        font-weight: 300;
+                        padding-top: 75px;
+                    }
+
+                    /* Header - Same as other pages */
+                    .header {
+                        position: fixed;
+                        width: 100%;
+                        top: 0;
+                        z-index: 1000;
+                        background: rgba(0, 0, 0, 0.85);
+                        backdrop-filter: blur(12px);
+                        transition: all 0.4s ease;
+                    }
+
+                    .header::before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 1px;
+                        background: var(--primary-red);
+                        transition: width 0.6s ease;
+                    }
+
+                    .header.scrolled::before {
+                        width: 200px;
+                    }
+
+                    .header_content {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 2rem;
+                        height: 75px;
+                    }
+
+                    .logo img {
+                        height: 45px;
+                        width: auto;
+                    }
+
+                    .nav {
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    .nav_list {
+                        display: flex;
+                        gap: 2rem;
+                        list-style: none;
+                    }
+
+                    .nav_item a {
+                        color: var(--off-white);
+                        text-decoration: none;
+                        font-size: 0.9rem;
+                        font-weight: 300;
+                        letter-spacing: 1px;
+                        text-transform: lowercase;
+                        transition: all 0.3s ease;
+                        position: relative;
+                        padding: 0.5rem 0;
+                    }
+
+                    .nav_item a::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 1px;
+                        background: var(--primary-red);
+                        transition: width 0.3s ease;
+                    }
+
+                    .nav_item a:hover::after {
+                        width: 80%;
+                    }
+
+                    .nav_item a:hover {
+                        color: var(--primary-red);
+                    }
+
+                    .hamburger {
+                        display: none;
+                        flex-direction: column;
+                        cursor: pointer;
+                        padding: 8px;
+                    }
+
+                    .bar {
+                        width: 22px;
+                        height: 2px;
+                        background: var(--off-white);
+                        margin: 2px 0;
+                        transition: all 0.3s ease;
+                    }
+
+                    .nav-open {
+                        transform: translateX(0) !important;
+                    }
+
+                    .hamburger-open .bar:nth-child(1) {
+                        transform: translateY(6px) rotate(45deg);
+                    }
+
+                    .hamburger-open .bar:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    .hamburger-open .bar:nth-child(3) {
+                        transform: translateY(-6px) rotate(-45deg);
+                    }
+
+                    /* Main Content */
+                    .container {
+                        max-width: 800px;
+                        margin: 0 auto;
+                        padding: 3rem 2rem;
+                    }
+
+                    .page-header {
+                        text-align: center;
+                        margin-bottom: 3rem;
+                    }
+
+                    .page-title {
+                        font-family: 'Playfair Display', serif;
+                        font-size: clamp(2.5rem, 5vw, 4rem);
+                        color: var(--primary-red);
+                        margin-bottom: 1rem;
+                        font-weight: 400;
+                    }
+
+                    .page-subtitle {
+                        font-size: 1.1rem;
+                        color: var(--light-gray);
+                        letter-spacing: 1px;
+                    }
+
+                    /* Business Card */
+                    .business-card {
+                        background: rgba(255, 255, 255, 0.05);
+                        border: 1px solid rgba(164, 32, 32, 0.3);
+                        padding: 3rem;
+                        text-align: center;
+                        position: relative;
+                        overflow: hidden;
+                        margin-bottom: 2rem;
+                    }
+
+                    .business-card::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        height: 4px;
+                        background: linear-gradient(90deg, var(--primary-red), #b52525, var(--primary-red));
+                    }
+
+                    .card-photo {
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                        background: var(--warm-gray);
+                        margin: 0 auto 2rem;
+                        border: 3px solid rgba(164, 32, 32, 0.3);
+                        overflow: hidden;
+                    }
+
+                    .card-photo img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    .card-name {
+                        font-family: 'Playfair Display', serif;
+                        font-size: 2.2rem;
+                        color: var(--off-white);
+                        margin-bottom: 0.5rem;
+                        font-weight: 400;
+                    }
+
+                    .card-title {
+                        font-size: 1.2rem;
+                        color: var(--primary-red);
+                        margin-bottom: 0.5rem;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-weight: 400;
+                    }
+
+                    .card-specialties {
+                        color: var(--light-gray);
+                        margin-bottom: 2rem;
+                        font-size: 1rem;
+                    }
+
+                    /* Contact Actions */
+                    .contact-actions {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                        gap: 1rem;
+                        margin-bottom: 2rem;
+                    }
+
+                    .contact-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.8rem;
+                        padding: 1rem;
+                        background: rgba(164, 32, 32, 0.1);
+                        border: 1px solid rgba(164, 32, 32, 0.3);
+                        color: var(--off-white);
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+                        font-size: 0.95rem;
+                    }
+
+                    .contact-btn:hover {
+                        background: rgba(164, 32, 32, 0.2);
+                        border-color: var(--primary-red);
+                        transform: translateY(-2px);
+                    }
+
+                    .contact-btn i {
+                        font-size: 1.2rem;
+                        color: var(--primary-red);
+                    }
+
+                    /* Save to Contacts */
+                    .save-contact {
+                        background: var(--primary-red);
+                        color: white;
+                        border: none;
+                        padding: 1rem 2rem;
+                        font-size: 1rem;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        font-weight: 400;
+                        width: 100%;
+                        margin-bottom: 2rem;
+                    }
+
+                    .save-contact:hover {
+                        background: #b52525;
+                        transform: translateY(-2px);
+                    }
+
+                    .save-contact i {
+                        margin-right: 0.5rem;
+                    }
+
+                    /* Contact Info Grid */
+                    .contact-info-grid {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 2rem;
+                        margin-bottom: 2rem;
+                        text-align: left;
+                    }
+
+                    .contact-info-item {
+                        padding: 1rem;
+                        background: rgba(255, 255, 255, 0.02);
+                        border: 1px solid rgba(164, 32, 32, 0.1);
+                    }
+
+                    .contact-info-item h4 {
+                        color: var(--primary-red);
+                        margin-bottom: 0.5rem;
+                        font-size: 0.9rem;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                    }
+
+                    .contact-info-item p {
+                        color: var(--light-gray);
+                        font-size: 0.95rem;
+                    }
+
+                    /* Social Links */
+                    .social-links {
+                        display: flex;
+                        justify-content: center;
+                        gap: 1.5rem;
+                        margin-top: 2rem;
+                    }
+
+                    .social-link {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 50px;
+                        height: 50px;
+                        background: rgba(164, 32, 32, 0.1);
+                        border: 1px solid rgba(164, 32, 32, 0.3);
+                        color: var(--primary-red);
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+                    }
+
+                    .social-link:hover {
+                        background: var(--primary-red);
+                        color: white;
+                        transform: translateY(-2px);
+                    }
+
+                    .social-link i {
+                        font-size: 1.2rem;
+                    }
+
+                    /* QR Code Section */
+                    .qr-section {
+                        text-align: center;
+                        padding: 2rem;
+                        background: rgba(255, 255, 255, 0.03);
+                        border: 1px solid rgba(164, 32, 32, 0.2);
+                        margin-bottom: 2rem;
+                    }
+
+                    .qr-section h3 {
+                        color: var(--primary-red);
+                        margin-bottom: 1rem;
+                        font-family: 'Playfair Display', serif;
+                    }
+
+                    .qr-code {
+                        width: 150px;
+                        height: 150px;
+                        margin: 0 auto 1rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 2px solid rgba(164, 32, 32, 0.2);
+                        background: white;
+                    }
+
+                    .qr-code img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+
+                    /* Footer */
+                    footer {
+                        background: var(--deep-black);
+                        padding: 2rem;
+                        border-top: 1px solid rgba(164, 32, 32, 0.2);
+                        margin-top: 4rem;
+                    }
+
+                    .footer-content {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        gap: 1rem;
+                    }
+
+                    .copyright {
+                        color: var(--light-gray);
+                        font-size: 0.85rem;
+                    }
+
+                    .footer-social-links {
+                        display: flex;
+                        gap: 1.5rem;
+                    }
+
+                    .footer-social-links a {
+                        color: var(--light-gray);
+                        font-size: 1.1rem;
+                        transition: all 0.3s ease;
+                        text-decoration: none;
+                    }
+
+                    .footer-social-links a:hover {
+                        color: var(--primary-red);
+                        transform: translateY(-2px);
+                    }
+
+                    
+                    /* Mobile Responsive */
+                    @media (max-width: 1024px) {
+                        .hamburger {
+                            display: flex;
+                        }
+
+                        .nav {
+                            position: fixed;
+                            top: 75px;
+                            left: 0;
+                            width: 100%;
+                            height: calc(100vh - 75px);
+                            background: rgba(0, 0, 0, 0.95);
+                            backdrop-filter: blur(15px);
+                            transform: translateX(-100%);
+                            transition: transform 0.3s ease;
+                            padding: 3rem 2rem;
+                        }
+
+                        .nav-open {
+                            transform: translateX(0);
+                        }
+
+                        .nav_list {
+                            flex-direction: column;
+                            gap: 2rem;
+                            height: 100%;
+                            justify-content: flex-start;
+                        }
+
+                        .nav_item a {
+                            font-size: 1.2rem;
+                        }
+
+                        .hamburger-open .bar:nth-child(1) {
+                            transform: translateY(6px) rotate(45deg);
+                        }
+
+                        .hamburger-open .bar:nth-child(2) {
+                            opacity: 0;
+                        }
+
+                        .hamburger-open .bar:nth-child(3) {
+                            transform: translateY(-6px) rotate(-45deg);
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        .nav {
+                            position: fixed;
+                            top: 75px;
+                            left: 0;
+                            width: 100%;
+                            height: calc(100vh - 75px);
+                            background: rgba(0, 0, 0, 0.98);
+                            backdrop-filter: blur(15px);
+                            transform: translateX(-100%);
+                            transition: transform 0.3s ease;
+                            padding: 3rem 2rem;
+                        }
+
+                        .nav_list {
+                            flex-direction: column;
+                            gap: 2rem;
+                            height: 100%;
+                            justify-content: flex-start;
+                        }
+
+                        .nav_item a {
+                            font-size: 1.2rem;
+                        }
+
+                        .hamburger {
+                            display: flex;
+                        }
+
+                        .container {
+                            padding: 2rem 1rem;
+                        }
+
+                        .business-card {
+                            padding: 2rem;
+                        }
+
+                        .contact-info-grid {
+                            grid-template-columns: 1fr;
+                            gap: 1rem;
+                        }
+
+                        .contact-actions {
+                            grid-template-columns: 1fr;
+                        }
+
+                        .social-links {
+                            gap: 1rem;
+                        }
+
+                        .footer-content {
+                            text-align: center;
+                            flex-direction: column;
+                        }
+                    }
+
+                    @media (max-width: 480px) {
+                        .business-card {
+                            padding: 1.5rem;
+                        }
+
+                        .card-name {
+                            font-size: 1.8rem;
+                        }
+
+                        .card-photo {
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+                </style>
+            
+            <!-- CONTACT PAGE SCHEMA (reach-me.html) -->
+            <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact Samuel Berlad",
+            "description": "Professional contact information for bass-baritone Samuel Berlad",
+            "mainEntity": {
+                "@type": "Person",
+                "name": "Samuel Berlad",
+                "jobTitle": "Professional Bass-Baritone Opera Singer",
+                "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "email": "contact@samuelberlad.com",
+                    "contactType": "Professional Booking",
+                    "availableLanguage": ["English", "German", "Hebrew"]
+                }
+                ],
+                "areaServed": ["Europe", "Israel", "Germany"],
+                "serviceType": ["Opera Performance", "Concert Performance", "Vocal Instruction"]
+            }
+            }
+            </script>
+        </head>
+
+    <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header_content">
+            <a class="logo" href="index.html">
+                <img src="images/Samuel_Berlad_bass-baritone__1_-removebg-crop-300x160.png" alt="Samuel Berlad">
+            </a>
+
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html">home</a></li>
+                    <li class="nav_item"><a href="about.html">biography</a></li>
+                    <li class="nav_item"><a href="repertoire.html">repertoire</a></li>
+                    <li class="nav_item"><a href="gallery.html">gallery</a></li>
+                    <li class="nav_item"><a href="videos.html">hear me sing</a></li>
+                    <li class="nav_item"><a href="blog.html">blog</a></li>
+                    <li class="nav_item"><a href="reach-me.html">contact</a></li>
+                    <li class="nav_item"><a href="disclaimer.html">legal</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+    <div class="page-header">
+    <h1 class="page-title">Contact</h1>
+    <p class="page-subtitle">Professional Bass-Baritone • Germany • Israel</p>
+    </div>
+
+    <!-- Virtual Business Card -->
+    <div class="business-card">
+        <div class="card-photo">
+            <img src="images/LRB_8438 edited.jpg" alt="Samuel Berlad" onerror="this.style.display='none'">
+        </div>
+
+        <h2 class="card-name">Samuel Berlad</h2>
+        <p class="card-title">Bass-Baritone</p>
+        <p class="card-specialties">Opera • Concert • Chazzan • Vocal Pedagogue</p>
+
+        <!-- Save to Contacts Button -->
+        <button class="save-contact" onclick="downloadVCard()">
+            <i class="fas fa-download"></i>
+            Save to Contacts
+        </button>
+
+        <!-- Quick Contact Actions -->
+        <div class="contact-actions">
+        <a href="mailto:contact@samuelberlad.com" class="contact-btn">
+            <i class="fas fa-envelope"></i>
+            Email
+        </a>
+        <a href="https://wa.me/4917662566823" class="contact-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            WhatsApp
+        </a>
+        <a href="tel:+49-176-62566823" class="contact-btn">
+            <i class="fas fa-phone"></i>
+            Germany
+        </a>
+        <a href="tel:+972-53-429-6543" class="contact-btn">
+            <i class="fas fa-phone"></i>
+            Israel
+        </a>
+        </div>
+
+        <!-- Contact Info Grid -->
+        <div class="contact-info-grid">
+        <div class="contact-info-item">
+            <h4>Email</h4>
+            <p>contact@samuelberlad.com</p>
+        </div>
+        <div class="contact-info-item">
+            <h4>Based in</h4>
+            <p>Germany • Israel</p>
+        </div>
+        <div class="contact-info-item">
+            <h4>Phone Germany</h4>
+            <p>+49-(0)176-62566823</p>
+        </div>
+        <div class="contact-info-item">
+            <h4>Phone Israel</h4>
+            <p>+972-(0)53-429-6543</p>
+        </div>
+        <div class="contact-info-item">
+            <h4>Languages</h4>
+            <p>German, English, Hebrew, French, Italian</p>
+        </div>
+        <div class="contact-info-item">
+            <h4>Specializations</h4>
+            <p>Opera, Concert, Chazzan, Vocal Pedagogue (Dipl. IGP)</p>
+        </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+    <a href="https://www.facebook.com/samuel.berlad/" target="_blank" class="social-link">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/samuelberlad_bassbaritone/" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/channel/UC5I1E7F3C1SUcLed-w7Ax9A" target="_blank" class="social-link">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://open.spotify.com/artist/6yueNB4pXtAZmGPh01Q4Eo" target="_blank" class="social-link">
+        <i class="fab fa-spotify"></i>
+    </a>
+    </div>
+    </div>
+
+    <!-- QR Code Section -->
+    <div class="qr-section">
+    <h3>Share My Contact</h3>
+    <div class="qr-code">
+    <img src="images/qr-code.png" alt="QR Code - Samuel Berlad Contact">
+    </div>
+    <p style="color: var(--light-gray); font-size: 0.9rem;">
+    Scan to share my contact information
+    </p>
+    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+    <div class="footer-content">
+    <div class="copyright">
+    <p>© 2025 Samuel Berlad. All rights reserved.</p>
+    </div>
+    <div class="footer-social-links">
+    <a href="https://www.facebook.com/samuel.berlad/" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/samuelberlad_bassbaritone/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/channel/UC5I1E7F3C1SUcLed-w7Ax9A" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://open.spotify.com/artist/6yueNB4pXtAZmGPh01Q4Eo" target="_blank" aria-label="Spotify">
+        <i class="fab fa-spotify"></i>
+    </a>
+    </div>
+    </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+    // Mobile menu functionality
+    document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+    const navLinks = document.querySelectorAll('.nav_item a');
+
+    if (hamburger && nav) {
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('hamburger-open');
+        nav.classList.toggle('nav-open');
+    });
+    }
+
+    if (navLinks) {
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (hamburger && nav) {
+                hamburger.classList.remove('hamburger-open');
+                nav.classList.remove('nav-open');
+            }
+        });
+    });
+    }
+
+    // Header scroll effects
+    window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    const scrollTop = window.pageYOffset;
+
+    if (scrollTop > 100) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+    });
+    });
+
+    // vCard download function
+    function downloadVCard() {
+    const vcard = `BEGIN:VCARD
+    VERSION:3.0
+    FN:Samuel Berlad
+    N:Berlad;Samuel;;;
+    ORG:Professional Bass-Baritone
+    TITLE:Opera Singer
+    EMAIL:contact@samuelberlad.com
+    TEL;TYPE=WORK:+49-176-62566823
+    TEL;TYPE=WORK:+972-53-429-6543
+    URL:https://samuelberlad.com
+    ADR;TYPE=WORK:;;Germany;;
+    ADR;TYPE=WORK:;;Israel;;
+    NOTE:Professional Bass-Baritone specializing in Opera, Concert, Chazzan services, and Vocal Pedagogy (Dipl. IGP). Based in Germany and Israel. Available for international engagements.
+    END:VCARD`;
+
+    const blob = new Blob([vcard], { type: 'text/vcard' });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Samuel_Berlad_Contact.vcf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+    }
+    </script>
+    </body>
+</html>
