@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Samuel Berlad - the young German-American Bass-Baritone. Current Performance dates, recordings and more.">
+    <meta name="author" content="Samuel Berlad">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samuelberlad.com/videos.html">
+    <meta property="og:title" content="Hear Me Sing | Samuel Berlad">
+    <meta property="og:description" content="Listen to Samuel Berlad perform opera, art songs, and sacred music. Live recordings from stages across Europe and Israel.">
+    <meta property="og:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Samuel Berlad">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://samuelberlad.com/videos.html">
+    <meta property="twitter:title" content="Hear Me Sing | Samuel Berlad">
+    <meta property="twitter:description" content="Listen to Samuel Berlad perform opera, art songs, and sacred music. Live recordings from stages across Europe and Israel.">
+    <meta property="twitter:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Samuel Berlad | Hear Me Sing</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1KBWVNTC4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K1KBWVNTC4');
+    </script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/glacial-indifference-2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-red: #a42020;
+            --deep-black: #000;
+            --off-white: #fafafa;
+            --warm-gray: #333;
+            --light-gray: #888;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Glacial Indifference', sans-serif;
+            background: var(--deep-black);
+            color: var(--off-white);
+            line-height: 1.6;
+            font-weight: 300;
+            padding-top: 75px;
+        }
+
+        /* Header - Same as repertoire database */
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(12px);
+            transition: all 0.4s ease;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background: var(--primary-red);
+            transition: width 0.6s ease;
+        }
+
+        .header.scrolled::before {
+            width: 200px;
+        }
+
+        .header_content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            height: 75px;
+        }
+
+        .logo img {
+            height: 45px;
+            width: auto;
+        }
+
+        .nav {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav_list {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav_item a {
+            color: var(--off-white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: lowercase;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav_item a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background: var(--primary-red);
+            transition: width 0.3s ease;
+        }
+
+        .nav_item a:hover::after {
+            width: 80%;
+        }
+
+        .nav_item a:hover {
+            color: var(--primary-red);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .bar {
+            width: 22px;
+            height: 2px;
+            background: var(--off-white);
+            margin: 2px 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav-open {
+            transform: translateX(0) !important;
+        }
+
+        .hamburger-open .bar:nth-child(1) {
+            transform: translateY(6px) rotate(45deg);
+        }
+
+        .hamburger-open .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-open .bar:nth-child(3) {
+            transform: translateY(-6px) rotate(-45deg);
+        }
+
+        /* Video Section */
+        .video-section {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .video-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .video-wrapper h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--primary-red);
+            margin-bottom: 3rem;
+            font-weight: 400;
+        }
+
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 0 auto;
+        }
+
+        .box {
+            flex: 1 1 calc(33.33% - 2rem);
+            max-width: 355px;
+            min-width: 300px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(164, 32, 32, 0.2);
+            padding: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .box:hover {
+            border-color: rgba(164, 32, 32, 0.5);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(164, 32, 32, 0.15);
+        }
+
+        .video-container {
+            position: relative;
+            background: var(--warm-gray);
+            transition: opacity 0.3s ease;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+            display: block;
+        }
+
+        .video-info {
+            padding: 1rem 0 0.5rem;
+            text-align: left;
+        }
+
+        .video-title {
+            font-size: 1.1rem;
+            color: var(--off-white);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        .video-description {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .video-description a {
+            color: var(--primary-red);
+            text-decoration: none;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        .video-description a:hover {
+            color: var(--off-white);
+            text-decoration: underline;
+        }
+
+        .featured-box {
+            order: -1;
+            flex: 1 1 100%;
+            max-width: 750px;
+            margin: 0 auto 2rem auto;
+            background: rgba(164, 32, 32, 0.08);
+            border: 1px solid rgba(164, 32, 32, 0.4);
+            padding: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: 0 8px 25px rgba(164, 32, 32, 0.08);
+        }
+
+        .featured-box:hover {
+            border-color: rgba(164, 32, 32, 0.5);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(164, 32, 32, 0.15);
+        }
+
+        .featured-box .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .featured-box .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--deep-black);
+            padding: 2rem;
+            border-top: 1px solid rgba(164, 32, 32, 0.2);
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .copyright {
+            color: var(--light-gray);
+            font-size: 0.85rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--light-gray);
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-red);
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav {
+                position: fixed;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                height: calc(100vh - 75px);
+                background: rgba(0, 0, 0, 0.95);
+                backdrop-filter: blur(15px);
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                padding: 3rem 2rem;
+            }
+
+            .nav-open {
+                transform: translateX(0);
+            }
+
+            .nav_list {
+                flex-direction: column;
+                gap: 2rem;
+                height: 100%;
+                justify-content: flex-start;
+            }
+
+            .nav_item a {
+                font-size: 1.2rem;
+            }
+
+            .hamburger-open .bar:nth-child(1) {
+                transform: translateY(6px) rotate(45deg);
+            }
+
+            .hamburger-open .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger-open .bar:nth-child(3) {
+                transform: translateY(-6px) rotate(-45deg);
+            }
+        }
+        @media (max-width: 768px) {
+            .nav {
+                position: fixed;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                height: calc(100vh - 75px);
+                background: rgba(0, 0, 0, 0.98);
+                backdrop-filter: blur(15px);
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                padding: 3rem 2rem;
+            }
+
+            .nav_list {
+                flex-direction: column;
+                gap: 2rem;
+                height: 100%;
+                justify-content: flex-start;
+            }
+
+            .nav_item a {
+                font-size: 1.2rem;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .video-wrapper {
+                padding: 0 1rem;
+            }
+
+            .featured-box {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+
+            .featured-box .video-container iframe {
+                height: 250px;
+            }
+
+            .box {
+                flex-basis: calc(50% - 1rem);
+                min-width: 280px;
+            }
+
+            .footer-content {
+                text-align: center;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 555px) {
+            .box {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+
+            .featured-box .video-container iframe {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .box iframe {
+                height: 180px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .box iframe {
+                height: 160px;
+            }
+        }
+    </style>
+
+    <!-- VIDEOS PAGE SCHEMA (videos.html) -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Audio & Video Recordings - Samuel Berlad", 
+    "description": "Listen to Samuel Berlad perform opera, art songs, and sacred music",
+    "mainEntity": {
+        "@type": "ItemList",
+        "name": "Samuel Berlad Recordings",
+        "itemListElement": [
+        {
+            "@type": "MusicRecording",
+            "name": "Opera Performance Recordings",
+            "byArtist": {
+            "@type": "Person",
+            "name": "Samuel Berlad"
+            },
+            "genre": "Opera",
+            "recordingOf": {
+            "@type": "MusicComposition",
+            "genre": "Classical Music"
+            }
+        }
+        ]
+    }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+     <header class="header">
+        <div class="header_content">
+            <a class="logo" href="index.html">
+                <img src="images/Samuel_Berlad_bass-baritone__1_-removebg-crop-300x160.png" alt="Samuel Berlad">
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html">home</a></li>
+                    <li class="nav_item"><a href="about.html">biography</a></li>
+                    <li class="nav_item"><a href="repertoire.html">repertoire</a></li>
+                    <li class="nav_item"><a href="gallery.html">gallery</a></li>
+                    <li class="nav_item"><a href="videos.html">hear me sing</a></li>
+                    <li class="nav_item"><a href="blog.html">blog</a></li>
+                    <li class="nav_item"><a href="reach-me.html">contact</a></li>
+                    <li class="nav_item"><a href="disclaimer.html">legal</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="video-section">
+    <div class="video-wrapper">
+        <h1>Hear Me Sing</h1>
+        <div class="boxes">
+            
+            <!-- Featured Recording -->
+            <div class="box featured-box">
+                <div class="featured-label">Featured</div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y_Fv8UcFk-c?si=fc8vLGIiutHDPcPN" 
+                            title="Samuel Berlad as Schaunard in La Bohème – Live from Haifa" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">La Bohème (Puccini): Abasso, abasso l'autor</div>
+                    <div class="video-description">Samuel Berlad as Schaunard in Puccini's <em>La Bohème</em> • Live performance from the Haifa Performing Arts Center (Dec 2021).</div>
+                </div>
+            </div>
+            
+            <!-- Korngold -->
+            <div class="box">
+                <div class="video-container">
+                    <iframe width="355" height="200" src="https://www.youtube.com/embed/4M0UonXJjRM?si=6rUTFlqYoe3wS0Cg" 
+                            title="Samuel Berlad sings Korngold – Mein Sehnen, mein Wähnen" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Die tote Stadt (Korngold): Mein Sehnen, mein Wähnen</div>
+                    <div class="video-description">Concert performance with the Haifa Symphony Orchestra during the 2020 lockdown season • A lyrical, introspective aria from Korngold’s <em>Die tote Stadt</em>.</div>
+                </div>
+            </div>
+            
+            <!-- Wagner -->
+            <div class="box">
+                <div class="video-container">
+                    <img src="images/gallery/rheingold3.jpg" alt="Samuel Berlad as Alberich in Wagner’s Das Rheingold – Harztheater" width="355" height="200" style="object-fit: cover; width: 100%; height: 100%;">
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Das Rheingold (Wagner): Bin ich nun frei</div>
+                    <div class="video-description">
+                        Samuel Berlad as Alberich in Wagner’s <em>Das Rheingold</em> • Live stage recording from <a href="http://www.harztheater.de" target="_blank" rel="noopener">Harztheater</a> Season 2023/24.<br>
+                        This dramatic excerpt is not publicly available due to licensing restrictions. Please <a href="mailto:contact@samuelberlad.com">contact me</a> to request access.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kel Male Rachamim -->
+            <div class="box">
+                <div class="video-container">
+                    <iframe width="355" height="200" src="https://www.youtube.com/embed/687tbblc--Q" 
+                            title="Samuel Berlad sings Kel Male Rachamim during President Biden's visit to Yad Vashem" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Kel Male Rachamim – Yad Vashem (2022)</div>
+                    <div class="video-description">Samuel Berlad sings the Jewish memorial prayer <em>Kel Male Rachamim</em> during U.S. President Joe Biden’s official visit to Yad Vashem • Broadcast live worldwide in July 2022.</div>
+                </div>
+            </div>
+            
+            <!-- Schubert: Erlkönig -->
+            <div class="box">
+                <div class="video-container">
+                    <iframe width="355" height="200" src="https://www.youtube.com/embed/DC28HHO1P1E" 
+                            title="Samuel Berlad sings Schubert’s Erlkönig live in Jerusalem" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Schubert: Erlkönig</div>
+                    <div class="video-description">Live Lieder performance with Ido Ariel from the Israel Schubertiade (Jerusalem, Jan 2021) • A dramatic and vocally demanding setting of Goethe’s famous ballad.</div>
+                </div>
+            </div>
+            
+            <!-- Schubert: Die Forelle -->
+            <div class="box">
+                <div class="video-container">
+                    <iframe width="355" height="200" src="https://www.youtube.com/embed/7wHZi9Jolgo" 
+                            title="Samuel Berlad sings Schubert’s Die Forelle live in Jerusalem" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Schubert: Die Forelle</div>
+                    <div class="video-description">Samuel Berlad and Ido Ariel perform Schubert’s cheerful art song <em>Die Forelle</em> • Live from the Israel Schubertiade (Jerusalem, Jan 2021).</div>
+                </div>
+            </div>
+            
+            <!-- Mozart: Madamina -->
+            <div class="box">
+                <div class="video-container">
+                    <iframe width="355" height="200" scrolling="no" frameborder="no" allow="autoplay" 
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/437442444&color=%23a42020&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                            title="Samuel Berlad sings Leporello's Catalogue Aria from Don Giovanni – Audio Recording" loading="lazy">
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Don Giovanni (Mozart): Madamina, il catalogo è questo</div>
+                    <div class="video-description">Leporello's Catalogue Aria from Mozart's <em>Don Giovanni</em> • Archival live audio recording from Tel Aviv (Dec 2018).</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                <p>© 2025 Samuel Berlad. All rights reserved.</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/samuel.berlad/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/samuelberlad_bassbaritone/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UC5I1E7F3C1SUcLed-w7Ax9A" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://open.spotify.com/artist/6yueNB4pXtAZmGPh01Q4Eo" target="_blank" aria-label="Spotify">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('.nav');
+            const navLinks = document.querySelectorAll('.nav_item a');
+
+            if (hamburger && nav) {
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('hamburger-open');
+                    nav.classList.toggle('nav-open');
+                });
+            }
+
+            if (navLinks) {
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (hamburger && nav) {
+                            hamburger.classList.remove('hamburger-open');
+                            nav.classList.remove('nav-open');
+                        }
+                    });
+                });
+            }
+
+            // Header scroll effects
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('.header');
+                const scrollTop = window.pageYOffset;
+                
+                if (scrollTop > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
