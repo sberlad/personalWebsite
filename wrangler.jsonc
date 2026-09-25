@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "samuelberlad-website",
+  "compatibility_date": "2026-09-25",
+  "assets": {
+    // Serve every file in the repo root as-is (index.html, about.html, css/, js/, images/, json data files, etc.)
+    "directory": "./",
+    // Any request that doesn't match a real file (e.g. a mistyped URL) gets 404.html,
+    // matching the same "Page Not Found" experience the site already has.
+    "not_found_handling": "404-page"
+  }
+}

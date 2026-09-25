@@ -1,0 +1,13 @@
+{
+  "name": "samuelberlad-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Samuel Berlad's professional website, deployed as static assets on Cloudflare Workers.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.140.0"
+  }
+}

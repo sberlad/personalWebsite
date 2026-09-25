@@ -1,6 +1,33 @@
 # personalWebsite
 SamuelBerlad's professional singer portfolio website
 
+## Deploying (Cloudflare Workers)
+
+The site is plain static files, served on Cloudflare Workers via static
+assets (no server-side code, no build step for the site itself).
+
+**One-time setup:**
+
+1. `npm install`
+2. `npx wrangler login` (authorizes this machine against your Cloudflare account)
+
+**Deploy:**
+
+    npm run deploy
+
+**Local preview** (serves the site exactly as Cloudflare will, including the
+404 fallback):
+
+    npm run dev
+
+Config lives in `wrangler.jsonc`. `.assetsignore` keeps dev tooling
+(`node_modules`, `scripts/`, `posts/`, this README, etc.) out of the
+deployed bundle — it doesn't affect what's in git, only what gets uploaded.
+
+To go live on `samuelberlad.com`, add the domain as a Custom Domain for
+this Worker in the Cloudflare dashboard (Workers & Pages → this Worker →
+Settings → Domains & Routes) once the zone is on Cloudflare.
+
 ## Structure
 
 Plain static HTML, no build step. Each page is its own `.html` file.

@@ -1,0 +1,15 @@
+# Files here are excluded from the Cloudflare Workers static-assets upload
+# (they're dev/build tooling, not part of the live site). This does not
+# affect what's tracked in git — see .gitignore for that.
+.git
+.github
+.wrangler
+node_modules
+package.json
+package-lock.json
+wrangler.jsonc
+.assetsignore
+.gitignore
+README.md
+scripts/
+posts/
