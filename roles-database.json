@@ -1,6 +1,36 @@
 {
   "roles": [
     {
+      "id": 42,
+      "role": "Kuno",
+      "opera": "Der Freischütz",
+      "composer": "Carl Maria von Weber",
+      "venue": "Harztheater",
+      "location": "Halberstadt, Germany",
+      "year": "2027",
+      "type": "opera",
+      "director": "Susanne Knapp",
+      "conductor": "GMD Johannes Rieger",
+      "status": "upcoming",
+      "featured": true,
+      "description": "The hereditary head forester whose blessing and legacy set the plot in motion, Kuno anchors Weber's Romantic masterpiece with paternal authority and quiet gravity. The role calls for a warm, grounded bass sound and the dramatic weight of a man caught between tradition and his daughter's fate."
+    },
+    {
+      "id": 41,
+      "role": "Korporal / Graf von Sandau",
+      "opera": "Das Wirtshaus im Spessart",
+      "composer": "Franz Grothe",
+      "venue": "Harztheater",
+      "location": "Halberstadt, Germany",
+      "year": "2026",
+      "type": "musical",
+      "director": "Marco Misgaiski",
+      "conductor": "Georgios Sgourdas",
+      "status": "current",
+      "featured": true,
+      "description": "A dual role built on mistaken identity, the disguised Corporal masquerading as the Count von Sandau lets Berlad play both comic swagger and aristocratic bearing within a single evening. The part rewards sharp character contrast, spoken dialogue timing, and an easy shift between the two personas."
+    },
+    {
       "id": 39,
       "role": "Alberich",
       "opera": "Siegfried",
@@ -26,7 +56,7 @@
       "type": "opera",
       "director": "Stephanie Schimmer",
       "conductor": "Harutyun Muradyan",
-      "status": "upcoming",
+      "status": "current",
       "featured": true,
       "description": "The cantankerous and self-important guardian thwarted at every turn, Bartolo is one of Rossini's great comic creations. The role demands expert buffo technique, razor-sharp diction in rapid-fire patter, and the ability to make pomposity utterly irresistible."
     },
@@ -56,7 +86,7 @@
       "type": "musical",
       "director": "Frank Voigtmann",
       "conductor": "GMD Johannes Rieger",
-      "status": "current",
+      "status": "past",
       "featured": true,
       "description": "A grotesque figure lurking on the edges of Weill and Brecht's criminal underworld, Trauerweidenwalter embodies the darkly comic absurdity at the heart of Die Dreigroschenoper. The role calls for sardonic presence, rhythmic precision in Weill's angular vocal lines, and an instinct for Brechtian estrangement."
     },
@@ -71,7 +101,7 @@
       "type": "operetta",
       "director": "Nick Westbrock",
       "conductor": "Harutyun Muradyan",
-      "status": "current",
+      "status": "past",
       "featured": true,
       "description": "The scheming and sharp-tongued minister at the court of Louis XV, Maurepas is a classic operetta villain-buffoon — politically calculating yet perpetually outmanoeuvred. The role demands crisp comic timing, aristocratic hauteur, and a gleeful flair for satirical characterisation."
     },
