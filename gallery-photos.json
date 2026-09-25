@@ -1,0 +1,127 @@
+{
+  "productions": [
+    {
+      "id": "walkure",
+      "title": "Hunding",
+      "opera": "Die Walküre",
+      "composer": "Richard Wagner",
+      "venue": "Harztheater",
+      "year": "2025",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/walkure1.jpg", "alt": "Samuel Berlad as Hunding in Wagner's Die Walküre" },
+        { "src": "images/gallery/walkure2.jpg", "alt": "Samuel Berlad as Hunding in Wagner's Die Walküre" }
+      ]
+    },
+    {
+      "id": "pompadour",
+      "title": "Comte de Maurepas",
+      "opera": "Madame Pompadour",
+      "composer": "Leo Fall",
+      "venue": "Harztheater",
+      "year": "2025",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/pompadour1.jpg", "alt": "Samuel Berlad as Comte de Maurepas in Leo Fall's Madame Pompadour" },
+        { "src": "images/gallery/pompadour2.jpg", "alt": "Samuel Berlad as Comte de Maurepas in Leo Fall's Madame Pompadour" }
+      ]
+    },
+    {
+      "id": "rusalka",
+      "title": "Vodník",
+      "opera": "Rusalka",
+      "composer": "Antonín Dvořák",
+      "venue": "Harztheater",
+      "year": "2024",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/rusalka1.jpg", "alt": "Rusalka Photo 1" },
+        { "src": "images/gallery/rusalka2.jpg", "alt": "Rusalka Photo 2" },
+        { "src": "images/gallery/rusalka3.jpg", "alt": "Rusalka Photo 3" },
+        { "src": "images/gallery/rusalka4.jpg", "alt": "Rusalka Photo 4" },
+        { "src": "images/gallery/rusalka5.jpg", "alt": "Rusalka Photo 5" }
+      ]
+    },
+    {
+      "id": "rheingold",
+      "title": "Alberich",
+      "opera": "Das Rheingold",
+      "composer": "Richard Wagner",
+      "venue": "Harztheater",
+      "year": "2024",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/rheingold1.jpg", "alt": "Rheingold Photo 1" },
+        { "src": "images/gallery/rheingold2.jpg", "alt": "Rheingold Photo 2" },
+        { "src": "images/gallery/rheingold3.jpg", "alt": "Rheingold Photo 3" },
+        { "src": "images/gallery/rheingold4.jpg", "alt": "Rheingold Photo 4" }
+      ]
+    },
+    {
+      "id": "boheme",
+      "title": "Schaunard",
+      "opera": "La Bohème",
+      "composer": "Giacomo Puccini",
+      "venue": "Harztheater",
+      "year": "2023",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/boheme1.jpg", "alt": "Boheme Photo 1" },
+        { "src": "images/gallery/boheme2.jpg", "alt": "Boheme Photo 2" },
+        { "src": "images/gallery/boheme3.jpg", "alt": "Boheme Photo 3" }
+      ]
+    },
+    {
+      "id": "opernball",
+      "title": "Théophile",
+      "opera": "Der Opernball",
+      "composer": "Richard Heuberger",
+      "venue": "Harztheater",
+      "year": "2023",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/opernball1.jpg", "alt": "Opernball Photo 1" },
+        { "src": "images/gallery/opernball2.jpg", "alt": "Opernball Photo 2" }
+      ]
+    },
+    {
+      "id": "flute",
+      "title": "Papageno",
+      "opera": "Die Zauberflöte",
+      "composer": "Wolfgang Amadeus Mozart",
+      "venue": "Jerusalem Opera",
+      "year": "2017",
+      "photographer": "Larry Brandt",
+      "photos": [
+        { "src": "images/gallery/flute1.jpg", "alt": "Magic Flute Photo 1" },
+        { "src": "images/gallery/flute2.jpg", "alt": "Magic Flute Photo 2" },
+        { "src": "images/gallery/flute3.jpg", "alt": "Magic Flute Photo 3" },
+        { "src": "images/gallery/flute4.jpg", "alt": "Magic Flute Photo 4" }
+      ]
+    },
+    {
+      "id": "gerolstein",
+      "title": "Baron Grog",
+      "opera": "Die Großherzogin von Gerolstein",
+      "composer": "Jacques Offenbach",
+      "venue": "Harztheater",
+      "year": "2022",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/gerolstein1.jpg", "alt": "Gerolstein Photo 1" }
+      ]
+    },
+    {
+      "id": "lucretia",
+      "title": "Collatinus",
+      "opera": "The Rape of Lucretia",
+      "composer": "Benjamin Britten",
+      "venue": "Opera Incognita",
+      "year": "2018",
+      "photographer": "Misha Jackl",
+      "photos": [
+        { "src": "images/gallery/lucretia1.jpg", "alt": "The Rape of Lucretia Photo" }
+      ]
+    }
+  ]
+}
