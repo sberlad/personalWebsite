@@ -19,15 +19,6 @@
     
     <title>Page Not Found | Samuel Berlad</title>
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1KBWVNTC4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-K1KBWVNTC4');
-    </script>
-    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,15 +55,19 @@
                 <a href="/reach-me.html" class="link-item">Contact</a>
             </div>
         </div>
+        <a href="#" class="footer-cookie-link" onclick="window.openCookieSettings(); return false;">Cookie settings</a>
     </div>
 
-    <!-- Track 404 errors in Analytics -->
+    <script src="js/consent.js"></script>
+    <!-- Track 404 errors in Analytics, only once analytics has actually loaded (i.e. consent was given) -->
     <script>
-        gtag('event', 'page_view', {
-            'page_title': '404 Error',
-            'page_location': window.location.href,
-            'custom_map': {'error_type': '404'}
-        });
+        if (window.gtag) {
+            gtag('event', 'page_view', {
+                'page_title': '404 Error',
+                'page_location': window.location.href,
+                'custom_map': {'error_type': '404'}
+            });
+        }
     </script>
 </body>
 </html>

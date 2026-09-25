@@ -27,18 +27,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <title>Samuel Berlad | Legal & Privacy</title>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1KBWVNTC4"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-K1KBWVNTC4');
-    </script>
-
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/glacial-indifference-2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -158,23 +147,23 @@
                 </ul>
                 <p>To exercise any of these rights, please contact us at contact@samuelberlad.com. We will respond within one month.</p>
 
-                <h3 class="subsection-title">Cookies and Tracking</h3>
-                <p>This website uses cookies and tracking technologies to improve user experience and analyze website traffic:</p>
+                <h3 id="cookies" class="subsection-title">Cookies and Tracking</h3>
+                <p>Nothing on this list loads or runs until you choose to allow it. The first time you visit, a banner asks you to Accept all, Reject all, or Customize your choice by category; you can change your mind at any time using the "Cookie settings" link in the footer of any page.</p>
                 <ul>
                     <li><strong>Essential Cookies:</strong> Required for basic website functionality (none currently used).</li>
-                    <li><strong>Google Analytics:</strong> We use Google Analytics 4 to collect anonymous statistical data about website usage, including pages visited, time spent on site, and general geographic location. This helps us understand how visitors interact with our content and improve the website experience.</li>
-                    <li><strong>Embedded Content:</strong> YouTube and SoundCloud videos may set cookies for functionality and analytics. These are governed by their respective privacy policies.</li>
-                    <li><strong>Google Fonts:</strong> We load fonts from Google, which may collect minimal technical data (IP address, browser information).</li>
+                    <li><strong>Analytics:</strong> If you accept this category, we load Google Analytics 4 to collect anonymous statistical data about website usage — pages visited, time spent on site, and general geographic location. It does not load at all if you decline or haven't yet chosen.</li>
+                    <li><strong>Embedded Content:</strong> YouTube and SoundCloud players on the videos page are shown as a thumbnail/button, not a live embed, until you click play. Clicking play loads that player and counts as accepting this category (you can also switch it on in advance via Customize). YouTube is loaded from youtube-nocookie.com, which does not set a tracking cookie until playback starts. These embeds are governed by YouTube's and SoundCloud's own privacy policies once loaded.</li>
+                    <li><strong>Google Fonts:</strong> Some of the fonts on this site (Playfair Display, and Alef and Frank Ruhl Libre for Hebrew text) are loaded from Google Fonts, which may collect minimal technical data (IP address, browser information) independently of the choice above. The site's main body font, Glacial Indifference, is hosted directly on this site rather than from a third party.</li>
                 </ul>
-                <p>By using this website, you consent to the use of cookies as described above. You can disable analytics tracking by:</p>
+                <p>Regardless of your choice above, you can also:</p>
                 <ul>
-                    <li>Installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a></li>
-                    <li>Enabling "Do Not Track" in your browser settings</li>
-                    <li>Using browser privacy/incognito mode</li>
+                    <li>Install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a></li>
+                    <li>Enable "Do Not Track" in your browser settings</li>
+                    <li>Use browser privacy/incognito mode</li>
                 </ul>
 
                 <h3 class="subsection-title">Google Analytics Data Collection</h3>
-                <p>Google Analytics collects the following types of information:</p>
+                <p>If you accept the Analytics category above, Google Analytics collects the following types of information:</p>
                 <ul>
                     <li><strong>Technical Data:</strong> Browser type, operating system, screen resolution, IP address (anonymized)</li>
                     <li><strong>Usage Data:</strong> Pages visited, time spent on pages, click behavior, referral sources</li>
@@ -189,7 +178,7 @@
                     <li><strong>Direct Email:</strong> When you email contact@samuelberlad.com, your communication is governed by standard email privacy practices.</li>
                     <li><strong>Phone/SMS:</strong> Direct contact through provided phone numbers.</li>
                     <li><strong>Social Media:</strong> Contact through linked social media platforms is governed by their respective privacy policies.</li>
-                    <li><strong>Analytics Data:</strong> Anonymous website usage statistics collected via Google Analytics as described above.</li>
+                    <li><strong>Analytics Data:</strong> Anonymous website usage statistics collected via Google Analytics, only if you've accepted that category as described above.</li>
                 </ul>
                 <p>We do not use contact forms or automatically collect personal data through this website beyond analytics.</p>
                 
@@ -225,6 +214,7 @@
         <div class="footer-content">
             <div class="copyright">
                 <p>© <span class="copyright-year">2026</span> Samuel Berlad. All rights reserved.</p>
+<a href="#" class="footer-cookie-link" onclick="window.openCookieSettings(); return false;">Cookie settings</a>
             </div>
             <div class="footer-social-links">
                 <a href="https://www.facebook.com/samuel.berlad/" target="_blank" aria-label="Facebook">
@@ -245,5 +235,6 @@
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
+    <script src="js/consent.js"></script>
 </body>
 </html>

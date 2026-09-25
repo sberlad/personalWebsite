@@ -58,6 +58,80 @@
     display: block;
 }
 
+/* Click-to-load facade: shown until the visitor clicks play, then js/pages/videos.js
+   replaces it with the real iframe. Keeps YouTube/SoundCloud from loading anything
+   before that point. */
+.video-facade {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    background: var(--warm-gray);
+    overflow: hidden;
+}
+
+.video-facade img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(164, 32, 32, 0.85);
+    color: white;
+    border: none;
+    width: 56px;
+    height: 56px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.video-facade:hover .video-play-btn {
+    background: var(--primary-red);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-facade-audio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(164, 32, 32, 0.08);
+    border: 1px solid rgba(164, 32, 32, 0.3);
+}
+
+.video-facade-audio .video-play-btn {
+    position: static;
+    transform: none;
+    width: auto;
+    height: auto;
+    padding: 0.7rem 1.4rem;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.video-facade-audio:hover .video-play-btn {
+    transform: scale(1.05);
+}
+
+.featured-box .video-facade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .video-info {
     padding: 1rem 0 0.5rem;
     text-align: left;
@@ -133,7 +207,8 @@
         max-width: 100%;
     }
 
-    .featured-box .video-container iframe {
+    .featured-box .video-container iframe,
+    .featured-box .video-facade {
         height: 250px;
     }
 
@@ -149,7 +224,8 @@
         max-width: 100%;
     }
 
-    .featured-box .video-container iframe {
+    .featured-box .video-container iframe,
+    .featured-box .video-facade {
         height: 200px;
     }
 }
