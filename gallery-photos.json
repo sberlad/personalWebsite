@@ -1,6 +1,20 @@
 {
   "productions": [
     {
+      "id": "midsummer",
+      "title": "Squenz",
+      "opera": "Ein Sommernachtstraum",
+      "composer": "Benjamin Britten",
+      "venue": "Nordharzer Städtebundtheater",
+      "year": "2023",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/midsummer3.jpg", "alt": "Samuel Berlad as Squenz in Britten's Ein Sommernachtstraum" },
+        { "src": "images/gallery/midsummer4.jpg", "alt": "Samuel Berlad as Squenz in Britten's Ein Sommernachtstraum" },
+        { "src": "images/gallery/midsummer1.jpeg", "alt": "The mechanicals in Britten's Ein Sommernachtstraum" }
+      ]
+    },
+    {
       "id": "blues-brothers",
       "title": "Curtis",
       "opera": "Blues Brothers",
