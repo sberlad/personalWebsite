@@ -1,0 +1,274 @@
+/* Styles for reach-me.html only. Shared styles are in css/main.css. */
+
+/* Main Content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--primary-red);
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.page-subtitle {
+    font-size: 1.1rem;
+    color: var(--light-gray);
+    letter-spacing: 1px;
+}
+
+/* Business Card */
+.business-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(164, 32, 32, 0.3);
+    padding: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.business-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-red), #b52525, var(--primary-red));
+}
+
+.card-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--warm-gray);
+    margin: 0 auto 2rem;
+    border: 3px solid rgba(164, 32, 32, 0.3);
+    overflow: hidden;
+}
+
+.card-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--off-white);
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: var(--primary-red);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.card-specialties {
+    color: var(--light-gray);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* Contact Actions */
+.contact-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    background: rgba(164, 32, 32, 0.1);
+    border: 1px solid rgba(164, 32, 32, 0.3);
+    color: var(--off-white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.contact-btn:hover {
+    background: rgba(164, 32, 32, 0.2);
+    border-color: var(--primary-red);
+    transform: translateY(-2px);
+}
+
+.contact-btn i {
+    font-size: 1.2rem;
+    color: var(--primary-red);
+}
+
+/* Save to Contacts */
+.save-contact {
+    background: var(--primary-red);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.save-contact:hover {
+    background: #b52525;
+    transform: translateY(-2px);
+}
+
+.save-contact i {
+    margin-right: 0.5rem;
+}
+
+/* Contact Info Grid */
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.contact-info-item {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(164, 32, 32, 0.1);
+}
+
+.contact-info-item h4 {
+    color: var(--primary-red);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-info-item p {
+    color: var(--light-gray);
+    font-size: 0.95rem;
+}
+
+/* Social Links */
+.card-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(164, 32, 32, 0.1);
+    border: 1px solid rgba(164, 32, 32, 0.3);
+    color: var(--primary-red);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: var(--primary-red);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.social-link i {
+    font-size: 1.2rem;
+}
+
+/* QR Code Section */
+.qr-section {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(164, 32, 32, 0.2);
+    margin-bottom: 2rem;
+}
+
+.qr-section h3 {
+    color: var(--primary-red);
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(164, 32, 32, 0.2);
+    background: white;
+}
+
+.qr-code img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media (max-width: 768px) {
+
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    .business-card {
+        padding: 2rem;
+    }
+
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contact-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .card-social-links {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .business-card {
+        padding: 1.5rem;
+    }
+
+    .card-name {
+        font-size: 1.8rem;
+    }
+
+    .card-photo {
+        width: 100px;
+        height: 100px;
+    }
+}
