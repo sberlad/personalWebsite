@@ -1,6 +1,20 @@
 {
   "productions": [
     {
+      "id": "blues-brothers",
+      "title": "Curtis",
+      "opera": "Blues Brothers",
+      "composer": "Various Artists",
+      "venue": "Harztheater",
+      "year": "2024",
+      "photographer": "Eugen Babash",
+      "photos": [
+        { "src": "images/gallery/bluesbrothers1.jpg", "alt": "Samuel Berlad as Rev. Cleophus in Blues Brothers, Harztheater" },
+        { "src": "images/gallery/bluesbrothers2.jpg", "alt": "Samuel Berlad in Blues Brothers, Harztheater" },
+        { "src": "images/gallery/bluesbrothers3.jpg", "alt": "Samuel Berlad as Ray in Blues Brothers, Harztheater" }
+      ]
+    },
+    {
       "id": "walkure",
       "title": "Hunding",
       "opera": "Die Walküre",
