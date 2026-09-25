@@ -65,5 +65,12 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- Blog RSS Feed -->
+  <url>
+    <loc>https://samuelberlad.com/blog-rss.xml</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
 
 </urlset>
