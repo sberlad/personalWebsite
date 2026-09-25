@@ -85,6 +85,20 @@
     font-size: 0.85rem;
 }
 
+.press-quote-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: var(--primary-red);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.press-quote-link:hover {
+    color: var(--off-white);
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 2rem 1rem;

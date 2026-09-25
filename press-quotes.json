@@ -58,7 +58,8 @@
       "publication": "",
       "production": "Bach's Christmas Oratorio",
       "venue": "Jerusalem",
-      "date": "2016-12"
+      "date": "2016-12",
+      "url": "http://pamelahickmansblog.blogspot.com/2016/12/jsbachs-christmas-oratorio-performed-in.html"
     },
     {
       "text": "His rich voice and fine German taking him through the feathered person's naive gaffes...",
@@ -68,7 +69,30 @@
       "publication": "",
       "production": "Die Zauberflöte (Papageno)",
       "venue": "Jerusalem Opera",
-      "date": "2017-12"
+      "date": "2017-12",
+      "url": "http://pamelahickmansblog.blogspot.com/2017/12/the-jerusalem-opera-and-guests-perform.html"
+    },
+    {
+      "text": "Den Doktor Bartolo – Almavivas Gegenspieler im Kampf um sein Mündel Rosina – gab Samuel Berlad als eleganten Vormund mit angenehm klingendem Bassbariton; in „A un dottor de la mia sorte\" erfreute er durch schönes Legato und geläufige Koloraturen, auch noch beim Höllentempo in der Stretta.",
+      "translation": "Doctor Bartolo — Almaviva's rival in the fight for his ward Rosina — was played by Samuel Berlad as an elegant guardian with a pleasant-sounding bass-baritone; in 'A un dottor de la mia sorte' he delighted with beautiful legato and fluent coloratura, even at the breakneck tempo of the stretta.",
+      "language": "de",
+      "critic": "Marion Eckels",
+      "publication": "Der Opernfreund",
+      "production": "Il Barbiere di Siviglia (Bartolo)",
+      "venue": "Harztheater",
+      "date": "2026-09",
+      "url": "https://deropernfreund.de/harztheater/harztheater-halberstadt/halberstadt-il-barbiere-di-siviglia-gioachino-rossini/"
+    },
+    {
+      "text": "More pompous than dashing, Berlad did, indeed, cut the figure of the army man.",
+      "translation": "",
+      "language": "en",
+      "critic": "Pamela Hickman",
+      "publication": "",
+      "production": "L'elisir d'amore (Belcore)",
+      "venue": "Jerusalem Opera",
+      "date": "2020-02",
+      "url": "http://pamelahickmansblog.blogspot.com/2020/02/singing-of-love-potions-and-love.html"
     }
   ]
 }

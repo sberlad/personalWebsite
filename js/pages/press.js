@@ -43,6 +43,7 @@ function renderQuotes(quotes) {
                     '<cite class="press-quote-source">' + sourceLine + '</cite>' +
                     '<span class="press-quote-production">' + productionLine + (q.date ? ' · ' + formatDate(q.date) : '') + '</span>' +
                 '</footer>' +
+                (q.url ? '<a class="press-quote-link" href="' + q.url + '" target="_blank" rel="noopener">Read the full review →</a>' : '') +
             '</blockquote>'
         );
     }).join('');
