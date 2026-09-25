@@ -81,6 +81,20 @@ body {
     transform: translateY(0);
 }
 
+.hero-press-link {
+    display: inline-block;
+    color: var(--light-gray);
+    font-size: 0.85rem;
+    text-decoration: none;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.hero-press-link:hover {
+    color: var(--primary-red);
+}
+
 .rtl{
     font-family: Alef;
     direction: rtl;

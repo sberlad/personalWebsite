@@ -3,55 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Samuel Berlad performance gallery - Stage photos from opera and concert performances across Europe and Israel.">
+    <meta name="description" content="Press and critical reviews of Samuel Berlad, German-American bass-baritone, from Volksstimme, Der Opernfreund, Opern News and others.">
     <meta name="author" content="Samuel Berlad">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://samuelberlad.com/gallery.html">
-    <meta property="og:title" content="Performance Gallery | Samuel Berlad">
-    <meta property="og:description" content="Stage photos from opera and concert performances across Europe and Israel. See Samuel Berlad in action on stage.">
-    <meta property="og:image" content="https://samuelberlad.com/images/gallery/rheingold1.jpg">
+    <meta property="og:url" content="https://samuelberlad.com/press.html">
+    <meta property="og:title" content="Press | Samuel Berlad">
+    <meta property="og:description" content="Critical reviews of Samuel Berlad, German-American bass-baritone, from German, Israeli and international press.">
+    <meta property="og:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Samuel Berlad">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://samuelberlad.com/gallery.html">
-    <meta property="twitter:title" content="Performance Gallery | Samuel Berlad">
-    <meta property="twitter:description" content="Stage photos from opera and concert performances across Europe and Israel. See Samuel Berlad in action on stage.">
-    <meta property="twitter:image" content="https://samuelberlad.com/images/gallery/rheingold1.jpg">
+    <meta property="twitter:url" content="https://samuelberlad.com/press.html">
+    <meta property="twitter:title" content="Press | Samuel Berlad">
+    <meta property="twitter:description" content="Critical reviews of Samuel Berlad, German-American bass-baritone, from German, Israeli and international press.">
+    <meta property="twitter:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Samuel Berlad | Gallery</title>
+    <title>Samuel Berlad | Press</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+    <!-- Hebrew Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruehl+Libre:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/pages/gallery.css">
-    <!-- GALLERY PAGE SCHEMA (gallery.html) -->
+    <link rel="stylesheet" href="css/pages/press.css">
+
+    <!-- PRESS PAGE SCHEMA (press.html) -->
     <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "ImageGallery",
-    "name": "Performance Gallery - Samuel Berlad",
-    "description": "Professional stage photography from Samuel Berlad's opera and concert performances",
-    "creator": {
-        "@type": "Person",
-        "name": "Samuel Berlad"
-    },
-    "about": {
-        "@type": "Person",
-        "name": "Samuel Berlad",
-        "jobTitle": "Bass-Baritone Opera Singer"
-    }
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Press | Samuel Berlad",
+            "description": "Critical reviews of Samuel Berlad, German-American bass-baritone.",
+            "url": "https://samuelberlad.com/press.html",
+            "about": {
+                "@type": "Person",
+                "name": "Samuel Berlad",
+                "jobTitle": "Professional Bass-Baritone Opera Singer"
+            }
+        }
     </script>
 </head>
 
@@ -62,7 +63,7 @@
             <a class="logo" href="index.html">
                 <img src="images/Samuel_Berlad_bass-baritone__1_-removebg-crop-300x160.png" alt="Samuel Berlad">
             </a>
-            
+
             <nav class="nav">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="index.html">home</a></li>
@@ -76,7 +77,7 @@
                     <li class="nav_item"><a href="disclaimer.html">legal</a></li>
                 </ul>
             </nav>
-            
+
             <div class="hamburger">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -86,35 +87,15 @@
     </header>
 
     <!-- Main Content -->
-    <main class="gallery-container">
-        <div class="gallery-header">
-            <h1 class="gallery-title">Gallery</h1>
+    <main class="container">
+        <div class="page-header">
+            <h1 class="page-title">Press</h1>
+            <p class="page-subtitle">Selected reviews from German, Israeli and international critics</p>
         </div>
 
-        <!-- Productions (grid of tiles, each opening a lightbox of that production's photos) -->
-        <div class="production-grid" id="productionGrid">
-            <!-- Loaded from gallery-photos.json -->
+        <div class="quotes-list" id="quotesList">
+            <!-- Loaded from press-quotes.json -->
         </div>
-
-        <!-- Lightbox -->
-        <div class="lightbox" id="lightbox" hidden>
-            <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
-            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <div class="lightbox-content">
-                <img id="lightboxImage" src="" alt="">
-                <div class="lightbox-info">
-                    <div class="lightbox-description" id="lightboxDescription"></div>
-                    <div class="lightbox-credit" id="lightboxCredit"></div>
-                    <div class="lightbox-count" id="lightboxCount"></div>
-                </div>
-            </div>
-            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-        </div>
-
     </main>
 
     <!-- Footer -->
@@ -122,9 +103,9 @@
         <div class="footer-content">
             <div class="copyright">
                 <p>© <span class="copyright-year">2026</span> Samuel Berlad. All rights reserved.</p>
-<a href="#" class="footer-cookie-link" onclick="window.openCookieSettings(); return false;">Cookie settings</a>
+                <a href="#" class="footer-cookie-link" onclick="window.openCookieSettings(); return false;">Cookie settings</a>
             </div>
-            <div class="social-links">
+            <div class="footer-social-links">
                 <a href="https://www.facebook.com/samuel.berlad/" target="_blank" aria-label="Facebook">
                     <i class="fab fa-facebook"></i>
                 </a>
@@ -141,9 +122,9 @@
         </div>
     </footer>
 
-    <!-- Pure JavaScript -->
+    <!-- JavaScript -->
     <script src="js/main.js"></script>
     <script src="js/consent.js"></script>
-    <script src="js/pages/gallery.js"></script>
+    <script src="js/pages/press.js"></script>
 </body>
 </html>

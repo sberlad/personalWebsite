@@ -32,7 +32,15 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
+
+  <!-- Press -->
+  <url>
+    <loc>https://samuelberlad.com/press.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Gallery -->
   <url>
     <loc>https://samuelberlad.com/gallery.html</loc>
