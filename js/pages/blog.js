@@ -306,19 +306,19 @@ function showPostModal(post) {
                 <div class="post-social-share">
                     <h4>Share This Post</h4>
                     <div class="post-share-buttons">
-                        <a href="#" class="post-share-btn facebook" onclick="sharePost('facebook', ${post.id}); return false;">
+                        <a href="#" class="post-share-btn facebook" onclick="sharePost('facebook', '${post.id}'); return false;">
                             <i class="fab fa-facebook-f"></i> Facebook
                         </a>
-                        <a href="#" class="post-share-btn twitter" onclick="sharePost('twitter', ${post.id}); return false;">
+                        <a href="#" class="post-share-btn twitter" onclick="sharePost('twitter', '${post.id}'); return false;">
                             <i class="fab fa-twitter"></i> Twitter
                         </a>
-                        <a href="#" class="post-share-btn linkedin" onclick="sharePost('linkedin', ${post.id}); return false;">
+                        <a href="#" class="post-share-btn linkedin" onclick="sharePost('linkedin', '${post.id}'); return false;">
                             <i class="fab fa-linkedin-in"></i> LinkedIn
                         </a>
-                        <a href="#" class="post-share-btn email" onclick="sharePost('email', ${post.id}); return false;">
+                        <a href="#" class="post-share-btn email" onclick="sharePost('email', '${post.id}'); return false;">
                             <i class="fas fa-envelope"></i> Email
                         </a>
-                        <button class="post-share-btn copy" onclick="copyPostUrl(${post.id})">
+                        <button class="post-share-btn copy" onclick="copyPostUrl('${post.id}')">
                             <i class="fas fa-link"></i> Copy Link
                         </button>
                     </div>
@@ -329,19 +329,19 @@ function showPostModal(post) {
                 <div class="post-social-share" style="margin-top: 2rem;">
                     <h4>Enjoyed this post? Share it!</h4>
                     <div class="post-share-buttons">
-                        <a href="#" class="post-share-btn facebook" onclick="sharePost('facebook', ${post.id}); return false;">
+                        <a href="#" class="post-share-btn facebook" onclick="sharePost('facebook', '${post.id}'); return false;">
                             <i class="fab fa-facebook-f"></i> Facebook
                         </a>
-                        <a href="#" class="post-share-btn twitter" onclick="sharePost('twitter', ${post.id}); return false;">
+                        <a href="#" class="post-share-btn twitter" onclick="sharePost('twitter', '${post.id}'); return false;">
                             <i class="fab fa-twitter"></i> Twitter
                         </a>
-                        <a href="#" class="post-share-btn linkedin" onclick="sharePost('linkedin', ${post.id}); return false;">
+                        <a href="#" class="post-share-btn linkedin" onclick="sharePost('linkedin', '${post.id}'); return false;">
                             <i class="fab fa-linkedin-in"></i> LinkedIn
                         </a>
-                        <a href="#" class="post-share-btn email" onclick="sharePost('email', ${post.id}); return false;">
+                        <a href="#" class="post-share-btn email" onclick="sharePost('email', '${post.id}'); return false;">
                             <i class="fas fa-envelope"></i> Email
                         </a>
-                        <button class="post-share-btn copy" onclick="copyPostUrl(${post.id})">
+                        <button class="post-share-btn copy" onclick="copyPostUrl('${post.id}')">
                             <i class="fas fa-link"></i> Copy Link
                         </button>
                     </div>
