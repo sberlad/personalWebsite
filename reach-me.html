@@ -647,7 +647,7 @@
     <!-- Virtual Business Card -->
     <div class="business-card">
         <div class="card-photo">
-            <img src="images/LRB_8438 edited.jpg" alt="Samuel Berlad" onerror="this.style.display='none'">
+            <img src="images/contact-portrait.jpg" alt="Samuel Berlad" onerror="this.style.display='none'">
         </div>
 
         <h2 class="card-name">Samuel Berlad</h2>
@@ -741,7 +741,8 @@
     <footer>
     <div class="footer-content">
     <div class="copyright">
-    <p>© 2025 Samuel Berlad. All rights reserved.</p>
+    <p>© <span class="copyright-year">2026</span> Samuel Berlad. All rights reserved.</p>
+    <script>document.querySelectorAll(".copyright-year").forEach(function (el) { el.textContent = new Date().getFullYear(); });</script>
     </div>
     <div class="footer-social-links">
     <a href="https://www.facebook.com/samuel.berlad/" target="_blank" aria-label="Facebook">

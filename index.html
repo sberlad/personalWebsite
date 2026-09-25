@@ -49,7 +49,6 @@
     <!-- Hebrew Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruehl+Libre:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <style>
         * {
@@ -881,7 +880,8 @@
     <footer>
         <div class="footer-content">
             <div class="copyright">
-                <p>© 2025 Samuel Berlad. All rights reserved.</p>
+                <p>© <span class="copyright-year">2026</span> Samuel Berlad. All rights reserved.</p>
+                <script>document.querySelectorAll(".copyright-year").forEach(function (el) { el.textContent = new Date().getFullYear(); });</script>
             </div>
             <div class="social-links">
                 <a href="https://www.facebook.com/samuel.berlad/" target="_blank" aria-label="Facebook">

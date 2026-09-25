@@ -710,7 +710,8 @@
     <footer>
         <div class="footer-content">
             <div class="copyright">
-                <p>© 2025 Samuel Berlad. All rights reserved.</p>
+                <p>© <span class="copyright-year">2026</span> Samuel Berlad. All rights reserved.</p>
+                <script>document.querySelectorAll(".copyright-year").forEach(function (el) { el.textContent = new Date().getFullYear(); });</script>
             </div>
             <div class="social-links">
                 <a href="https://www.facebook.com/samuel.berlad/" target="_blank" aria-label="Facebook">
