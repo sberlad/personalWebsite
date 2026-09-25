@@ -1,0 +1,18 @@
+{
+  // Cloudflare Worker configuration. Not used by the current IONOS static
+  // hosting — this only takes effect once the site is deployed to
+  // Cloudflare Workers (Workers & Pages → Create → Import a repository).
+  // See README.md's "Blog (Substack)" section for the full setup steps.
+  "name": "samuelberlad-website",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-25",
+  "assets": {
+    // The site's files live at the repo root (kept flat so the same
+    // checkout can still be uploaded as-is to IONOS). This also serves
+    // src/index.js and wrangler.jsonc as plain files — harmless, since
+    // neither contains a secret; the real Substack URL is an environment
+    // variable, not committed here.
+    "directory": "./",
+    "binding": "ASSETS"
+  }
+}

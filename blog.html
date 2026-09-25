@@ -20,9 +20,6 @@
     <meta property="twitter:description" content="Insights on opera, vocal technique, and life as a professional bass-baritone. From Wagner preparation to German pedagogy.">
     <meta property="twitter:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
     
-    <!-- RSS Feed Discovery -->
-    <link rel="alternate" type="application/rss+xml" title="Samuel Berlad Blog RSS Feed" href="https://samuelberlad.com/blog-rss.xml">
-    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -109,43 +106,25 @@
             <p class="page-subtitle">Insights on opera, vocal technique, and life as a professional bass-baritone</p>
         </div>
 
-        <!-- RSS Subscribe Section -->
-        <div class="rss-subscribe">
-            <p class="rss-info">Never miss a post! Subscribe to my RSS feed for updates on opera insights, vocal technique, and behind-the-scenes stories from the stage.</p>
-            <a href="/blog-rss.xml" class="rss-link" target="_blank">
-                <i class="fas fa-rss"></i>
-                Subscribe to RSS Feed
-            </a>
-        </div>
-
-        <!-- Blog Controls -->
-        <div class="blog-controls">
-            <div class="search-container">
-                <i class="fas fa-search search-icon"></i>
-                <input type="text" class="search-input" placeholder="Search posts..." id="searchInput">
-            </div>
-            
-            <div class="category-filters" id="categoryFilters">
-                <button class="filter-btn active" data-category="all">All Posts</button>
-                <button class="filter-btn" data-category="opera">Opera</button>
-                <button class="filter-btn" data-category="pedagogy">Vocal Pedagogy</button>
-                <button class="filter-btn" data-category="career">Career</button>
-                <button class="filter-btn" data-category="culture">Culture</button>
-                <button class="filter-btn" data-category="chazzanut">Chazzanut</button>
-            </div>
+        <!-- Subscribe Section (Substack embed, filled in by js/pages/blog.js) -->
+        <div class="subscribe-box">
+            <p class="subscribe-info">Get new posts by email — opera insights, vocal technique, and behind-the-scenes stories from the stage.</p>
+            <div id="subscribeBox"></div>
         </div>
 
         <!-- Blog Grid -->
         <div class="blog-grid" id="blogGrid">
-            <!-- Posts will be dynamically loaded here -->
+            <!-- Posts are loaded from Substack via /api/posts -->
         </div>
 
         <!-- No Results -->
         <div class="no-results" id="noResults" style="display: none;">
-            <i class="fas fa-search"></i>
-            <h3>No posts found</h3>
-            <p>Try adjusting your search or category filter.</p>
+            <i class="fas fa-feather"></i>
+            <h3>No posts yet</h3>
+            <p>Check back soon, or subscribe above to get new posts by email.</p>
         </div>
+
+        <a href="#" id="archiveLink" class="archive-link" target="_blank" rel="noopener" style="display:none">View the full archive on Substack →</a>
     </main>
 
     <!-- Footer -->
