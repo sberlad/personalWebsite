@@ -3,6 +3,20 @@
 let allRoles = [];
 let filteredRoles = [];
 
+const HARZTHEATER_SPIELPLAN_URL = 'https://harztheater.de/spielplan';
+
+// Where to find dates/tickets for a role, or '' if there isn't one to show.
+// Harztheater's own schedule page never needs updating here as seasons change,
+// so any current/upcoming Harztheater role gets it automatically with no data
+// entry required. A role can also set its own "ticketUrl" for a one-off
+// engagement elsewhere.
+function getTicketUrl(role) {
+    if (role.ticketUrl) return role.ticketUrl;
+    const isCurrentOrUpcoming = role.status === 'current' || role.status === 'upcoming';
+    if (isCurrentOrUpcoming && role.venue === 'Harztheater') return HARZTHEATER_SPIELPLAN_URL;
+    return '';
+}
+
 // ── Fetch from roles-database.json ──────────────────────────────────
 async function loadRoles() {
     try {
@@ -66,6 +80,7 @@ function renderRoles(data) {
                 <div class="venue-name">${role.venue}</div>
                 <div class="venue-location">${role.location}</div>
                 ${teamString ? `<div class="production-team">${teamString}</div>` : ''}
+                ${getTicketUrl(role) ? `<a href="${getTicketUrl(role)}" class="ticket-link" target="_blank" rel="noopener">See dates &amp; tickets →</a>` : ''}
             </div>
         </div>`;
     }).join('');

@@ -318,6 +318,20 @@ body {
     font-style: italic;
 }
 
+.ticket-link {
+    display: inline-block;
+    color: var(--primary-red);
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-top: 0.75rem;
+    transition: color 0.3s ease;
+}
+
+.ticket-link:hover {
+    color: var(--off-white);
+    text-decoration: underline;
+}
+
 .role-description {
     color: var(--light-gray);
     font-size: 0.8rem;

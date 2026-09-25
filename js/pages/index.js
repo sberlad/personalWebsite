@@ -3,6 +3,20 @@
 // Global variables
 let allRoles = [];
 
+const HARZTHEATER_SPIELPLAN_URL = 'https://harztheater.de/spielplan';
+
+// Where to find dates/tickets for a role, or '' if there isn't one to show.
+// Harztheater's own schedule page never needs updating here as seasons change,
+// so any current/upcoming Harztheater role gets it automatically with no data
+// entry required. A role can also set its own "ticketUrl" for a one-off
+// engagement elsewhere.
+function getTicketUrl(role) {
+    if (role.ticketUrl) return role.ticketUrl;
+    const isCurrentOrUpcoming = role.status === 'current' || role.status === 'upcoming';
+    if (isCurrentOrUpcoming && role.venue === 'Harztheater') return HARZTHEATER_SPIELPLAN_URL;
+    return '';
+}
+
 // Quote rotation functionality
 let currentQuote = 0;
 const quotes = document.querySelectorAll('.quote-text');
@@ -81,6 +95,7 @@ function renderCurrentSeason() {
         gridElement.innerHTML = displayRoles.map(function(role) {
             const showBadge = role.status === 'upcoming' || role.status === 'current';
             const showTeam = role.director && role.director !== 'Concert Performance' && role.director !== 'Recital' && role.director !== 'Broadcast';
+            const ticketUrl = getTicketUrl(role);
             return `
                 <div class="venue-card ${role.featured ? 'featured' : ''}" onclick="window.location.href='repertoire.html'" style="cursor:pointer">
                     ${showBadge ? `<div class="status-badge ${role.status}">${role.status}</div>` : ''}
@@ -91,6 +106,7 @@ function renderCurrentSeason() {
                     <p class="venue-name">${role.venue}</p>
                     <p class="venue-location">${role.location}</p>
                     ${showTeam ? `<p class="venue-details">${[role.director, role.conductor].filter(Boolean).join(' | ')}</p>` : ''}
+                    ${ticketUrl ? `<a href="${ticketUrl}" class="ticket-link" target="_blank" rel="noopener" onclick="event.stopPropagation()">See dates &amp; tickets →</a>` : ''}
                 </div>
             `;
         }).join('');
