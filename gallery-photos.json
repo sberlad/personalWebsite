@@ -1,6 +1,18 @@
 {
   "productions": [
     {
+      "id": "barbiere-paisiello",
+      "title": "Figaro",
+      "opera": "Il Barbiere di Siviglia",
+      "composer": "Giovanni Paisiello",
+      "venue": "Junge Oper Rhein-Main",
+      "year": "2012",
+      "photos": [
+        { "src": "images/gallery/barbiere-paisiello1.jpg", "alt": "Samuel Berlad as Figaro in Paisiello's Il Barbiere di Siviglia" },
+        { "src": "images/gallery/barbiere-paisiello2.jpg", "alt": "Samuel Berlad as Figaro in Paisiello's Il Barbiere di Siviglia" }
+      ]
+    },
+    {
       "id": "don-giovanni",
       "title": "Leporello",
       "opera": "Don Giovanni",
