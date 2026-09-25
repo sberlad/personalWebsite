@@ -1,6 +1,30 @@
 {
   "productions": [
     {
+      "id": "serva-padrona-ashdod",
+      "title": "Uberto",
+      "opera": "La Serva Padrona",
+      "composer": "Giovanni Battista Pergolesi",
+      "venue": "Israeli Chamber Opera",
+      "year": "2022",
+      "photos": [
+        { "src": "images/gallery/servapadrona-ashdod1.jpg", "alt": "Samuel Berlad as Uberto in Pergolesi's La Serva Padrona, Ashdod" },
+        { "src": "images/gallery/servapadrona-ashdod2.jpg", "alt": "Samuel Berlad as Uberto in Pergolesi's La Serva Padrona, Ashdod" }
+      ]
+    },
+    {
+      "id": "boheme-haifa",
+      "title": "Schaunard",
+      "opera": "La Bohème",
+      "composer": "Giacomo Puccini",
+      "venue": "Haifa Opera",
+      "year": "2021",
+      "photos": [
+        { "src": "images/gallery/boheme-haifa1.jpg", "alt": "Samuel Berlad as Schaunard in Puccini's La Bohème, Haifa Opera" },
+        { "src": "images/gallery/boheme-haifa2.jpg", "alt": "Samuel Berlad as Schaunard in Puccini's La Bohème, Haifa Opera" }
+      ]
+    },
+    {
       "id": "midsummer",
       "title": "Squenz",
       "opera": "Ein Sommernachtstraum",

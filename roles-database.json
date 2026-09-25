@@ -1,6 +1,21 @@
 {
   "roles": [
     {
+      "id": 43,
+      "role": "Uberto",
+      "opera": "La Serva Padrona",
+      "composer": "Giovanni Battista Pergolesi",
+      "venue": "Israeli Chamber Opera",
+      "location": "Ashdod, Israel",
+      "year": "2022",
+      "type": "opera",
+      "director": "",
+      "conductor": "",
+      "status": "past",
+      "featured": false,
+      "description": "The blustering, self-satisfied master outwitted by his own servant in Pergolesi's foundational comic intermezzo. A pure buffo showcase in rapid patter and exasperated bewilderment."
+    },
+    {
       "id": 42,
       "role": "Kuno",
       "opera": "Der Freischütz",
