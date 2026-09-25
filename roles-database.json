@@ -87,7 +87,7 @@
       "director": "Frank Voigtmann",
       "conductor": "GMD Johannes Rieger",
       "status": "past",
-      "featured": true,
+      "featured": false,
       "description": "A grotesque figure lurking on the edges of Weill and Brecht's criminal underworld, Trauerweidenwalter embodies the darkly comic absurdity at the heart of Die Dreigroschenoper. The role calls for sardonic presence, rhythmic precision in Weill's angular vocal lines, and an instinct for Brechtian estrangement."
     },
     {
@@ -102,7 +102,7 @@
       "director": "Nick Westbrock",
       "conductor": "Harutyun Muradyan",
       "status": "past",
-      "featured": true,
+      "featured": false,
       "description": "The scheming and sharp-tongued minister at the court of Louis XV, Maurepas is a classic operetta villain-buffoon — politically calculating yet perpetually outmanoeuvred. The role demands crisp comic timing, aristocratic hauteur, and a gleeful flair for satirical characterisation."
     },
     {
@@ -117,7 +117,7 @@
       "director": "Marco Misgaiski",
       "conductor": "GMD Johannes Rieger",
       "status": "past",
-      "featured": true,
+      "featured": false,
       "description": "Sieglinde's menacing husband in Wagner's Ring cycle, a role requiring both vocal power and dramatic intensity."
     },
     {
@@ -132,7 +132,7 @@
       "director": "Marco Misgaiski",
       "conductor": "Willi Haselbeck",
       "status": "past",
-      "featured": true,
+      "featured": false,
       "description": "Curtis works in the orphanage and acts as a sort of deus ex machina, assisting the brothers at several key points. Throughout the story, he takes on the roles of Rev Cleophus and Ray, while always remaining clearly Curtis."
     },
     {
@@ -147,7 +147,7 @@
       "director": "Marco Misgaiski",
       "conductor": "GMD Johannes Rieger",
       "status": "past",
-      "featured": true,
+      "featured": false,
       "description": "The wise water spirit and father of Rusalka, a role showcasing the bass-baritone's lyrical and dramatic capabilities."
     },
     {
@@ -342,7 +342,7 @@
       "director": "Rosemarie Danziger",
       "conductor": "Nir Kabaretti",
       "status": "past",
-      "featured": false,
+      "featured": true,
       "description": "Don Giovanni's long-suffering servant. A major comic role requiring excellent patter, timing, and character development."
     },
     {
@@ -372,7 +372,7 @@
       "director": "Rosemarie Danziger",
       "conductor": "Adrian Sylveen",
       "status": "past",
-      "featured": false,
+      "featured": true,
       "description": "A grotesque parody of dictatorship, this role is at once tragic and absurd. Requires biting satire and dark vocal color."
     },
     {
@@ -387,7 +387,7 @@
       "director": "Monica Waitzfelder",
       "conductor": "Omer Arieli",
       "status": "past",
-      "featured": false,
+      "featured": true,
       "description": "The beloved bird-catcher in Mozart's fairy tale opera, showcasing comedic and musical skills."
     },
     {
@@ -402,7 +402,7 @@
       "director": "Susanna Stranders",
       "conductor": "David Angus",
       "status": "past",
-      "featured": false,
+      "featured": true,
       "description": "The swaggering toreador, Escamillo is one of opera's iconic baritone roles. Requires vocal bravado and commanding presence."
     },
     {
