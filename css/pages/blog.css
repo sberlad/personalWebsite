@@ -26,6 +26,65 @@
     letter-spacing: 1px;
 }
 
+/* Email Subscribe Section (Buttondown) */
+.email-subscribe {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(164, 32, 32, 0.05);
+    border: 1px solid rgba(164, 32, 32, 0.2);
+}
+
+.email-subscribe-info {
+    color: var(--light-gray);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.email-subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.email-subscribe-form input[type="email"] {
+    padding: 0.8rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(164, 32, 32, 0.3);
+    color: var(--off-white);
+    font-family: inherit;
+    font-size: 0.95rem;
+    min-width: 260px;
+    transition: all 0.3s ease;
+}
+
+.email-subscribe-form input[type="email"]:focus {
+    outline: none;
+    border-color: var(--primary-red);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.email-subscribe-form button {
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-red);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.email-subscribe-form button:hover {
+    background: #8a1b1b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(164, 32, 32, 0.3);
+}
+
 /* RSS Subscribe Section */
 .rss-subscribe {
     text-align: center;
@@ -516,9 +575,15 @@
         padding: 2rem 1rem;
     }
 
+    .email-subscribe,
     .rss-subscribe {
         margin: 1rem 0;
         padding: 1rem;
+    }
+
+    .email-subscribe-form input[type="email"] {
+        min-width: 0;
+        width: 100%;
     }
 
     .blog-controls {
