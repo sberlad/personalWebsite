@@ -1,6 +1,19 @@
 {
   "productions": [
     {
+      "id": "don-giovanni",
+      "title": "Leporello",
+      "opera": "Don Giovanni",
+      "composer": "Wolfgang Amadeus Mozart",
+      "venue": "Vocal Connection / Sinfonietta Beer Sheva",
+      "year": "2019",
+      "photos": [
+        { "src": "images/gallery/dongiovanni1.jpg", "alt": "Samuel Berlad as Leporello in Mozart's Don Giovanni, Beer Sheva" },
+        { "src": "images/gallery/dongiovanni2.jpg", "alt": "Samuel Berlad as Leporello in Mozart's Don Giovanni, Beer Sheva" },
+        { "src": "images/gallery/dongiovanni3.jpg", "alt": "Samuel Berlad as Leporello in Mozart's Don Giovanni, Beer Sheva" }
+      ]
+    },
+    {
       "id": "serva-padrona-ashdod",
       "title": "Uberto",
       "opera": "La Serva Padrona",
