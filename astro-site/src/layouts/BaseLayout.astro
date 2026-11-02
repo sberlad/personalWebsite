@@ -1,0 +1,162 @@
+---
+// Shared shell for every page except 404.html (which is standalone,
+// matching the original flat-HTML site's convention). Carries all the
+// <head> boilerplate, header/nav, footer, and shared scripts that used to
+// be hand-duplicated in every .html file.
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath: string; // e.g. "/" or "/press.html"
+  ogTitle: string;
+  ogDescription: string;
+  ogType?: string;
+  ogImage?: string;
+  ogImageWidth?: string;
+  ogImageHeight?: string;
+  includeHebrewFonts?: boolean;
+  includeFontAwesome?: boolean;
+  pageScript?: string; // e.g. "/js/pages/press.js"
+  mainId?: string; // id for the skip-link target; defaults to "main-content"
+  includeScrollToTop?: boolean; // only index.html and repertoire.html have this in the original site
+}
+
+const {
+  title,
+  description,
+  canonicalPath,
+  ogTitle,
+  ogDescription,
+  ogType = 'website',
+  ogImage = 'https://samuelberlad.com/images/samuel-berlad-social.jpg',
+  ogImageWidth = '1200',
+  ogImageHeight = '630',
+  includeHebrewFonts = false,
+  includeFontAwesome = true,
+  pageScript,
+  mainId = 'main-content',
+  includeScrollToTop = false,
+} = Astro.props;
+
+const canonicalUrl = `https://samuelberlad.com${canonicalPath === '/' ? '/' : canonicalPath}`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content={description}>
+    <meta name="author" content="Samuel Berlad">
+    <meta property="og:type" content={ogType}>
+    <meta property="og:url" content={canonicalUrl}>
+    <link rel="canonical" href={canonicalUrl}>
+    <meta property="og:title" content={ogTitle}>
+    <meta property="og:description" content={ogDescription}>
+    <meta property="og:image" content={ogImage}>
+    <meta property="og:image:width" content={ogImageWidth}>
+    <meta property="og:image:height" content={ogImageHeight}>
+    <meta property="og:site_name" content="Samuel Berlad">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content={canonicalUrl}>
+    <meta name="twitter:title" content={ogTitle}>
+    <meta name="twitter:description" content={ogDescription}>
+    <meta name="twitter:image" content={ogImage}>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>{title}</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    {includeFontAwesome && <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />}
+    {includeHebrewFonts && (
+        <>
+            <!-- Hebrew Fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Frank+Ruehl+Libre:wght@400;700&display=swap" rel="stylesheet">
+        </>
+    )}
+
+    <link rel="stylesheet" href="/css/main.css">
+    <slot name="page-css" />
+
+    <slot name="head-extra" />
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <!-- Header -->
+    <header class="header">
+        <div class="header_content">
+            <a href="/index.html" class="logo">
+                <img src="/images/Samuel_Berlad_bass-baritone__1_-removebg-crop-300x160.png" width="300" height="160" alt="Samuel Berlad">
+            </a>
+
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="/index.html">home</a></li>
+                    <li class="nav_item"><a href="/about.html">biography</a></li>
+                    <li class="nav_item"><a href="/repertoire.html">repertoire</a></li>
+                    <li class="nav_item"><a href="/gallery.html">gallery</a></li>
+                    <li class="nav_item"><a href="/videos.html">hear me sing</a></li>
+                    <li class="nav_item"><a href="/blog.html">blog</a></li>
+                    <li class="nav_item"><a href="/press.html">press</a></li>
+                    <li class="nav_item"><a href="/reach-me.html">contact</a></li>
+                    <li class="nav_item"><a href="/disclaimer.html">legal</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <slot />
+
+    <!-- Footer -->
+    <slot name="footer">
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                <p>© <span class="copyright-year">2026</span> Samuel Berlad. All rights reserved.</p>
+                <a href="/disclaimer.html#impressum" class="footer-impressum-link">Impressum</a>
+                <a href="#" class="footer-cookie-link">Cookie settings</a>
+            </div>
+            <div class="footer-social-links">
+                <a href="https://www.facebook.com/samuel.berlad/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/samuelberlad_bassbaritone/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UC5I1E7F3C1SUcLed-w7Ax9A" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://open.spotify.com/artist/6yueNB4pXtAZmGPh01Q4Eo" target="_blank" aria-label="Spotify">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    </slot>
+
+    {includeScrollToTop && (
+        <div id="scrolltotop_parent">
+            <i class="fas fa-chevron-up" id="scrolltotop_arrow"></i>
+        </div>
+    )}
+
+    <script src="/js/main.js" is:inline></script>
+    <script src="/js/consent.js" is:inline></script>
+    {pageScript && <script src={pageScript} is:inline></script>}
+</body>
+</html>

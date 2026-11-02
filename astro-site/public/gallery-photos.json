@@ -1,0 +1,217 @@
+{
+  "productions": [
+    {
+      "id": "noyes-fludde",
+      "title": "Noye",
+      "opera": "Noye's Fludde",
+      "composer": "Benjamin Britten",
+      "venue": "Maria Rosenkranz Frankfurt",
+      "year": "2010",
+      "photos": [
+        { "src": "images/gallery/noyesfludde2.jpg", "alt": "Samuel Berlad as Noye in Britten's Noye's Fludde" },
+        { "src": "images/gallery/noyesfludde1.jpg", "alt": "Samuel Berlad as Noye with the ensemble in Britten's Noye's Fludde" }
+      ]
+    },
+    {
+      "id": "barbiere-paisiello",
+      "title": "Figaro",
+      "opera": "Il Barbiere di Siviglia",
+      "composer": "Giovanni Paisiello",
+      "venue": "Junge Oper Rhein-Main",
+      "year": "2012",
+      "photos": [
+        { "src": "images/gallery/barbiere-paisiello1.jpg", "alt": "Samuel Berlad as Figaro in Paisiello's Il Barbiere di Siviglia" },
+        { "src": "images/gallery/barbiere-paisiello2.jpg", "alt": "Samuel Berlad as Figaro in Paisiello's Il Barbiere di Siviglia" }
+      ]
+    },
+    {
+      "id": "don-giovanni",
+      "title": "Leporello",
+      "opera": "Don Giovanni",
+      "composer": "Wolfgang Amadeus Mozart",
+      "venue": "Vocal Connection / Sinfonietta Beer Sheva",
+      "year": "2019",
+      "photos": [
+        { "src": "images/gallery/dongiovanni1.jpg", "alt": "Samuel Berlad as Leporello in Mozart's Don Giovanni, Beer Sheva" },
+        { "src": "images/gallery/dongiovanni2.jpg", "alt": "Samuel Berlad as Leporello in Mozart's Don Giovanni, Beer Sheva" },
+        { "src": "images/gallery/dongiovanni3.jpg", "alt": "Samuel Berlad as Leporello in Mozart's Don Giovanni, Beer Sheva" }
+      ]
+    },
+    {
+      "id": "serva-padrona-ashdod",
+      "title": "Uberto",
+      "opera": "La Serva Padrona",
+      "composer": "Giovanni Battista Pergolesi",
+      "venue": "Israeli Chamber Opera",
+      "year": "2022",
+      "photos": [
+        { "src": "images/gallery/servapadrona-ashdod1.jpg", "alt": "Samuel Berlad as Uberto in Pergolesi's La Serva Padrona, Ashdod" },
+        { "src": "images/gallery/servapadrona-ashdod2.jpg", "alt": "Samuel Berlad as Uberto in Pergolesi's La Serva Padrona, Ashdod" }
+      ]
+    },
+    {
+      "id": "boheme-haifa",
+      "title": "Schaunard",
+      "opera": "La Bohème",
+      "composer": "Giacomo Puccini",
+      "venue": "Haifa Opera",
+      "year": "2021",
+      "photos": [
+        { "src": "images/gallery/boheme-haifa1.jpg", "alt": "Samuel Berlad as Schaunard in Puccini's La Bohème, Haifa Opera" },
+        { "src": "images/gallery/boheme-haifa2.jpg", "alt": "Samuel Berlad as Schaunard in Puccini's La Bohème, Haifa Opera" }
+      ]
+    },
+    {
+      "id": "midsummer",
+      "title": "Squenz",
+      "opera": "Ein Sommernachtstraum",
+      "composer": "Benjamin Britten",
+      "venue": "Nordharzer Städtebundtheater",
+      "year": "2023",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/midsummer3.jpg", "alt": "Samuel Berlad as Squenz in Britten's Ein Sommernachtstraum" },
+        { "src": "images/gallery/midsummer4.jpg", "alt": "Samuel Berlad as Squenz in Britten's Ein Sommernachtstraum" },
+        { "src": "images/gallery/midsummer1.jpeg", "alt": "The mechanicals in Britten's Ein Sommernachtstraum" },
+        { "src": "images/gallery/midsummer2.jpeg", "alt": "Samuel Berlad as Squenz in the play-within-the-play scene, Ein Sommernachtstraum" }
+      ]
+    },
+    {
+      "id": "blues-brothers",
+      "title": "Curtis",
+      "opera": "Blues Brothers",
+      "composer": "Various Artists",
+      "venue": "Harztheater",
+      "year": "2024",
+      "photographer": "Eugen Babash",
+      "photos": [
+        { "src": "images/gallery/bluesbrothers1.jpg", "alt": "Samuel Berlad as Rev. Cleophus in Blues Brothers, Harztheater" },
+        { "src": "images/gallery/bluesbrothers2.jpg", "alt": "Samuel Berlad in Blues Brothers, Harztheater" },
+        { "src": "images/gallery/bluesbrothers3.jpg", "alt": "Samuel Berlad as Ray in Blues Brothers, Harztheater" }
+      ]
+    },
+    {
+      "id": "walkure",
+      "title": "Hunding",
+      "opera": "Die Walküre",
+      "composer": "Richard Wagner",
+      "venue": "Harztheater",
+      "year": "2025",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/walkure1.jpg", "alt": "Samuel Berlad as Hunding in Wagner's Die Walküre" },
+        { "src": "images/gallery/walkure2.jpg", "alt": "Samuel Berlad as Hunding in Wagner's Die Walküre" }
+      ]
+    },
+    {
+      "id": "pompadour",
+      "title": "Comte de Maurepas",
+      "opera": "Madame Pompadour",
+      "composer": "Leo Fall",
+      "venue": "Harztheater",
+      "year": "2025",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/pompadour1.jpg", "alt": "Samuel Berlad as Comte de Maurepas in Leo Fall's Madame Pompadour" },
+        { "src": "images/gallery/pompadour2.jpg", "alt": "Samuel Berlad as Comte de Maurepas in Leo Fall's Madame Pompadour" }
+      ]
+    },
+    {
+      "id": "rusalka",
+      "title": "Vodník",
+      "opera": "Rusalka",
+      "composer": "Antonín Dvořák",
+      "venue": "Harztheater",
+      "year": "2024",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/rusalka1.jpg", "alt": "Rusalka Photo 1" },
+        { "src": "images/gallery/rusalka2.jpg", "alt": "Rusalka Photo 2" },
+        { "src": "images/gallery/rusalka3.jpg", "alt": "Rusalka Photo 3" },
+        { "src": "images/gallery/rusalka4.jpg", "alt": "Rusalka Photo 4" },
+        { "src": "images/gallery/rusalka5.jpg", "alt": "Rusalka Photo 5" }
+      ]
+    },
+    {
+      "id": "rheingold",
+      "title": "Alberich",
+      "opera": "Das Rheingold",
+      "composer": "Richard Wagner",
+      "venue": "Harztheater",
+      "year": "2024",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/rheingold1.jpg", "alt": "Rheingold Photo 1" },
+        { "src": "images/gallery/rheingold2.jpg", "alt": "Rheingold Photo 2" },
+        { "src": "images/gallery/rheingold3.jpg", "alt": "Rheingold Photo 3" },
+        { "src": "images/gallery/rheingold4.jpg", "alt": "Rheingold Photo 4" }
+      ]
+    },
+    {
+      "id": "boheme",
+      "title": "Schaunard",
+      "opera": "La Bohème",
+      "composer": "Giacomo Puccini",
+      "venue": "Harztheater",
+      "year": "2023",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/boheme1.jpg", "alt": "Boheme Photo 1" },
+        { "src": "images/gallery/boheme2.jpg", "alt": "Boheme Photo 2" },
+        { "src": "images/gallery/boheme3.jpg", "alt": "Boheme Photo 3" }
+      ]
+    },
+    {
+      "id": "opernball",
+      "title": "Théophile",
+      "opera": "Der Opernball",
+      "composer": "Richard Heuberger",
+      "venue": "Harztheater",
+      "year": "2023",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/opernball1.jpg", "alt": "Opernball Photo 1" },
+        { "src": "images/gallery/opernball2.jpg", "alt": "Opernball Photo 2" }
+      ]
+    },
+    {
+      "id": "flute",
+      "title": "Papageno",
+      "opera": "Die Zauberflöte",
+      "composer": "Wolfgang Amadeus Mozart",
+      "venue": "Jerusalem Opera",
+      "year": "2017",
+      "photographer": "Larry Brandt",
+      "photos": [
+        { "src": "images/gallery/flute1.jpg", "alt": "Magic Flute Photo 1" },
+        { "src": "images/gallery/flute2.jpg", "alt": "Magic Flute Photo 2" },
+        { "src": "images/gallery/flute3.jpg", "alt": "Magic Flute Photo 3" },
+        { "src": "images/gallery/flute4.jpg", "alt": "Magic Flute Photo 4" }
+      ]
+    },
+    {
+      "id": "gerolstein",
+      "title": "Baron Grog",
+      "opera": "Die Großherzogin von Gerolstein",
+      "composer": "Jacques Offenbach",
+      "venue": "Harztheater",
+      "year": "2022",
+      "photographer": "Ray Behringer",
+      "photos": [
+        { "src": "images/gallery/gerolstein1.jpg", "alt": "Gerolstein Photo 1" }
+      ]
+    },
+    {
+      "id": "lucretia",
+      "title": "Collatinus",
+      "opera": "The Rape of Lucretia",
+      "composer": "Benjamin Britten",
+      "venue": "Opera Incognita",
+      "year": "2018",
+      "photographer": "Misha Jackl",
+      "photos": [
+        { "src": "images/gallery/lucretia1.jpg", "alt": "The Rape of Lucretia Photo" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+    title="Samuel Berlad | Biography"
+    description="Samuel Berlad, bass-baritone and member of the Harztheater ensemble since 2022. Biography, opera and concert work, cantorial activity, and education."
+    canonicalPath="/about.html"
+    ogType="profile"
+    ogTitle="Biography | Samuel Berlad Bass-Baritone"
+    ogDescription="From Frankfurt conservatories to Jerusalem's stages, now performing across European opera houses. Available in multiple languages."
+    includeHebrewFonts={true}
+    pageScript="/js/pages/about.js"
+>
+    <Fragment slot="page-css">
+        <link rel="stylesheet" href="/css/pages/about.css">
+    </Fragment>
+
+    <Fragment slot="head-extra">
+        <!-- ABOUT PAGE SCHEMA (about.html) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "Biography - Samuel Berlad",
+            "description": "Professional biography of Samuel Berlad, bass-baritone opera singer, including education, career highlights, and current engagements.",
+            "mainEntity": {
+                "@type": ["Person", "PerformingArtist"],
+                "name": "Samuel Berlad",
+                "jobTitle": "Professional Bass-Baritone Opera Singer",
+                "description": "Bass-baritone and member of the Harztheater ensemble since 2022",
+                "educationalCredential": [
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "credentialCategory": "Master of Music",
+                        "name": "Master of Music in Opera",
+                        "educationalLevel": "Graduate",
+                        "recognizedBy": { "@type": "Organization", "name": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main" }
+                    },
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "credentialCategory": "Diplom",
+                        "name": "Diplom Gesangspädagogik",
+                        "recognizedBy": { "@type": "Organization", "name": "Wiesbadener Musikakademie / Hochschule für Musik und Darstellende Kunst Frankfurt" }
+                    }
+                ]
+            }
+        })} />
+    </Fragment>
+
+    <!-- Main Content -->
+    <main class="main-container" id="main-content">
+        <div class="bio-header">
+            <h1 class="bio-title">Biography</h1>
+        </div>
+
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <p>Biography available in multiple languages:</p>
+            <div class="language-links">
+                <a id="english" class="active">English</a>
+                <a id="german">Deutsch</a>
+                <a id="french">Français</a>
+                <a id="italian">Italiano</a>
+                <a id="hebrew">עברית</a>
+            </div>
+        </div>
+
+        <div class="bio-content">
+            <div class="bio-sidebar">
+                    <img src="/images/RBZ_5353.jpeg" width="213" height="300" alt="Samuel Berlad portrait" class="bio-image">
+
+                <div class="quick-facts">
+                    <h3>Quick Facts</h3>
+                    <div class="fact-item">
+                        <span class="fact-label">Voice Type</span>
+                        <span class="fact-value">Bass-Baritone</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-label">Current Position</span>
+                        <span class="fact-value">Harztheater Ensemble</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-label">Languages</span>
+                        <span class="fact-value">German, English, Hebrew, French, Italian</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-label">Current Base</span>
+                        <span class="fact-value">Halberstadt, Germany</span>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-label">Home</span>
+                        <span class="fact-value">Jerusalem, Israel</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bio-text">
+                <div id="biotext">
+        <div class="bio-section">
+            <p>Samuel Berlad is a bass-baritone and has been a member of the Harztheater ensemble in Halberstadt, Germany, since 2022.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Opera</h2>
+            <p>His roles at Harztheater include Alberich in Wagner’s <em>Das Rheingold</em>, Hunding in <em>Die Walküre</em>, Vodník in Dvořák’s <em>Rusalka</em>, Schaunard in Puccini’s <em>La Bohème</em> and Bassa Selim in Mozart’s <em>Die Entführung aus dem Serail</em>. In <em>The Blues Brothers</em>, he has appeared as Curtis, James Brown and Ray Charles. His roles in the 2026/27 season are the Corporal/Count von Sandau in <em>Das Wirtshaus im Spessart</em>, Bartolo in Rossini’s <em>Il barbiere di Siviglia</em> and Alberich in Wagner’s <em>Siegfried</em>.</p>
+
+            <p>His wider operatic repertoire includes Figaro in Mozart’s <em>Le nozze di Figaro</em>, Leporello in <em>Don Giovanni</em>, Collatinus in Britten’s <em>The Rape of Lucretia</em>, Escamillo in Bizet’s <em>Carmen</em>, Belcore in Donizetti’s <em>L’elisir d’amore</em> and Emperor Overall in Ullmann’s <em>Der Kaiser von Atlantis</em>. He has performed in opera and concert in Germany, Israel, France, Italy, the United Kingdom and the United States. In 2016, he was a Britten-Pears Young Artist at the Aldeburgh Festival.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Concerts &amp; Song</h2>
+            <p>In 2024, Berlad gave the premiere of Dr. Ido Ariel’s Hebrew translation of Schubert’s complete song cycle <em>Die schöne Müllerin</em>. In 2021, he performed Schubert songs at the Israel Schubertiade. His song and concert repertoire ranges from Bach and Handel through Schubert, Schumann and Brahms to the twentieth century, and includes Handel’s <em>Messiah</em>, Bach’s <em>Weihnachtsoratorium</em>, Brahms’s <em>Ein deutsches Requiem</em> and Vaughan Williams’s <em>Songs of Travel</em>.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Israel</h2>
+            <p>Berlad lived in Jerusalem from 2012 to 2022 and was active in Israel’s musical life throughout those years. He performed with Jerusalem Opera, Haifa Opera, the Israel Chamber Orchestra and Sinfonietta Beer Sheva, among others. Israel has also remained an important part of his work as a song recitalist.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Cantorial Work</h2>
+            <p>Jewish liturgical music has been part of Berlad’s life since childhood. Alongside his opera and concert work, he continues to serve regularly as a cantor. He trained at the Tel Aviv Cantorial Institute, where his teachers included the late Naftali Herstik and Raymond Goldstein.</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>Education</h2>
+            <p>Berlad holds a Diplom in Gesangspädagogik (vocal pedagogy) from the Wiesbadener Musikakademie / Hochschule für Musik und Darstellende Kunst Frankfurt and a Master of Music in Opera from the Hochschule für Musik und Darstellende Kunst Frankfurt.</p>
+        </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- about.html has no proper <footer> wrapper in the original site (no social
+         icons here either) — preserved exactly rather than "fixed", since that
+         wasn't one of the audited/approved changes. -->
+    <Fragment slot="footer">
+        <a href="/disclaimer.html#impressum" class="footer-impressum-link">Impressum</a>
+        <a href="#" class="footer-cookie-link" style="padding-bottom: 2rem;">Cookie settings</a>
+    </Fragment>
+</BaseLayout>

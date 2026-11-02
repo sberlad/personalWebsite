@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+    title="Samuel Berlad | Blog"
+    description="Samuel Berlad's blog - Insights on opera, vocal technique, and life as a professional bass-baritone."
+    canonicalPath="/blog.html"
+    ogType="blog"
+    ogTitle="Blog | Samuel Berlad"
+    ogDescription="Insights on opera, vocal technique, and life as a professional bass-baritone. From Wagner preparation to German pedagogy."
+    pageScript="/js/pages/blog.js"
+>
+    <Fragment slot="page-css">
+        <link rel="stylesheet" href="/css/pages/blog.css">
+    </Fragment>
+
+    <Fragment slot="head-extra">
+        <!-- RSS Feed Discovery -->
+        <link rel="alternate" type="application/rss+xml" title="Samuel Berlad Blog RSS Feed" href="https://samuelberlad.com/blog-rss.xml">
+
+        <!-- BLOG PAGE SCHEMA (blog.html) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "Samuel Berlad Blog",
+            "description": "Insights on opera, vocal technique, and professional singing career",
+            "url": "https://samuelberlad.com/blog.html",
+            "author": { "@type": "Person", "name": "Samuel Berlad", "jobTitle": "Professional Bass-Baritone Opera Singer" },
+            "publisher": { "@type": "Person", "name": "Samuel Berlad" },
+            "inLanguage": "en",
+            "genre": ["Music", "Opera", "Professional Development", "Vocal Technique"]
+        })} />
+    </Fragment>
+
+    <!-- Main Content -->
+    <main class="container" id="main-content">
+        <div class="page-header">
+            <h1 class="page-title">Blog</h1>
+            <p class="page-subtitle">Insights on opera, vocal technique, and life as a professional bass-baritone</p>
+        </div>
+
+        <!-- Email Subscribe Section (Buttondown) -->
+        <!-- TODO once the Buttondown account exists: replace YOUR-BUTTONDOWN-USERNAME
+             in the form action below with the real username. This is Buttondown's
+             standard embed form; the popup-window JS lives in js/pages/blog.js. -->
+        <div class="email-subscribe">
+            <p class="email-subscribe-info">Get new posts by email — opera insights, vocal technique, and behind-the-scenes stories from the stage.</p>
+            <form action="https://buttondown.com/api/emails/embed-subscribe/YOUR-BUTTONDOWN-USERNAME"
+                  method="post" target="popupwindow"
+                  id="emailSubscribeForm"
+                  class="email-subscribe-form">
+                <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+                <input type="hidden" value="1" name="embed">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <!-- RSS Subscribe Section -->
+        <div class="rss-subscribe">
+            <p class="rss-info">Prefer RSS? Subscribe to my feed for updates on opera insights, vocal technique, and behind-the-scenes stories from the stage.</p>
+            <a href="/blog-rss.xml" class="rss-link" target="_blank">
+                <i class="fas fa-rss"></i>
+                Subscribe to RSS Feed
+            </a>
+        </div>
+
+        <!-- Blog Controls -->
+        <div class="blog-controls">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search posts..." id="searchInput">
+            </div>
+
+            <div class="category-filters" id="categoryFilters">
+                <button class="filter-btn active" data-category="all">All Posts</button>
+                <button class="filter-btn" data-category="opera">Opera</button>
+                <button class="filter-btn" data-category="pedagogy">Vocal Pedagogy</button>
+                <button class="filter-btn" data-category="career">Career</button>
+                <button class="filter-btn" data-category="culture">Culture</button>
+                <button class="filter-btn" data-category="chazzanut">Chazzanut</button>
+            </div>
+        </div>
+
+        <!-- Blog Grid -->
+        <div class="blog-grid" id="blogGrid">
+            <!-- Posts will be dynamically loaded here -->
+        </div>
+
+        <!-- No Results -->
+        <div class="no-results" id="noResults" style="display: none;">
+            <i class="fas fa-search"></i>
+            <h3>No posts found</h3>
+            <p>Try adjusting your search or category filter.</p>
+        </div>
+    </main>
+</BaseLayout>

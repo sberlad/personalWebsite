@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+    title="Samuel Berlad | Press"
+    description="Press and critical reviews of Samuel Berlad, German-American bass-baritone, from Volksstimme, Der Opernfreund, Opern News and others."
+    canonicalPath="/press.html"
+    ogTitle="Press | Samuel Berlad"
+    ogDescription="Critical reviews of Samuel Berlad, German-American bass-baritone, from German, Israeli and international press."
+    includeHebrewFonts={true}
+    pageScript="/js/pages/press.js"
+>
+    <Fragment slot="page-css">
+        <link rel="stylesheet" href="/css/pages/press.css">
+    </Fragment>
+
+    <Fragment slot="head-extra">
+        <!-- PRESS PAGE SCHEMA (press.html) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Press | Samuel Berlad",
+            "description": "Critical reviews of Samuel Berlad, German-American bass-baritone.",
+            "url": "https://samuelberlad.com/press.html",
+            "about": {
+                "@type": "Person",
+                "name": "Samuel Berlad",
+                "jobTitle": "Professional Bass-Baritone Opera Singer"
+            }
+        })} />
+    </Fragment>
+
+    <!-- Main Content -->
+    <main class="container" id="main-content">
+        <div class="page-header">
+            <h1 class="page-title">Press</h1>
+            <p class="page-subtitle">Selected reviews from German, Israeli and international critics</p>
+        </div>
+
+        <div class="quotes-list" id="quotesList">
+            <!-- Loaded from press-quotes.json -->
+        </div>
+    </main>
+</BaseLayout>

@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+    title="Samuel Berlad | Roles & Performances"
+    description="Samuel Berlad - Complete roles and performances database. Bass-Baritone repertoire from 2010-2025."
+    canonicalPath="/repertoire.html"
+    ogTitle="Roles & Performances | Samuel Berlad"
+    ogDescription="Complete operatic and concert career database. From Wagner's Alberich to Mozart's Papageno - explore Samuel Berlad's diverse repertoire."
+    pageScript="/js/pages/repertoire.js"
+    includeScrollToTop={true}
+>
+    <Fragment slot="page-css">
+        <link rel="stylesheet" href="/css/pages/repertoire.css">
+    </Fragment>
+
+    <Fragment slot="head-extra">
+        <!-- REPERTOIRE PAGE SCHEMA (repertoire.html) -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Repertoire & Performances - Samuel Berlad",
+            "description": "Complete database of operatic roles and concert performances by bass-baritone Samuel Berlad",
+            "mainEntity": {
+                "@type": "ItemList",
+                "name": "Samuel Berlad Performance Repertoire",
+                "description": "Comprehensive list of operatic roles performed by Samuel Berlad",
+                "itemListElement": [
+                    {
+                        "@type": "MusicComposition",
+                        "name": "Das Rheingold - Alberich",
+                        "composer": { "@type": "Person", "name": "Richard Wagner" },
+                        "genre": "Opera"
+                    },
+                    {
+                        "@type": "MusicComposition",
+                        "name": "Die Zauberflöte - Papageno",
+                        "composer": { "@type": "Person", "name": "Wolfgang Amadeus Mozart" },
+                        "genre": "Opera"
+                    }
+                ]
+            }
+        })} />
+    </Fragment>
+
+    <div class="container" id="main-content">
+        <div class="header-roles">
+            <h1>Roles & Performances</h1>
+            <p>A comprehensive overview of Samuel Berlad's operatic and concert career</p>
+        </div>
+
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search roles, operas, venues..." id="searchInput">
+        </div>
+
+        <div class="filter-dropdown">
+            <select class="filter-select" id="filterSelect">
+                <option value="all">All Categories</option>
+                <option value="opera">Opera</option>
+                <option value="operetta">Operetta</option>
+                <option value="musical">Musical Theater</option>
+                <option value="concert">Concert</option>
+                <option value="oratorio">Oratorio</option>
+                <option value="recital">Recital</option>
+            </select>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="opera">Opera</button>
+            <button class="filter-btn" data-filter="operetta">Operetta</button>
+            <button class="filter-btn" data-filter="musical">Musical Theater</button>
+            <button class="filter-btn" data-filter="concert">Concert</button>
+            <button class="filter-btn" data-filter="oratorio">Oratorio</button>
+            <button class="filter-btn" data-filter="recital">Recital</button>
+        </div>
+
+        <div class="roles-grid" id="rolesGrid">
+            <!-- Roles will be populated by JavaScript -->
+        </div>
+
+        <div class="no-results" id="noResults">
+            No roles found matching your search criteria.
+        </div>
+    </div>
+</BaseLayout>
