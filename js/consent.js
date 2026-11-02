@@ -122,6 +122,15 @@ function openCookieSettings() {
 }
 window.openCookieSettings = openCookieSettings;
 
+// Delegated so it works for every "Cookie settings" footer link on every
+// page without each page needing its own listener.
+document.addEventListener('click', function (e) {
+    const link = e.target.closest('.footer-cookie-link');
+    if (!link) return;
+    e.preventDefault();
+    openCookieSettings();
+});
+
 // ---- Init ---------------------------------------------------------------
 
 const consent = getConsent();

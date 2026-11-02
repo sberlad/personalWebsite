@@ -1,4 +1,4 @@
-</div><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -7,6 +7,7 @@
         <meta name="author" content="Samuel Berlad">
         <meta property="og:type" content="profile">
         <meta property="og:url" content="https://samuelberlad.com/reach-me.html">
+    <link rel="canonical" href="https://samuelberlad.com/reach-me.html">
         <meta property="og:title" content="Contact | Samuel Berlad Bass-Baritone">
         <meta property="og:description" content="Get in touch with professional bass-baritone Samuel Berlad. Based in Germany and Israel. Available for opera, concerts, and vocal instruction.">
         <meta property="og:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
@@ -14,11 +15,11 @@
         <meta property="og:image:height" content="630">
         <meta property="og:site_name" content="Samuel Berlad">
 
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://samuelberlad.com/reach-me.html">
-        <meta property="twitter:title" content="Contact | Samuel Berlad Bass-Baritone">
-        <meta property="twitter:description" content="Get in touch with professional bass-baritone Samuel Berlad. Based in Germany and Israel. Available for opera, concerts, and vocal instruction.">
-        <meta property="twitter:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="https://samuelberlad.com/reach-me.html">
+        <meta name="twitter:title" content="Contact | Samuel Berlad Bass-Baritone">
+        <meta name="twitter:description" content="Get in touch with professional bass-baritone Samuel Berlad. Based in Germany and Israel. Available for opera, concerts, and vocal instruction.">
+        <meta name="twitter:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -64,11 +65,12 @@
         </head>
 
     <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <!-- Header -->
     <header class="header">
         <div class="header_content">
             <a class="logo" href="index.html">
-                <img src="images/Samuel_Berlad_bass-baritone__1_-removebg-crop-300x160.png" alt="Samuel Berlad">
+                <img src="images/Samuel_Berlad_bass-baritone__1_-removebg-crop-300x160.png" width="300" height="160" alt="Samuel Berlad">
             </a>
 
             <nav class="nav">
@@ -94,7 +96,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container">
+    <main class="container" id="main-content">
     <div class="page-header">
     <h1 class="page-title">Contact</h1>
     <p class="page-subtitle">Professional Bass-Baritone • Germany • Israel</p>
@@ -103,7 +105,7 @@
     <!-- Virtual Business Card -->
     <div class="business-card">
         <div class="card-photo">
-            <img src="images/contact-portrait.jpg" alt="Samuel Berlad" onerror="this.style.display='none'">
+            <img src="images/contact-portrait.jpg" width="480" height="480" alt="Samuel Berlad" id="contactPortrait">
         </div>
 
         <h2 class="card-name">Samuel Berlad</h2>
@@ -111,7 +113,7 @@
         <p class="card-specialties">Opera • Concert • Chazzan • Vocal Pedagogue</p>
 
         <!-- Save to Contacts Button -->
-        <button class="save-contact" onclick="downloadVCard()">
+        <button class="save-contact" id="saveContactBtn">
             <i class="fas fa-download"></i>
             Save to Contacts
         </button>
@@ -166,16 +168,16 @@
 
     <!-- Social Links -->
     <div class="card-social-links">
-    <a href="https://www.facebook.com/samuel.berlad/" target="_blank" class="social-link">
+    <a href="https://www.facebook.com/samuel.berlad/" target="_blank" class="social-link" aria-label="Facebook">
         <i class="fab fa-facebook"></i>
     </a>
-    <a href="https://www.instagram.com/samuelberlad_bassbaritone/" target="_blank" class="social-link">
+    <a href="https://www.instagram.com/samuelberlad_bassbaritone/" target="_blank" class="social-link" aria-label="Instagram">
         <i class="fab fa-instagram"></i>
     </a>
-    <a href="https://www.youtube.com/channel/UC5I1E7F3C1SUcLed-w7Ax9A" target="_blank" class="social-link">
+    <a href="https://www.youtube.com/channel/UC5I1E7F3C1SUcLed-w7Ax9A" target="_blank" class="social-link" aria-label="YouTube">
         <i class="fab fa-youtube"></i>
     </a>
-    <a href="https://open.spotify.com/artist/6yueNB4pXtAZmGPh01Q4Eo" target="_blank" class="social-link">
+    <a href="https://open.spotify.com/artist/6yueNB4pXtAZmGPh01Q4Eo" target="_blank" class="social-link" aria-label="Spotify">
         <i class="fab fa-spotify"></i>
     </a>
     </div>
@@ -185,7 +187,7 @@
     <div class="qr-section">
     <h3>Share My Contact</h3>
     <div class="qr-code">
-    <img src="images/qr-code.png" alt="QR Code - Samuel Berlad Contact">
+    <img src="images/qr-code.png" width="1148" height="1148" alt="QR Code - Samuel Berlad Contact">
     </div>
     <p style="color: var(--light-gray); font-size: 0.9rem;">
     Scan to share my contact information
@@ -198,7 +200,7 @@
     <div class="footer-content">
     <div class="copyright">
     <p>© <span class="copyright-year">2026</span> Samuel Berlad. All rights reserved.</p>
-<a href="#" class="footer-cookie-link" onclick="window.openCookieSettings(); return false;">Cookie settings</a>
+<a href="#" class="footer-cookie-link">Cookie settings</a>
     </div>
     <div class="footer-social-links">
     <a href="https://www.facebook.com/samuel.berlad/" target="_blank" aria-label="Facebook">

@@ -7,6 +7,7 @@
     <meta name="author" content="Samuel Berlad">
     <meta property="og:type" content="blog">
     <meta property="og:url" content="https://samuelberlad.com/blog.html">
+    <link rel="canonical" href="https://samuelberlad.com/blog.html">
     <meta property="og:title" content="Blog | Samuel Berlad">
     <meta property="og:description" content="Insights on opera, vocal technique, and life as a professional bass-baritone. From Wagner preparation to German pedagogy.">
     <meta property="og:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
@@ -14,11 +15,11 @@
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Samuel Berlad">
 
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://samuelberlad.com/blog.html">
-    <meta property="twitter:title" content="Blog | Samuel Berlad">
-    <meta property="twitter:description" content="Insights on opera, vocal technique, and life as a professional bass-baritone. From Wagner preparation to German pedagogy.">
-    <meta property="twitter:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://samuelberlad.com/blog.html">
+    <meta name="twitter:title" content="Blog | Samuel Berlad">
+    <meta name="twitter:description" content="Insights on opera, vocal technique, and life as a professional bass-baritone. From Wagner preparation to German pedagogy.">
+    <meta name="twitter:image" content="https://samuelberlad.com/images/samuel-berlad-social.jpg">
     
     <!-- RSS Feed Discovery -->
     <link rel="alternate" type="application/rss+xml" title="Samuel Berlad Blog RSS Feed" href="https://samuelberlad.com/blog-rss.xml">
@@ -63,11 +64,12 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <!-- Header -->
     <header class="header">
         <div class="header_content">
             <a class="logo" href="index.html">
-                <img src="images/Samuel_Berlad_bass-baritone__1_-removebg-crop-300x160.png" alt="Samuel Berlad">
+                <img src="images/Samuel_Berlad_bass-baritone__1_-removebg-crop-300x160.png" width="300" height="160" alt="Samuel Berlad">
             </a>
             
             <nav class="nav">
@@ -93,7 +95,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container">
+    <main class="container" id="main-content">
         <div class="page-header">
             <h1 class="page-title">Blog</h1>
             <p class="page-subtitle">Insights on opera, vocal technique, and life as a professional bass-baritone</p>
@@ -107,7 +109,7 @@
             <p class="email-subscribe-info">Get new posts by email — opera insights, vocal technique, and behind-the-scenes stories from the stage.</p>
             <form action="https://buttondown.com/api/emails/embed-subscribe/YOUR-BUTTONDOWN-USERNAME"
                   method="post" target="popupwindow"
-                  onsubmit="window.open('https://buttondown.com/YOUR-BUTTONDOWN-USERNAME', 'popupwindow')"
+                  id="emailSubscribeForm"
                   class="email-subscribe-form">
                 <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
                 <input type="hidden" value="1" name="embed">
@@ -159,7 +161,7 @@
         <div class="footer-content">
             <div class="copyright">
                 <p>© <span class="copyright-year">2026</span> Samuel Berlad. All rights reserved.</p>
-<a href="#" class="footer-cookie-link" onclick="window.openCookieSettings(); return false;">Cookie settings</a>
+<a href="#" class="footer-cookie-link">Cookie settings</a>
             </div>
             <div class="footer-social-links">
                 <a href="https://www.facebook.com/samuel.berlad/" target="_blank" aria-label="Facebook">

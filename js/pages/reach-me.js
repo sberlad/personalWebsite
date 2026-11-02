@@ -29,3 +29,13 @@ function downloadVCard() {
     document.body.removeChild(link);
     window.URL.revokeObjectURL(url);
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const saveBtn = document.getElementById('saveContactBtn');
+    if (saveBtn) saveBtn.addEventListener('click', downloadVCard);
+
+    const portrait = document.getElementById('contactPortrait');
+    if (portrait) portrait.addEventListener('error', function () {
+        portrait.style.display = 'none';
+    });
+});

@@ -102,6 +102,16 @@ async function loadBlogPosts() {
 }
 
 function bindEvents() {
+    // Buttondown's standard embed pattern: opens the named popup window the
+    // form already targets, so the subscribe POST completes in that popup
+    // instead of navigating this page away.
+    const subscribeForm = document.getElementById('emailSubscribeForm');
+    if (subscribeForm) {
+        subscribeForm.addEventListener('submit', function () {
+            window.open('https://buttondown.com/YOUR-BUTTONDOWN-USERNAME', 'popupwindow');
+        });
+    }
+
     // Search
     const searchInput = document.getElementById('searchInput');
     if (searchInput) {

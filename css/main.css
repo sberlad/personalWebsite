@@ -64,6 +64,25 @@ body {
     padding-top: 75px;
 }
 
+/* Skip link: hidden until focused, so keyboard/screen-reader users can jump
+   past the repeated header/nav straight to each page's main content. */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 2000;
+    background: var(--primary-red);
+    color: var(--off-white);
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 /* Header */
 .header {
     position: fixed;
