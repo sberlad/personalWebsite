@@ -167,7 +167,9 @@ const hebrewBio = `
 `;
 
 const switchLanguage = (bioText, lang) => {
-    document.getElementById("biotext").innerHTML = bioText;
+    const bioEl = document.getElementById("biotext");
+    bioEl.innerHTML = bioText;
+    bioEl.classList.toggle("rtl", lang === 'hebrew');
 
     // Update active state
     document.querySelectorAll(".language-links a").forEach(link => {
