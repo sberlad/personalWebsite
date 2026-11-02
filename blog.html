@@ -102,20 +102,9 @@
         </div>
 
         <!-- Email Subscribe Section (Buttondown) -->
-        <!-- TODO once the Buttondown account exists: replace YOUR-BUTTONDOWN-USERNAME
-             in both the form action and the onsubmit popup URL below with the real
-             username (2 places). This is Buttondown's standard embed form. -->
-        <div class="email-subscribe">
-            <p class="email-subscribe-info">Get new posts by email — opera insights, vocal technique, and behind-the-scenes stories from the stage.</p>
-            <form action="https://buttondown.com/api/emails/embed-subscribe/YOUR-BUTTONDOWN-USERNAME"
-                  method="post" target="popupwindow"
-                  id="emailSubscribeForm"
-                  class="email-subscribe-form">
-                <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
-                <input type="hidden" value="1" name="embed">
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
+        <!-- Hidden until there's a real Buttondown account; re-add the form
+             here and un-guard the subscribe listener in js/pages/blog.js
+             once there's a real username. -->
 
         <!-- RSS Subscribe Section -->
         <div class="rss-subscribe">
