@@ -393,7 +393,8 @@ footer {
     height: 16px;
 }
 
-.footer-cookie-link {
+.footer-cookie-link,
+.footer-impressum-link {
     display: block;
     text-align: center;
     color: var(--light-gray);
@@ -402,7 +403,8 @@ footer {
     margin-top: 0.75rem;
 }
 
-.footer-cookie-link:hover {
+.footer-cookie-link:hover,
+.footer-impressum-link:hover {
     color: var(--primary-red);
 }
 
