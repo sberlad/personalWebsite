@@ -36,9 +36,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <h1 class="gallery-title">Gallery</h1>
         </div>
 
+        <!-- Filters -->
+        <div class="gallery-filters">
+            <select class="gallery-filter-select" id="yearFilter" aria-label="Filter by year">
+                <option value="all">All Years</option>
+            </select>
+            <select class="gallery-filter-select" id="venueFilter" aria-label="Filter by institution">
+                <option value="all">All Institutions</option>
+            </select>
+            <select class="gallery-filter-select" id="genreFilter" aria-label="Filter by genre">
+                <option value="all">All Genres</option>
+            </select>
+        </div>
+
         <!-- Productions (grid of tiles, each opening a lightbox of that production's photos) -->
         <div class="production-grid" id="productionGrid">
             <!-- Loaded from gallery-photos.json -->
+        </div>
+
+        <!-- No Results -->
+        <div class="gallery-no-results" id="galleryNoResults" hidden>
+            No productions match these filters.
         </div>
 
         <!-- Lightbox -->

@@ -4,13 +4,24 @@
 // production; clicking a tile opens a lightbox showing just that
 // production's photos, with prev/next between them.
 
-let productions = [];
+let allProductions = [];
+let filteredProductions = [];
 let activeProduction = null;
 let activePhotoIndex = 0;
+
+const GENRE_LABELS = {
+    opera: 'Opera',
+    operetta: 'Operetta',
+    musical: 'Musical Theater',
+    concert: 'Concert',
+    oratorio: 'Oratorio',
+    recital: 'Recital',
+};
 
 document.addEventListener('DOMContentLoaded', function () {
     loadProductions();
     bindLightboxControls();
+    bindFilterControls();
 });
 
 async function loadProductions() {
@@ -18,7 +29,11 @@ async function loadProductions() {
         const response = await fetch('./gallery-photos.json');
         if (!response.ok) throw new Error('HTTP ' + response.status);
         const data = await response.json();
-        productions = data.productions || [];
+        allProductions = (data.productions || []).slice().sort(function (a, b) {
+            return Number(b.year) - Number(a.year);
+        });
+        filteredProductions = allProductions;
+        populateFilterOptions();
         renderGrid();
     } catch (error) {
         console.error('Error loading gallery-photos.json:', error);
@@ -28,11 +43,63 @@ async function loadProductions() {
     }
 }
 
+// ── Filters ──────────────────────────────────────────────────────────
+function populateFilterOptions() {
+    const years = [...new Set(allProductions.map(function (p) { return p.year; }))]
+        .sort(function (a, b) { return Number(b) - Number(a); });
+    const venues = [...new Set(allProductions.map(function (p) { return p.venue; }))].sort();
+    const genres = [...new Set(allProductions.map(function (p) { return p.genre; }).filter(Boolean))]
+        .sort(function (a, b) { return (GENRE_LABELS[a] || a).localeCompare(GENRE_LABELS[b] || b); });
+
+    appendOptions('yearFilter', years, function (y) { return y; });
+    appendOptions('venueFilter', venues, function (v) { return v; });
+    appendOptions('genreFilter', genres, function (g) { return GENRE_LABELS[g] || g; });
+}
+
+function appendOptions(selectId, values, labelFor) {
+    const select = document.getElementById(selectId);
+    if (!select) return;
+    values.forEach(function (value) {
+        const option = document.createElement('option');
+        option.value = value;
+        option.textContent = labelFor(value);
+        select.appendChild(option);
+    });
+}
+
+function bindFilterControls() {
+    ['yearFilter', 'venueFilter', 'genreFilter'].forEach(function (id) {
+        const el = document.getElementById(id);
+        if (el) el.addEventListener('change', applyFilters);
+    });
+}
+
+function applyFilters() {
+    const year = document.getElementById('yearFilter').value;
+    const venue = document.getElementById('venueFilter').value;
+    const genre = document.getElementById('genreFilter').value;
+
+    filteredProductions = allProductions.filter(function (p) {
+        return (year === 'all' || p.year === year) &&
+               (venue === 'all' || p.venue === venue) &&
+               (genre === 'all' || p.genre === genre);
+    });
+    renderGrid();
+}
+
 function renderGrid() {
     const grid = document.getElementById('productionGrid');
+    const noResults = document.getElementById('galleryNoResults');
     if (!grid) return;
 
-    grid.innerHTML = productions.map(function (production, index) {
+    if (filteredProductions.length === 0) {
+        grid.innerHTML = '';
+        if (noResults) noResults.hidden = false;
+        return;
+    }
+    if (noResults) noResults.hidden = true;
+
+    grid.innerHTML = filteredProductions.map(function (production, index) {
         const cover = production.photos[0];
         return (
             '<div class="production-tile" data-index="' + index + '">' +
@@ -55,7 +122,7 @@ function renderGrid() {
 }
 
 function openLightbox(productionIndex, photoIndex) {
-    activeProduction = productions[productionIndex];
+    activeProduction = filteredProductions[productionIndex];
     activePhotoIndex = photoIndex;
     document.getElementById('lightbox').hidden = false;
     document.body.style.overflow = 'hidden';

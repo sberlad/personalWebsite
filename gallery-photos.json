@@ -8,9 +8,16 @@
       "venue": "Maria Rosenkranz Frankfurt",
       "year": "2010",
       "photos": [
-        { "src": "images/gallery/noyesfludde2.jpg", "alt": "Samuel Berlad as Noye in Britten's Noye's Fludde" },
-        { "src": "images/gallery/noyesfludde1.jpg", "alt": "Samuel Berlad as Noye with the ensemble in Britten's Noye's Fludde" }
-      ]
+        {
+          "src": "images/gallery/noyesfludde2.jpg",
+          "alt": "Samuel Berlad as Noye in Britten's Noye's Fludde"
+        },
+        {
+          "src": "images/gallery/noyesfludde1.jpg",
+          "alt": "Samuel Berlad as Noye with the ensemble in Britten's Noye's Fludde"
+        }
+      ],
+      "genre": "opera"
     },
     {
       "id": "barbiere-paisiello",
@@ -20,9 +27,16 @@
       "venue": "Junge Oper Rhein-Main",
       "year": "2012",
       "photos": [
-        { "src": "images/gallery/barbiere-paisiello1.jpg", "alt": "Samuel Berlad as Figaro in Paisiello's Il Barbiere di Siviglia" },
-        { "src": "images/gallery/barbiere-paisiello2.jpg", "alt": "Samuel Berlad as Figaro in Paisiello's Il Barbiere di Siviglia" }
-      ]
+        {
+          "src": "images/gallery/barbiere-paisiello1.jpg",
+          "alt": "Samuel Berlad as Figaro in Paisiello's Il Barbiere di Siviglia"
+        },
+        {
+          "src": "images/gallery/barbiere-paisiello2.jpg",
+          "alt": "Samuel Berlad as Figaro in Paisiello's Il Barbiere di Siviglia"
+        }
+      ],
+      "genre": "opera"
     },
     {
       "id": "don-giovanni",
@@ -32,10 +46,20 @@
       "venue": "Vocal Connection / Sinfonietta Beer Sheva",
       "year": "2019",
       "photos": [
-        { "src": "images/gallery/dongiovanni1.jpg", "alt": "Samuel Berlad as Leporello in Mozart's Don Giovanni, Beer Sheva" },
-        { "src": "images/gallery/dongiovanni2.jpg", "alt": "Samuel Berlad as Leporello in Mozart's Don Giovanni, Beer Sheva" },
-        { "src": "images/gallery/dongiovanni3.jpg", "alt": "Samuel Berlad as Leporello in Mozart's Don Giovanni, Beer Sheva" }
-      ]
+        {
+          "src": "images/gallery/dongiovanni1.jpg",
+          "alt": "Samuel Berlad as Leporello in Mozart's Don Giovanni, Beer Sheva"
+        },
+        {
+          "src": "images/gallery/dongiovanni2.jpg",
+          "alt": "Samuel Berlad as Leporello in Mozart's Don Giovanni, Beer Sheva"
+        },
+        {
+          "src": "images/gallery/dongiovanni3.jpg",
+          "alt": "Samuel Berlad as Leporello in Mozart's Don Giovanni, Beer Sheva"
+        }
+      ],
+      "genre": "opera"
     },
     {
       "id": "serva-padrona-ashdod",
@@ -45,9 +69,16 @@
       "venue": "Israeli Chamber Opera",
       "year": "2022",
       "photos": [
-        { "src": "images/gallery/servapadrona-ashdod1.jpg", "alt": "Samuel Berlad as Uberto in Pergolesi's La Serva Padrona, Ashdod" },
-        { "src": "images/gallery/servapadrona-ashdod2.jpg", "alt": "Samuel Berlad as Uberto in Pergolesi's La Serva Padrona, Ashdod" }
-      ]
+        {
+          "src": "images/gallery/servapadrona-ashdod1.jpg",
+          "alt": "Samuel Berlad as Uberto in Pergolesi's La Serva Padrona, Ashdod"
+        },
+        {
+          "src": "images/gallery/servapadrona-ashdod2.jpg",
+          "alt": "Samuel Berlad as Uberto in Pergolesi's La Serva Padrona, Ashdod"
+        }
+      ],
+      "genre": "opera"
     },
     {
       "id": "boheme-haifa",
@@ -57,9 +88,16 @@
       "venue": "Haifa Opera",
       "year": "2021",
       "photos": [
-        { "src": "images/gallery/boheme-haifa1.jpg", "alt": "Samuel Berlad as Schaunard in Puccini's La Bohème, Haifa Opera" },
-        { "src": "images/gallery/boheme-haifa2.jpg", "alt": "Samuel Berlad as Schaunard in Puccini's La Bohème, Haifa Opera" }
-      ]
+        {
+          "src": "images/gallery/boheme-haifa1.jpg",
+          "alt": "Samuel Berlad as Schaunard in Puccini's La Bohème, Haifa Opera"
+        },
+        {
+          "src": "images/gallery/boheme-haifa2.jpg",
+          "alt": "Samuel Berlad as Schaunard in Puccini's La Bohème, Haifa Opera"
+        }
+      ],
+      "genre": "opera"
     },
     {
       "id": "midsummer",
@@ -70,11 +108,24 @@
       "year": "2023",
       "photographer": "Ray Behringer",
       "photos": [
-        { "src": "images/gallery/midsummer3.jpg", "alt": "Samuel Berlad as Squenz in Britten's Ein Sommernachtstraum" },
-        { "src": "images/gallery/midsummer4.jpg", "alt": "Samuel Berlad as Squenz in Britten's Ein Sommernachtstraum" },
-        { "src": "images/gallery/midsummer1.jpeg", "alt": "The mechanicals in Britten's Ein Sommernachtstraum" },
-        { "src": "images/gallery/midsummer2.jpeg", "alt": "Samuel Berlad as Squenz in the play-within-the-play scene, Ein Sommernachtstraum" }
-      ]
+        {
+          "src": "images/gallery/midsummer3.jpg",
+          "alt": "Samuel Berlad as Squenz in Britten's Ein Sommernachtstraum"
+        },
+        {
+          "src": "images/gallery/midsummer4.jpg",
+          "alt": "Samuel Berlad as Squenz in Britten's Ein Sommernachtstraum"
+        },
+        {
+          "src": "images/gallery/midsummer1.jpeg",
+          "alt": "The mechanicals in Britten's Ein Sommernachtstraum"
+        },
+        {
+          "src": "images/gallery/midsummer2.jpeg",
+          "alt": "Samuel Berlad as Squenz in the play-within-the-play scene, Ein Sommernachtstraum"
+        }
+      ],
+      "genre": "opera"
     },
     {
       "id": "blues-brothers",
@@ -85,10 +136,20 @@
       "year": "2024",
       "photographer": "Eugen Babash",
       "photos": [
-        { "src": "images/gallery/bluesbrothers1.jpg", "alt": "Samuel Berlad as Rev. Cleophus in Blues Brothers, Harztheater" },
-        { "src": "images/gallery/bluesbrothers2.jpg", "alt": "Samuel Berlad in Blues Brothers, Harztheater" },
-        { "src": "images/gallery/bluesbrothers3.jpg", "alt": "Samuel Berlad as Ray in Blues Brothers, Harztheater" }
-      ]
+        {
+          "src": "images/gallery/bluesbrothers1.jpg",
+          "alt": "Samuel Berlad as Rev. Cleophus in Blues Brothers, Harztheater"
+        },
+        {
+          "src": "images/gallery/bluesbrothers2.jpg",
+          "alt": "Samuel Berlad in Blues Brothers, Harztheater"
+        },
+        {
+          "src": "images/gallery/bluesbrothers3.jpg",
+          "alt": "Samuel Berlad as Ray in Blues Brothers, Harztheater"
+        }
+      ],
+      "genre": "musical"
     },
     {
       "id": "walkure",
@@ -99,9 +160,16 @@
       "year": "2025",
       "photographer": "Ray Behringer",
       "photos": [
-        { "src": "images/gallery/walkure1.jpg", "alt": "Samuel Berlad as Hunding in Wagner's Die Walküre" },
-        { "src": "images/gallery/walkure2.jpg", "alt": "Samuel Berlad as Hunding in Wagner's Die Walküre" }
-      ]
+        {
+          "src": "images/gallery/walkure1.jpg",
+          "alt": "Samuel Berlad as Hunding in Wagner's Die Walküre"
+        },
+        {
+          "src": "images/gallery/walkure2.jpg",
+          "alt": "Samuel Berlad as Hunding in Wagner's Die Walküre"
+        }
+      ],
+      "genre": "opera"
     },
     {
       "id": "pompadour",
@@ -112,9 +180,16 @@
       "year": "2025",
       "photographer": "Ray Behringer",
       "photos": [
-        { "src": "images/gallery/pompadour1.jpg", "alt": "Samuel Berlad as Comte de Maurepas in Leo Fall's Madame Pompadour" },
-        { "src": "images/gallery/pompadour2.jpg", "alt": "Samuel Berlad as Comte de Maurepas in Leo Fall's Madame Pompadour" }
-      ]
+        {
+          "src": "images/gallery/pompadour1.jpg",
+          "alt": "Samuel Berlad as Comte de Maurepas in Leo Fall's Madame Pompadour"
+        },
+        {
+          "src": "images/gallery/pompadour2.jpg",
+          "alt": "Samuel Berlad as Comte de Maurepas in Leo Fall's Madame Pompadour"
+        }
+      ],
+      "genre": "operetta"
     },
     {
       "id": "rusalka",
@@ -125,12 +200,28 @@
       "year": "2024",
       "photographer": "Ray Behringer",
       "photos": [
-        { "src": "images/gallery/rusalka1.jpg", "alt": "Rusalka Photo 1" },
-        { "src": "images/gallery/rusalka2.jpg", "alt": "Rusalka Photo 2" },
-        { "src": "images/gallery/rusalka3.jpg", "alt": "Rusalka Photo 3" },
-        { "src": "images/gallery/rusalka4.jpg", "alt": "Rusalka Photo 4" },
-        { "src": "images/gallery/rusalka5.jpg", "alt": "Rusalka Photo 5" }
-      ]
+        {
+          "src": "images/gallery/rusalka1.jpg",
+          "alt": "Rusalka Photo 1"
+        },
+        {
+          "src": "images/gallery/rusalka2.jpg",
+          "alt": "Rusalka Photo 2"
+        },
+        {
+          "src": "images/gallery/rusalka3.jpg",
+          "alt": "Rusalka Photo 3"
+        },
+        {
+          "src": "images/gallery/rusalka4.jpg",
+          "alt": "Rusalka Photo 4"
+        },
+        {
+          "src": "images/gallery/rusalka5.jpg",
+          "alt": "Rusalka Photo 5"
+        }
+      ],
+      "genre": "opera"
     },
     {
       "id": "rheingold",
@@ -141,11 +232,24 @@
       "year": "2024",
       "photographer": "Ray Behringer",
       "photos": [
-        { "src": "images/gallery/rheingold1.jpg", "alt": "Rheingold Photo 1" },
-        { "src": "images/gallery/rheingold2.jpg", "alt": "Rheingold Photo 2" },
-        { "src": "images/gallery/rheingold3.jpg", "alt": "Rheingold Photo 3" },
-        { "src": "images/gallery/rheingold4.jpg", "alt": "Rheingold Photo 4" }
-      ]
+        {
+          "src": "images/gallery/rheingold1.jpg",
+          "alt": "Rheingold Photo 1"
+        },
+        {
+          "src": "images/gallery/rheingold2.jpg",
+          "alt": "Rheingold Photo 2"
+        },
+        {
+          "src": "images/gallery/rheingold3.jpg",
+          "alt": "Rheingold Photo 3"
+        },
+        {
+          "src": "images/gallery/rheingold4.jpg",
+          "alt": "Rheingold Photo 4"
+        }
+      ],
+      "genre": "opera"
     },
     {
       "id": "boheme",
@@ -156,10 +260,20 @@
       "year": "2023",
       "photographer": "Ray Behringer",
       "photos": [
-        { "src": "images/gallery/boheme1.jpg", "alt": "Boheme Photo 1" },
-        { "src": "images/gallery/boheme2.jpg", "alt": "Boheme Photo 2" },
-        { "src": "images/gallery/boheme3.jpg", "alt": "Boheme Photo 3" }
-      ]
+        {
+          "src": "images/gallery/boheme1.jpg",
+          "alt": "Boheme Photo 1"
+        },
+        {
+          "src": "images/gallery/boheme2.jpg",
+          "alt": "Boheme Photo 2"
+        },
+        {
+          "src": "images/gallery/boheme3.jpg",
+          "alt": "Boheme Photo 3"
+        }
+      ],
+      "genre": "opera"
     },
     {
       "id": "opernball",
@@ -170,9 +284,16 @@
       "year": "2023",
       "photographer": "Ray Behringer",
       "photos": [
-        { "src": "images/gallery/opernball1.jpg", "alt": "Opernball Photo 1" },
-        { "src": "images/gallery/opernball2.jpg", "alt": "Opernball Photo 2" }
-      ]
+        {
+          "src": "images/gallery/opernball1.jpg",
+          "alt": "Opernball Photo 1"
+        },
+        {
+          "src": "images/gallery/opernball2.jpg",
+          "alt": "Opernball Photo 2"
+        }
+      ],
+      "genre": "operetta"
     },
     {
       "id": "flute",
@@ -183,11 +304,24 @@
       "year": "2017",
       "photographer": "Larry Brandt",
       "photos": [
-        { "src": "images/gallery/flute1.jpg", "alt": "Magic Flute Photo 1" },
-        { "src": "images/gallery/flute2.jpg", "alt": "Magic Flute Photo 2" },
-        { "src": "images/gallery/flute3.jpg", "alt": "Magic Flute Photo 3" },
-        { "src": "images/gallery/flute4.jpg", "alt": "Magic Flute Photo 4" }
-      ]
+        {
+          "src": "images/gallery/flute1.jpg",
+          "alt": "Magic Flute Photo 1"
+        },
+        {
+          "src": "images/gallery/flute2.jpg",
+          "alt": "Magic Flute Photo 2"
+        },
+        {
+          "src": "images/gallery/flute3.jpg",
+          "alt": "Magic Flute Photo 3"
+        },
+        {
+          "src": "images/gallery/flute4.jpg",
+          "alt": "Magic Flute Photo 4"
+        }
+      ],
+      "genre": "opera"
     },
     {
       "id": "gerolstein",
@@ -198,8 +332,12 @@
       "year": "2022",
       "photographer": "Ray Behringer",
       "photos": [
-        { "src": "images/gallery/gerolstein1.jpg", "alt": "Gerolstein Photo 1" }
-      ]
+        {
+          "src": "images/gallery/gerolstein1.jpg",
+          "alt": "Gerolstein Photo 1"
+        }
+      ],
+      "genre": "operetta"
     },
     {
       "id": "lucretia",
@@ -210,8 +348,12 @@
       "year": "2018",
       "photographer": "Misha Jackl",
       "photos": [
-        { "src": "images/gallery/lucretia1.jpg", "alt": "The Rape of Lucretia Photo" }
-      ]
+        {
+          "src": "images/gallery/lucretia1.jpg",
+          "alt": "The Rape of Lucretia Photo"
+        }
+      ],
+      "genre": "opera"
     }
   ]
 }
