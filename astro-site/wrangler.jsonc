@@ -2,6 +2,11 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "samuelberlad-website",
   "compatibility_date": "2026-11-02",
+  "build": {
+    // Cloudflare's Git-connected build (Workers Builds) runs this before
+    // deploying, so the dashboard flow doesn't need astro build run by hand.
+    "command": "npm run build"
+  },
   "assets": {
     // Astro's build output (npm run build) — not the project source.
     "directory": "./dist",
