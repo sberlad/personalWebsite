@@ -10,6 +10,12 @@
   "assets": {
     // Astro's build output (npm run build) — not the project source.
     "directory": "./dist",
-    "not_found_handling": "404-page"
+    "not_found_handling": "404-page",
+    // Cloudflare's default strips .html and 307-redirects every URL
+    // (/about.html -> /about), adding a round-trip on every single link
+    // and not matching the .html URLs baked into every canonical tag,
+    // the sitemap, and every internal link site-wide. Serve exactly what
+    // was requested instead.
+    "html_handling": "none"
   }
 }
